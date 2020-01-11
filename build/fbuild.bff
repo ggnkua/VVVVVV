@@ -1,0 +1,174 @@
+.PROJECT_ROOT=".."
+
+.GCCROOT="c:\svn\gitsfap\gcc7"
+.GPP='$GCCROOT$\bin\m68k-ataribrowrer-elf-g++'
+.GCC='$GCCROOT$\bin\m68k-ataribrowrer-elf-gcc'
+.AS= '$GCCROOT$\bin\m68k-ataribrowrer-elf-as'
+
+.CFLAGS=" "
+    +"-DPHYSFS_SUPPORTS_DEFAULT=0 "
+    +"-DPHYSFS_SUPPORTS_ZIP=0 "
+    +"-I$PROJECT_ROOT$/desktop_version/src "
+    +"-I$PROJECT_ROOT$/desktop_version/tinyxml "
+    +"-I$PROJECT_ROOT$/desktop_version/physfs "
+    +"-I$PROJECT_ROOT$/desktop_version/lodepng "
+    +"-I$GCCROOT$/include "
+
+.LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
+.PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
+.TINYXML_PATH="$PROJECT_ROOT$/desktop_version/tinyxml"
+.VVVVVV_PATH= "$PROJECT_ROOT$/desktop_version/src"
+
+
+Compiler ( 'g++7' )
+{
+    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-g++.exe'
+}
+Compiler ( 'gcc7' )
+{
+    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-gcc.exe'
+}
+Compiler ( 'gas7' )
+{
+    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-as.exe'
+    .CompilerFamily='custom'
+}
+
+
+; File lists
+.LODEPNG_SRC=
+{
+    "$LODEPNG_PATH$/lodepng.c"
+}
+
+.PHYSFS_SRC=
+{
+    "$PHYSFS_PATH$/physfs.c"
+    "$PHYSFS_PATH$/physfs_archiver_dir.c"
+    "$PHYSFS_PATH$/physfs_archiver_unpacked.c"
+    "$PHYSFS_PATH$/physfs_archiver_zip.c"
+    "$PHYSFS_PATH$/physfs_byteorder.c"
+    "$PHYSFS_PATH$/physfs_unicode.c"
+    "$PHYSFS_PATH$/physfs_platform_posix.c"
+    "$PHYSFS_PATH$/physfs_platform_unix.c"
+    "$PHYSFS_PATH$/physfs_platform_windows.c"
+}
+
+.TINYXML_SRC=
+{
+    "$TINYXML_PATH$/tinystr.cpp"
+    "$TINYXML_PATH$/tinyxml.cpp"
+    "$TINYXML_PATH$/tinyxmlerror.cpp"
+    "$TINYXML_PATH$/tinyxmlparser.cpp"
+}
+
+.VVVVVV_SRC=
+{
+    "$VVVVVV_PATH$/BinaryBlob.cpp"
+    "$VVVVVV_PATH$/BlockV.cpp"
+    "$VVVVVV_PATH$/editor.cpp"
+    "$VVVVVV_PATH$/Ent.cpp"
+    "$VVVVVV_PATH$/Entity.cpp"
+    "$VVVVVV_PATH$/FileSystemUtils.cpp"
+    "$VVVVVV_PATH$/Finalclass.cpp"
+    "$VVVVVV_PATH$/Game.cpp"
+    "$VVVVVV_PATH$/Graphics.cpp"
+    "$VVVVVV_PATH$/GraphicsResources.cpp"
+    "$VVVVVV_PATH$/GraphicsUtil.cpp"
+    "$VVVVVV_PATH$/Input.cpp"
+    "$VVVVVV_PATH$/KeyPoll.cpp"
+    "$VVVVVV_PATH$/Labclass.cpp"
+    "$VVVVVV_PATH$/Logic.cpp"
+    "$VVVVVV_PATH$/Map.cpp"
+    "$VVVVVV_PATH$/Music.cpp"
+    "$VVVVVV_PATH$/Otherlevel.cpp"
+    "$VVVVVV_PATH$/preloader.cpp"
+    "$VVVVVV_PATH$/Screen.cpp"
+    "$VVVVVV_PATH$/Script.cpp"
+    "$VVVVVV_PATH$/Scripts.cpp"
+    "$VVVVVV_PATH$/SoundSystem.cpp"
+    "$VVVVVV_PATH$/Spacestation2.cpp"
+    "$VVVVVV_PATH$/TerminalScripts.cpp"
+    "$VVVVVV_PATH$/Textbox.cpp"
+    "$VVVVVV_PATH$/titlerender.cpp"
+    "$VVVVVV_PATH$/Tower.cpp"
+    "$VVVVVV_PATH$/UtilityClass.cpp"
+    "$VVVVVV_PATH$/WarpClass.cpp"
+    "$VVVVVV_PATH$/main.cpp"
+    ;"$VVVVVV_PATH$/SteamNetwork.c"
+}
+
+ObjectList( 'lodepng' )
+{
+    .Compiler='gcc7'
+    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOutputPath='lodepng'
+    .CompilerOutputExtension='.o'
+    .CompilerInputFiles=.LODEPNG_SRC
+}
+
+ObjectList( 'physfs' )
+{
+    .Compiler='gcc7'
+    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOutputPath='physfs'
+    .CompilerOutputExtension='.o'
+    .CompilerInputFiles=.PHYSFS_SRC
+}
+
+ObjectList( 'tinyxml' )
+{
+    .Compiler='g++7'
+    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOutputPath='tinyxml'
+    .CompilerOutputExtension='.o'
+    .CompilerInputFiles=.TINYXML_SRC
+}
+
+ObjectList( 'vvvvvv' )
+{
+    .Compiler='g++7'
+    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOutputPath='vvvvvv'
+    .CompilerOutputExtension='.o'
+    .CompilerInputFiles=.VVVVVV_SRC
+}
+
+Executable( 'game' )
+{
+    .Linker="$GPP$"
+    .Libraries={
+                "vvvvvv",
+                "physfs",
+                "tinyxml",
+                "lodepng"
+               }
+    .LinkerLinkObjects=true
+    .LinkerOutput='vvvvvv.elf'
+    .LinkerOptions='%1 -o %2'
+                  +' -Wl,--emit-relocs'
+                  +' -Wl,-e_start'
+                  +' -Ttext=0'
+                  +' -nostdlib'
+                  +' -nostartfiles'
+                  +' -m68000'
+                  +' -Ofast'
+                  +' -fomit-frame-pointer'
+                  +' -fstrict-aliasing'
+                  +' -fcaller-saves'
+                  +' -ffunction-sections'
+                  +' -fdata-sections'
+                  +' -fleading-underscore'
+                  +' -flto'
+}
+
+Exec ( 'brown' )
+{
+	.ExecExecutable='bin\brownout'
+    .ExecInput='vvvvvv.elf'
+    .ExecOutput='vvvvvv.tos'
+    .ExecArguments='-s -x -f -p 0 -i %1 -o %2'
+}
+
+Alias( 'all' ) { .Targets = { 'game', 'brown'} }
+
