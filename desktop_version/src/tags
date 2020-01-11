@@ -1,0 +1,1837 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIVITY	.\Entity.h	/^    ACTIVITY = 5$/;"	e	enum:__anon1
+ACTIVITY	.\Otherlevel.h	/^        ACTIVITY$/;"	e	enum:otherlevelclass::__anon3
+AddFileToBinaryBlob	.\BinaryBlob.cpp	/^void binaryBlob::AddFileToBinaryBlob(const char* _path)$/;"	f	class:binaryBlob
+Aloss	.\SDL.h	/^    Uint8 Aloss;$/;"	m	struct:SDL_PixelFormat
+Amask	.\SDL.h	/^    Uint32 Amask;$/;"	m	struct:SDL_PixelFormat
+ApplyFilter	.\GraphicsUtil.cpp	/^SDL_Surface* ApplyFilter( SDL_Surface* _src )$/;"	f
+Ashift	.\SDL.h	/^    Uint8 Ashift;$/;"	m	struct:SDL_PixelFormat
+BINARYBLOB_H	.\BinaryBlob.h	2;"	d
+BLOCK	.\Entity.h	/^    BLOCK = 0,$/;"	e	enum:__anon1
+BLOCK	.\Otherlevel.h	/^        BLOCK = 0,$/;"	e	enum:otherlevelclass::__anon3
+BLOCKV_H	.\BlockV.h	2;"	d
+BitsPerPixel	.\SDL.h	/^    Uint8 BitsPerPixel;$/;"	m	struct:SDL_PixelFormat
+BlitSurfaceColoured	.\GraphicsUtil.cpp	/^void BlitSurfaceColoured($/;"	f
+BlitSurfaceStandard	.\GraphicsUtil.cpp	/^void BlitSurfaceStandard( SDL_Surface* _src, SDL_Rect* _srcRect, SDL_Surface* _dest, SDL_Rect* _destRect )$/;"	f
+Bloss	.\SDL.h	/^    Uint8 Bloss;$/;"	m	struct:SDL_PixelFormat
+Bmask	.\SDL.h	/^    Uint32 Bmask;$/;"	m	struct:SDL_PixelFormat
+BoolToString	.\Game.cpp	/^const char* BoolToString(bool _b)$/;"	f
+Bshift	.\SDL.h	/^    Uint8 Bshift;$/;"	m	struct:SDL_PixelFormat
+BytesPerPixel	.\SDL.h	/^    Uint8 BytesPerPixel;$/;"	m	struct:SDL_PixelFormat
+CLICKTOSTART	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+COPY_SAVEFILE	.\FileSystemUtils.cpp	207;"	d	file:
+COPY_SAVEFILE	.\FileSystemUtils.cpp	220;"	d	file:
+COPY_SAVEFILE	.\FileSystemUtils.cpp	254;"	d	file:
+COPY_SAVEFILE	.\FileSystemUtils.cpp	267;"	d	file:
+ClearPointers	.\SteamNetwork.c	/^static void ClearPointers()$/;"	f	file:
+ClearScreen	.\Screen.cpp	/^void Screen::ClearScreen( int colour )$/;"	f	class:Screen
+DAMAGE	.\Entity.h	/^    DAMAGE = 2,$/;"	e	enum:__anon1
+DAMAGE	.\Otherlevel.h	/^        DAMAGE,$/;"	e	enum:otherlevelclass::__anon3
+DECLSPEC	.\SDL.h	154;"	d
+DECLSPEC	.\SDL.h	156;"	d
+DECLSPEC	.\SDL.h	159;"	d
+DECLSPEC	.\SDL.h	163;"	d
+DECLSPEC	.\SDL.h	165;"	d
+DECLSPEC	.\SDL.h	169;"	d
+DECLSPEC	.\SDL.h	171;"	d
+DEFINE_FUNC	.\SteamNetwork.c	62;"	d	file:
+DEFINE_FUNC	.\SteamNetwork.c	75;"	d	file:
+DIRECTIONAL	.\Entity.h	/^    DIRECTIONAL = 3,$/;"	e	enum:__anon1
+DIRECTIONAL	.\Otherlevel.h	/^        DIRECTIONAL,$/;"	e	enum:otherlevelclass::__anon3
+Desc1	.\editor.h	/^	std::string Desc1;$/;"	m	struct:LevelMetaData
+Desc1	.\editor.h	/^  std::string Desc1;$/;"	m	class:editorclass
+Desc2	.\editor.h	/^	std::string Desc2;$/;"	m	struct:LevelMetaData
+Desc2	.\editor.h	/^  std::string Desc2;$/;"	m	class:editorclass
+Desc3	.\editor.h	/^	std::string Desc3;$/;"	m	struct:LevelMetaData
+Desc3	.\editor.h	/^  std::string Desc3;$/;"	m	class:editorclass
+DrawPixel	.\GraphicsUtil.cpp	/^void DrawPixel( SDL_Surface *_surface, int x, int y, Uint32 pixel )$/;"	f
+EDITORMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+EDITOR_H	.\editor.h	2;"	d
+ENTITY_H	.\Entity.h	2;"	d
+ENT_H	.\Ent.h	2;"	d
+ENUMGAME_H	.\Enums.h	2;"	d
+EditorData	.\editor.h	/^	EditorData():$/;"	f	class:EditorData
+EditorData	.\editor.h	/^class EditorData$/;"	c
+FILESYSTEMUTILS_H	.\FileSystemUtils.h	2;"	d
+FILESYSTEM_deinit	.\FileSystemUtils.cpp	/^void FILESYSTEM_deinit()$/;"	f
+FILESYSTEM_freeMemory	.\FileSystemUtils.cpp	/^void FILESYSTEM_freeMemory(unsigned char **mem)$/;"	f
+FILESYSTEM_getLevelDirFileNames	.\FileSystemUtils.cpp	/^std::vector<std::string> FILESYSTEM_getLevelDirFileNames()$/;"	f
+FILESYSTEM_getUserLevelDirectory	.\FileSystemUtils.cpp	/^char *FILESYSTEM_getUserLevelDirectory()$/;"	f
+FILESYSTEM_getUserSaveDirectory	.\FileSystemUtils.cpp	/^char *FILESYSTEM_getUserSaveDirectory()$/;"	f
+FILESYSTEM_init	.\FileSystemUtils.cpp	/^void FILESYSTEM_init(char *argvZero)$/;"	f
+FILESYSTEM_loadFileToMemory	.\FileSystemUtils.cpp	/^void FILESYSTEM_loadFileToMemory(const char *name, unsigned char **mem, size_t *len)$/;"	f
+FINALCLASS_H	.\Finalclass.h	2;"	d
+FOCUSMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+FadeVolAmountPerFrame	.\Music.h	/^	int FadeVolAmountPerFrame;$/;"	m	class:musicclass
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, SDL_Rect rect, int rgba )$/;"	f
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, SDL_Rect& _rect, const int r, int g, int b )$/;"	f
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, const int _x, const int _y, const int _w, const int _h, const int r, int g, int b )$/;"	f
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, const int color )$/;"	f
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, const int r, int g, int b )$/;"	f
+FillRect	.\GraphicsUtil.cpp	/^void FillRect( SDL_Surface* _surface, const int x, const int y, const int w, const int h, int rgba )$/;"	f
+FlipScreen	.\Screen.cpp	/^void Screen::FlipScreen()$/;"	f	class:Screen
+FlipSurfaceHorizontal	.\GraphicsUtil.cpp	/^SDL_Surface *  FlipSurfaceHorizontal(SDL_Surface* _src)$/;"	f
+FlipSurfaceVerticle	.\GraphicsUtil.cpp	/^SDL_Surface *  FlipSurfaceVerticle(SDL_Surface* _src)$/;"	f
+GAMECOMPLETE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+GAMECOMPLETE2	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+GAMEMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+GAME_H	.\Game.h	2;"	d
+GCChar	.\UtilityClass.cpp	/^const char *GCChar(SDL_GameControllerButton button)$/;"	f
+GCString	.\UtilityClass.cpp	/^std::string UtilityClass::GCString(std::vector<SDL_GameControllerButton> buttons)$/;"	f	class:UtilityClass
+GRAPHICSRESOURCES_H	.\GraphicsResources.h	2;"	d
+GRAPHICSUTIL_H	.\GraphicsUtil.h	2;"	d
+GRAPHICS_H	.\Graphics.h	2;"	d
+Game	.\Game.cpp	/^Game::Game(void):$/;"	f	class:Game
+Game	.\Game.h	/^class Game$/;"	c
+GetButtonFromString	.\Game.cpp	/^bool GetButtonFromString(const char *pText, SDL_GameControllerButton *button)$/;"	f
+GetFormat	.\Screen.cpp	/^const SDL_PixelFormat* Screen::GetFormat()$/;"	f	class:Screen
+GetInstance	.\editor.h	/^	static EditorData& GetInstance()$/;"	f	class:EditorData
+GetSubSurface	.\GraphicsUtil.cpp	/^SDL_Surface* GetSubSurface( SDL_Surface* metaSurface, int x, int y, int width, int height )$/;"	f
+GetWindowSize	.\Screen.cpp	/^void Screen::GetWindowSize(int* x, int* y)$/;"	f	class:Screen
+Gloss	.\SDL.h	/^    Uint8 Gloss;$/;"	m	struct:SDL_PixelFormat
+Gmask	.\SDL.h	/^    Uint32 Gmask;$/;"	m	struct:SDL_PixelFormat
+Graphics	.\Graphics.cpp	/^Graphics::Graphics()$/;"	f	class:Graphics
+Graphics	.\Graphics.h	/^class Graphics$/;"	c
+GraphicsResources	.\GraphicsResources.cpp	/^GraphicsResources::GraphicsResources(void)$/;"	f	class:GraphicsResources
+GraphicsResources	.\GraphicsResources.h	/^class GraphicsResources$/;"	c
+Gshift	.\SDL.h	/^    Uint8 Gshift;$/;"	m	struct:SDL_PixelFormat
+Hitest	.\Graphics.cpp	/^bool Graphics::Hitest(SDL_Surface* surface1, point p1, int col, SDL_Surface* surface2, point p2, int col2)$/;"	f	class:Graphics
+INPUT_H	.\Input.h	2;"	d
+KEYBOARD_BACKSPACE	.\KeyPoll.h	/^	KEYBOARD_BACKSPACE = SDLK_BACKSPACE$/;"	e	enum:Kybrd
+KEYBOARD_DOWN	.\KeyPoll.h	/^	KEYBOARD_DOWN = SDLK_DOWN,$/;"	e	enum:Kybrd
+KEYBOARD_ENTER	.\KeyPoll.h	/^	KEYBOARD_ENTER = SDLK_RETURN,$/;"	e	enum:Kybrd
+KEYBOARD_LEFT	.\KeyPoll.h	/^	KEYBOARD_LEFT = SDLK_LEFT,$/;"	e	enum:Kybrd
+KEYBOARD_RIGHT	.\KeyPoll.h	/^	KEYBOARD_RIGHT = SDLK_RIGHT,$/;"	e	enum:Kybrd
+KEYBOARD_SPACE	.\KeyPoll.h	/^	KEYBOARD_SPACE = SDLK_SPACE,$/;"	e	enum:Kybrd
+KEYBOARD_UP	.\KeyPoll.h	/^	KEYBOARD_UP = SDLK_UP,$/;"	e	enum:Kybrd
+KEYBOARD_a	.\KeyPoll.h	/^	KEYBOARD_a = SDLK_a,$/;"	e	enum:Kybrd
+KEYBOARD_d	.\KeyPoll.h	/^	KEYBOARD_d = SDLK_d,$/;"	e	enum:Kybrd
+KEYBOARD_m	.\KeyPoll.h	/^	KEYBOARD_m = SDLK_m,$/;"	e	enum:Kybrd
+KEYBOARD_s	.\KeyPoll.h	/^	KEYBOARD_s = SDLK_s,$/;"	e	enum:Kybrd
+KEYBOARD_v	.\KeyPoll.h	/^	KEYBOARD_v = SDLK_v,$/;"	e	enum:Kybrd
+KEYBOARD_w	.\KeyPoll.h	/^	KEYBOARD_w = SDLK_w,$/;"	e	enum:Kybrd
+KEYBOARD_z	.\KeyPoll.h	/^	KEYBOARD_z = SDLK_z,$/;"	e	enum:Kybrd
+KEYPOLL_H	.\KeyPoll.h	2;"	d
+KMOD_ALT	.\SDL.h	585;"	d
+KMOD_CAPS	.\SDL.h	/^	KMOD_CAPS  = 0x2000,$/;"	e	enum:__anon11
+KMOD_CTRL	.\SDL.h	583;"	d
+KMOD_LALT	.\SDL.h	/^	KMOD_LALT  = 0x0100,$/;"	e	enum:__anon11
+KMOD_LCTRL	.\SDL.h	/^	KMOD_LCTRL = 0x0040,$/;"	e	enum:__anon11
+KMOD_LMETA	.\SDL.h	/^	KMOD_LMETA = 0x0400,$/;"	e	enum:__anon11
+KMOD_LSHIFT	.\SDL.h	/^	KMOD_LSHIFT= 0x0001,$/;"	e	enum:__anon11
+KMOD_META	.\SDL.h	586;"	d
+KMOD_MODE	.\SDL.h	/^	KMOD_MODE  = 0x4000,$/;"	e	enum:__anon11
+KMOD_NONE	.\SDL.h	/^	KMOD_NONE  = 0x0000,$/;"	e	enum:__anon11
+KMOD_NUM	.\SDL.h	/^	KMOD_NUM   = 0x1000,$/;"	e	enum:__anon11
+KMOD_RALT	.\SDL.h	/^	KMOD_RALT  = 0x0200,$/;"	e	enum:__anon11
+KMOD_RCTRL	.\SDL.h	/^	KMOD_RCTRL = 0x0080,$/;"	e	enum:__anon11
+KMOD_RESERVED	.\SDL.h	/^	KMOD_RESERVED = 0x8000$/;"	e	enum:__anon11
+KMOD_RMETA	.\SDL.h	/^	KMOD_RMETA = 0x0800,$/;"	e	enum:__anon11
+KMOD_RSHIFT	.\SDL.h	/^	KMOD_RSHIFT= 0x0002,$/;"	e	enum:__anon11
+KMOD_SHIFT	.\SDL.h	584;"	d
+KeyPoll	.\KeyPoll.cpp	/^KeyPoll::KeyPoll()$/;"	f	class:KeyPoll
+KeyPoll	.\KeyPoll.h	/^class KeyPoll$/;"	c
+Kybrd	.\KeyPoll.h	/^enum Kybrd$/;"	g
+LABCLASS_H	.\Labclass.h	2;"	d
+LOAD_FUNC	.\SteamNetwork.c	112;"	d	file:
+LOAD_FUNC	.\SteamNetwork.c	132;"	d	file:
+LOGIC_H	.\Logic.h	2;"	d
+LevelMetaData	.\editor.h	/^struct LevelMetaData$/;"	s
+ListOfMetaData	.\editor.h	/^  std::vector<LevelMetaData> ListOfMetaData;$/;"	m	class:editorclass
+LoadImage	.\GraphicsResources.cpp	/^SDL_Surface* LoadImage(const char *filename, bool noBlend = true, bool noAlpha = false)$/;"	f
+MAKEANDPLAY_H	.\MakeAndPlay.h	2;"	d
+MAPGAME_H	.\Map.h	2;"	d
+MAPMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+MATHGAME_H	.\Maths.h	2;"	d
+MAX_PATH	.\FileSystemUtils.cpp	26;"	d	file:
+MUSIC_H	.\Music.h	2;"	d
+MakeSpriteArray	.\Graphics.cpp	/^void Graphics::MakeSpriteArray()$/;"	f	class:Graphics
+MakeTileArray	.\Graphics.cpp	/^void Graphics::MakeTileArray()$/;"	f	class:Graphics
+Makebfont	.\Graphics.cpp	/^void Graphics::Makebfont()$/;"	f	class:Graphics
+Mix_Chunk	.\SDL.h	/^typedef struct Mix_Chunk {$/;"	s
+Mix_Chunk	.\SDL.h	/^} Mix_Chunk;$/;"	t	typeref:struct:Mix_Chunk
+Mix_Music	.\SDL.h	/^typedef struct _Mix_Music Mix_Music;$/;"	t	typeref:struct:_Mix_Music
+MusicTrack	.\SoundSystem.cpp	/^MusicTrack::MusicTrack(SDL_RWops *rw)$/;"	f	class:MusicTrack
+MusicTrack	.\SoundSystem.cpp	/^MusicTrack::MusicTrack(const char* fileName)$/;"	f	class:MusicTrack
+MusicTrack	.\SoundSystem.h	/^class MusicTrack$/;"	c
+NETWORK_LIBRARY	.\SteamNetwork.c	17;"	d	file:
+NETWORK_LIBRARY	.\SteamNetwork.c	19;"	d	file:
+NETWORK_LIBRARY	.\SteamNetwork.c	21;"	d	file:
+NETWORK_getAchievementProgress	.\SteamNetwork.c	/^int32_t NETWORK_getAchievementProgress(const char *name)$/;"	f
+NETWORK_init	.\SteamNetwork.c	/^int NETWORK_init()$/;"	f
+NETWORK_setAchievementProgress	.\SteamNetwork.c	/^void NETWORK_setAchievementProgress(const char *name, int32_t stat)$/;"	f
+NETWORK_shutdown	.\SteamNetwork.c	/^void NETWORK_shutdown()$/;"	f
+NETWORK_unlockAchievement	.\SteamNetwork.c	/^void NETWORK_unlockAchievement(const char *name)$/;"	f
+NETWORK_update	.\SteamNetwork.c	/^void NETWORK_update()$/;"	f
+OTHERLEVEL_H	.\Otherlevel.h	2;"	d
+OverlaySurfaceKeyed	.\GraphicsUtil.cpp	/^void OverlaySurfaceKeyed( SDL_Surface* _src, SDL_Surface* _dest, Uint32 _key )$/;"	f
+PLATFORM_copyFile	.\FileSystemUtils.cpp	/^void PLATFORM_copyFile(const char *oldLocation, const char *newLocation)$/;"	f
+PLATFORM_getOSDirectory	.\FileSystemUtils.cpp	/^void PLATFORM_getOSDirectory(char* output)$/;"	f
+PLATFORM_migrateSaveData	.\FileSystemUtils.cpp	/^void PLATFORM_migrateSaveData(char* output)$/;"	f
+PRELOADER	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+PRELOADER_H	.\preloader.h	2;"	d
+Poll	.\KeyPoll.cpp	/^void KeyPoll::Poll()$/;"	f	class:KeyPoll
+Print	.\Graphics.cpp	/^void Graphics::Print( int _x, int _y, std::string _s, int r, int g, int b, bool cen \/*= false*\/ )$/;"	f	class:Graphics
+PrintOff	.\Graphics.cpp	/^void Graphics::PrintOff( int _x, int _y, std::string _s, int r, int g, int b, bool cen \/*= false*\/ )$/;"	f	class:Graphics
+RGB	.\Map.cpp	/^int mapclass::RGB(int red,int green,int blue)$/;"	f	class:mapclass
+RGBf	.\Graphics.cpp	/^Uint32 Graphics::RGBf(int r, int g, int b)$/;"	f	class:Graphics
+RGBflip	.\Graphics.cpp	/^Uint32 Graphics::RGBflip(Uint8  r, Uint8  g, Uint8  b)$/;"	f	class:Graphics
+RPrint	.\Graphics.cpp	/^void Graphics::RPrint( int _x, int _y, std::string _s, int r, int g, int b, bool cen \/*= false*\/ )$/;"	f	class:Graphics
+ReadPixel	.\GraphicsUtil.cpp	/^Uint32 ReadPixel( SDL_Surface *_surface, int x, int y )$/;"	f
+ResizeScreen	.\Screen.cpp	/^void Screen::ResizeScreen(int x , int y)$/;"	f	class:Screen
+Rloss	.\SDL.h	/^    Uint8 Rloss;$/;"	m	struct:SDL_PixelFormat
+Rmask	.\SDL.h	/^    Uint32 Rmask;$/;"	m	struct:SDL_PixelFormat
+Rshift	.\SDL.h	/^    Uint8 Rshift;$/;"	m	struct:SDL_PixelFormat
+SAFE	.\Entity.h	/^    SAFE = 4,$/;"	e	enum:__anon1
+SAFE	.\Otherlevel.h	/^        SAFE,$/;"	e	enum:otherlevelclass::__anon3
+SCREEN_H	.\Screen.h	2;"	d
+SCRIPTS_H	.\Scripts.cpp	2;"	d	file:
+SCRIPT_H	.\Script.h	2;"	d
+SDLCALL	.\SDL.h	179;"	d
+SDLCALL	.\SDL.h	181;"	d
+SDLCALL	.\SDL.h	186;"	d
+SDLK_0	.\SDL.h	/^	SDLK_0			= 48,$/;"	e	enum:__anon10
+SDLK_1	.\SDL.h	/^	SDLK_1			= 49,$/;"	e	enum:__anon10
+SDLK_2	.\SDL.h	/^	SDLK_2			= 50,$/;"	e	enum:__anon10
+SDLK_3	.\SDL.h	/^	SDLK_3			= 51,$/;"	e	enum:__anon10
+SDLK_4	.\SDL.h	/^	SDLK_4			= 52,$/;"	e	enum:__anon10
+SDLK_5	.\SDL.h	/^	SDLK_5			= 53,$/;"	e	enum:__anon10
+SDLK_6	.\SDL.h	/^	SDLK_6			= 54,$/;"	e	enum:__anon10
+SDLK_7	.\SDL.h	/^	SDLK_7			= 55,$/;"	e	enum:__anon10
+SDLK_8	.\SDL.h	/^	SDLK_8			= 56,$/;"	e	enum:__anon10
+SDLK_9	.\SDL.h	/^	SDLK_9			= 57,$/;"	e	enum:__anon10
+SDLK_AMPERSAND	.\SDL.h	/^	SDLK_AMPERSAND		= 38,$/;"	e	enum:__anon10
+SDLK_ASTERISK	.\SDL.h	/^	SDLK_ASTERISK		= 42,$/;"	e	enum:__anon10
+SDLK_AT	.\SDL.h	/^	SDLK_AT			= 64,$/;"	e	enum:__anon10
+SDLK_BACKQUOTE	.\SDL.h	/^	SDLK_BACKQUOTE		= 96,$/;"	e	enum:__anon10
+SDLK_BACKSLASH	.\SDL.h	/^	SDLK_BACKSLASH		= 92,$/;"	e	enum:__anon10
+SDLK_BACKSPACE	.\SDL.h	/^	SDLK_BACKSPACE		= 8,$/;"	e	enum:__anon10
+SDLK_BREAK	.\SDL.h	/^	SDLK_BREAK		= 318,$/;"	e	enum:__anon10
+SDLK_CAPSLOCK	.\SDL.h	/^	SDLK_CAPSLOCK		= 301,$/;"	e	enum:__anon10
+SDLK_CARET	.\SDL.h	/^	SDLK_CARET		= 94,$/;"	e	enum:__anon10
+SDLK_CLEAR	.\SDL.h	/^	SDLK_CLEAR		= 12,$/;"	e	enum:__anon10
+SDLK_COLON	.\SDL.h	/^	SDLK_COLON		= 58,$/;"	e	enum:__anon10
+SDLK_COMMA	.\SDL.h	/^	SDLK_COMMA		= 44,$/;"	e	enum:__anon10
+SDLK_COMPOSE	.\SDL.h	/^	SDLK_COMPOSE		= 314,		\/**< Multi-key compose key *\/$/;"	e	enum:__anon10
+SDLK_DELETE	.\SDL.h	/^	SDLK_DELETE		= 127,$/;"	e	enum:__anon10
+SDLK_DOLLAR	.\SDL.h	/^	SDLK_DOLLAR		= 36,$/;"	e	enum:__anon10
+SDLK_DOWN	.\SDL.h	/^	SDLK_DOWN		= 274,$/;"	e	enum:__anon10
+SDLK_END	.\SDL.h	/^	SDLK_END		= 279,$/;"	e	enum:__anon10
+SDLK_EQUALS	.\SDL.h	/^	SDLK_EQUALS		= 61,$/;"	e	enum:__anon10
+SDLK_ESCAPE	.\SDL.h	/^	SDLK_ESCAPE		= 27,$/;"	e	enum:__anon10
+SDLK_EURO	.\SDL.h	/^	SDLK_EURO		= 321,		\/**< Some european keyboards *\/$/;"	e	enum:__anon10
+SDLK_EXCLAIM	.\SDL.h	/^	SDLK_EXCLAIM		= 33,$/;"	e	enum:__anon10
+SDLK_F1	.\SDL.h	/^	SDLK_F1			= 282,$/;"	e	enum:__anon10
+SDLK_F10	.\SDL.h	/^	SDLK_F10		= 291,$/;"	e	enum:__anon10
+SDLK_F11	.\SDL.h	/^	SDLK_F11		= 292,$/;"	e	enum:__anon10
+SDLK_F12	.\SDL.h	/^	SDLK_F12		= 293,$/;"	e	enum:__anon10
+SDLK_F13	.\SDL.h	/^	SDLK_F13		= 294,$/;"	e	enum:__anon10
+SDLK_F14	.\SDL.h	/^	SDLK_F14		= 295,$/;"	e	enum:__anon10
+SDLK_F15	.\SDL.h	/^	SDLK_F15		= 296,$/;"	e	enum:__anon10
+SDLK_F2	.\SDL.h	/^	SDLK_F2			= 283,$/;"	e	enum:__anon10
+SDLK_F3	.\SDL.h	/^	SDLK_F3			= 284,$/;"	e	enum:__anon10
+SDLK_F4	.\SDL.h	/^	SDLK_F4			= 285,$/;"	e	enum:__anon10
+SDLK_F5	.\SDL.h	/^	SDLK_F5			= 286,$/;"	e	enum:__anon10
+SDLK_F6	.\SDL.h	/^	SDLK_F6			= 287,$/;"	e	enum:__anon10
+SDLK_F7	.\SDL.h	/^	SDLK_F7			= 288,$/;"	e	enum:__anon10
+SDLK_F8	.\SDL.h	/^	SDLK_F8			= 289,$/;"	e	enum:__anon10
+SDLK_F9	.\SDL.h	/^	SDLK_F9			= 290,$/;"	e	enum:__anon10
+SDLK_FIRST	.\SDL.h	/^	SDLK_FIRST		= 0,$/;"	e	enum:__anon10
+SDLK_GREATER	.\SDL.h	/^	SDLK_GREATER		= 62,$/;"	e	enum:__anon10
+SDLK_HASH	.\SDL.h	/^	SDLK_HASH		= 35,$/;"	e	enum:__anon10
+SDLK_HELP	.\SDL.h	/^	SDLK_HELP		= 315,$/;"	e	enum:__anon10
+SDLK_HOME	.\SDL.h	/^	SDLK_HOME		= 278,$/;"	e	enum:__anon10
+SDLK_INSERT	.\SDL.h	/^	SDLK_INSERT		= 277,$/;"	e	enum:__anon10
+SDLK_KP0	.\SDL.h	/^	SDLK_KP0		= 256,$/;"	e	enum:__anon10
+SDLK_KP1	.\SDL.h	/^	SDLK_KP1		= 257,$/;"	e	enum:__anon10
+SDLK_KP2	.\SDL.h	/^	SDLK_KP2		= 258,$/;"	e	enum:__anon10
+SDLK_KP3	.\SDL.h	/^	SDLK_KP3		= 259,$/;"	e	enum:__anon10
+SDLK_KP4	.\SDL.h	/^	SDLK_KP4		= 260,$/;"	e	enum:__anon10
+SDLK_KP5	.\SDL.h	/^	SDLK_KP5		= 261,$/;"	e	enum:__anon10
+SDLK_KP6	.\SDL.h	/^	SDLK_KP6		= 262,$/;"	e	enum:__anon10
+SDLK_KP7	.\SDL.h	/^	SDLK_KP7		= 263,$/;"	e	enum:__anon10
+SDLK_KP8	.\SDL.h	/^	SDLK_KP8		= 264,$/;"	e	enum:__anon10
+SDLK_KP9	.\SDL.h	/^	SDLK_KP9		= 265,$/;"	e	enum:__anon10
+SDLK_KP_DIVIDE	.\SDL.h	/^	SDLK_KP_DIVIDE		= 267,$/;"	e	enum:__anon10
+SDLK_KP_ENTER	.\SDL.h	/^	SDLK_KP_ENTER		= 271,$/;"	e	enum:__anon10
+SDLK_KP_EQUALS	.\SDL.h	/^	SDLK_KP_EQUALS		= 272,$/;"	e	enum:__anon10
+SDLK_KP_MINUS	.\SDL.h	/^	SDLK_KP_MINUS		= 269,$/;"	e	enum:__anon10
+SDLK_KP_MULTIPLY	.\SDL.h	/^	SDLK_KP_MULTIPLY	= 268,$/;"	e	enum:__anon10
+SDLK_KP_PERIOD	.\SDL.h	/^	SDLK_KP_PERIOD		= 266,$/;"	e	enum:__anon10
+SDLK_KP_PLUS	.\SDL.h	/^	SDLK_KP_PLUS		= 270,$/;"	e	enum:__anon10
+SDLK_LALT	.\SDL.h	/^	SDLK_LALT		= 308,$/;"	e	enum:__anon10
+SDLK_LAST	.\SDL.h	/^	SDLK_LAST$/;"	e	enum:__anon10
+SDLK_LCTRL	.\SDL.h	/^	SDLK_LCTRL		= 306,$/;"	e	enum:__anon10
+SDLK_LEFT	.\SDL.h	/^	SDLK_LEFT		= 276,$/;"	e	enum:__anon10
+SDLK_LEFTBRACKET	.\SDL.h	/^	SDLK_LEFTBRACKET	= 91,$/;"	e	enum:__anon10
+SDLK_LEFTPAREN	.\SDL.h	/^	SDLK_LEFTPAREN		= 40,$/;"	e	enum:__anon10
+SDLK_LESS	.\SDL.h	/^	SDLK_LESS		= 60,$/;"	e	enum:__anon10
+SDLK_LMETA	.\SDL.h	/^	SDLK_LMETA		= 310,$/;"	e	enum:__anon10
+SDLK_LSHIFT	.\SDL.h	/^	SDLK_LSHIFT		= 304,$/;"	e	enum:__anon10
+SDLK_LSUPER	.\SDL.h	/^	SDLK_LSUPER		= 311,		\/**< Left "Windows" key *\/$/;"	e	enum:__anon10
+SDLK_MENU	.\SDL.h	/^	SDLK_MENU		= 319,$/;"	e	enum:__anon10
+SDLK_MINUS	.\SDL.h	/^	SDLK_MINUS		= 45,$/;"	e	enum:__anon10
+SDLK_MODE	.\SDL.h	/^	SDLK_MODE		= 313,		\/**< "Alt Gr" key *\/$/;"	e	enum:__anon10
+SDLK_NUMLOCK	.\SDL.h	/^	SDLK_NUMLOCK		= 300,$/;"	e	enum:__anon10
+SDLK_PAGEDOWN	.\SDL.h	/^	SDLK_PAGEDOWN		= 281,$/;"	e	enum:__anon10
+SDLK_PAGEUP	.\SDL.h	/^	SDLK_PAGEUP		= 280,$/;"	e	enum:__anon10
+SDLK_PAUSE	.\SDL.h	/^	SDLK_PAUSE		= 19,$/;"	e	enum:__anon10
+SDLK_PERIOD	.\SDL.h	/^	SDLK_PERIOD		= 46,$/;"	e	enum:__anon10
+SDLK_PLUS	.\SDL.h	/^	SDLK_PLUS		= 43,$/;"	e	enum:__anon10
+SDLK_POWER	.\SDL.h	/^	SDLK_POWER		= 320,		\/**< Power Macintosh power key *\/$/;"	e	enum:__anon10
+SDLK_PRINT	.\SDL.h	/^	SDLK_PRINT		= 316,$/;"	e	enum:__anon10
+SDLK_QUESTION	.\SDL.h	/^	SDLK_QUESTION		= 63,$/;"	e	enum:__anon10
+SDLK_QUOTE	.\SDL.h	/^	SDLK_QUOTE		= 39,$/;"	e	enum:__anon10
+SDLK_QUOTEDBL	.\SDL.h	/^	SDLK_QUOTEDBL		= 34,$/;"	e	enum:__anon10
+SDLK_RALT	.\SDL.h	/^	SDLK_RALT		= 307,$/;"	e	enum:__anon10
+SDLK_RCTRL	.\SDL.h	/^	SDLK_RCTRL		= 305,$/;"	e	enum:__anon10
+SDLK_RETURN	.\SDL.h	/^	SDLK_RETURN		= 13,$/;"	e	enum:__anon10
+SDLK_RIGHT	.\SDL.h	/^	SDLK_RIGHT		= 275,$/;"	e	enum:__anon10
+SDLK_RIGHTBRACKET	.\SDL.h	/^	SDLK_RIGHTBRACKET	= 93,$/;"	e	enum:__anon10
+SDLK_RIGHTPAREN	.\SDL.h	/^	SDLK_RIGHTPAREN		= 41,$/;"	e	enum:__anon10
+SDLK_RMETA	.\SDL.h	/^	SDLK_RMETA		= 309,$/;"	e	enum:__anon10
+SDLK_RSHIFT	.\SDL.h	/^	SDLK_RSHIFT		= 303,$/;"	e	enum:__anon10
+SDLK_RSUPER	.\SDL.h	/^	SDLK_RSUPER		= 312,		\/**< Right "Windows" key *\/$/;"	e	enum:__anon10
+SDLK_SCROLLOCK	.\SDL.h	/^	SDLK_SCROLLOCK		= 302,$/;"	e	enum:__anon10
+SDLK_SEMICOLON	.\SDL.h	/^	SDLK_SEMICOLON		= 59,$/;"	e	enum:__anon10
+SDLK_SLASH	.\SDL.h	/^	SDLK_SLASH		= 47,$/;"	e	enum:__anon10
+SDLK_SPACE	.\SDL.h	/^	SDLK_SPACE		= 32,$/;"	e	enum:__anon10
+SDLK_SYSREQ	.\SDL.h	/^	SDLK_SYSREQ		= 317,$/;"	e	enum:__anon10
+SDLK_TAB	.\SDL.h	/^	SDLK_TAB		= 9,$/;"	e	enum:__anon10
+SDLK_UNDERSCORE	.\SDL.h	/^	SDLK_UNDERSCORE		= 95,$/;"	e	enum:__anon10
+SDLK_UNDO	.\SDL.h	/^	SDLK_UNDO		= 322,		\/**< Atari keyboard has Undo *\/$/;"	e	enum:__anon10
+SDLK_UNKNOWN	.\SDL.h	/^	SDLK_UNKNOWN		= 0,$/;"	e	enum:__anon10
+SDLK_UP	.\SDL.h	/^	SDLK_UP			= 273,$/;"	e	enum:__anon10
+SDLK_WORLD_0	.\SDL.h	/^	SDLK_WORLD_0		= 160,		\/* 0xA0 *\/$/;"	e	enum:__anon10
+SDLK_WORLD_1	.\SDL.h	/^	SDLK_WORLD_1		= 161,$/;"	e	enum:__anon10
+SDLK_WORLD_10	.\SDL.h	/^	SDLK_WORLD_10		= 170,$/;"	e	enum:__anon10
+SDLK_WORLD_11	.\SDL.h	/^	SDLK_WORLD_11		= 171,$/;"	e	enum:__anon10
+SDLK_WORLD_12	.\SDL.h	/^	SDLK_WORLD_12		= 172,$/;"	e	enum:__anon10
+SDLK_WORLD_13	.\SDL.h	/^	SDLK_WORLD_13		= 173,$/;"	e	enum:__anon10
+SDLK_WORLD_14	.\SDL.h	/^	SDLK_WORLD_14		= 174,$/;"	e	enum:__anon10
+SDLK_WORLD_15	.\SDL.h	/^	SDLK_WORLD_15		= 175,$/;"	e	enum:__anon10
+SDLK_WORLD_16	.\SDL.h	/^	SDLK_WORLD_16		= 176,$/;"	e	enum:__anon10
+SDLK_WORLD_17	.\SDL.h	/^	SDLK_WORLD_17		= 177,$/;"	e	enum:__anon10
+SDLK_WORLD_18	.\SDL.h	/^	SDLK_WORLD_18		= 178,$/;"	e	enum:__anon10
+SDLK_WORLD_19	.\SDL.h	/^	SDLK_WORLD_19		= 179,$/;"	e	enum:__anon10
+SDLK_WORLD_2	.\SDL.h	/^	SDLK_WORLD_2		= 162,$/;"	e	enum:__anon10
+SDLK_WORLD_20	.\SDL.h	/^	SDLK_WORLD_20		= 180,$/;"	e	enum:__anon10
+SDLK_WORLD_21	.\SDL.h	/^	SDLK_WORLD_21		= 181,$/;"	e	enum:__anon10
+SDLK_WORLD_22	.\SDL.h	/^	SDLK_WORLD_22		= 182,$/;"	e	enum:__anon10
+SDLK_WORLD_23	.\SDL.h	/^	SDLK_WORLD_23		= 183,$/;"	e	enum:__anon10
+SDLK_WORLD_24	.\SDL.h	/^	SDLK_WORLD_24		= 184,$/;"	e	enum:__anon10
+SDLK_WORLD_25	.\SDL.h	/^	SDLK_WORLD_25		= 185,$/;"	e	enum:__anon10
+SDLK_WORLD_26	.\SDL.h	/^	SDLK_WORLD_26		= 186,$/;"	e	enum:__anon10
+SDLK_WORLD_27	.\SDL.h	/^	SDLK_WORLD_27		= 187,$/;"	e	enum:__anon10
+SDLK_WORLD_28	.\SDL.h	/^	SDLK_WORLD_28		= 188,$/;"	e	enum:__anon10
+SDLK_WORLD_29	.\SDL.h	/^	SDLK_WORLD_29		= 189,$/;"	e	enum:__anon10
+SDLK_WORLD_3	.\SDL.h	/^	SDLK_WORLD_3		= 163,$/;"	e	enum:__anon10
+SDLK_WORLD_30	.\SDL.h	/^	SDLK_WORLD_30		= 190,$/;"	e	enum:__anon10
+SDLK_WORLD_31	.\SDL.h	/^	SDLK_WORLD_31		= 191,$/;"	e	enum:__anon10
+SDLK_WORLD_32	.\SDL.h	/^	SDLK_WORLD_32		= 192,$/;"	e	enum:__anon10
+SDLK_WORLD_33	.\SDL.h	/^	SDLK_WORLD_33		= 193,$/;"	e	enum:__anon10
+SDLK_WORLD_34	.\SDL.h	/^	SDLK_WORLD_34		= 194,$/;"	e	enum:__anon10
+SDLK_WORLD_35	.\SDL.h	/^	SDLK_WORLD_35		= 195,$/;"	e	enum:__anon10
+SDLK_WORLD_36	.\SDL.h	/^	SDLK_WORLD_36		= 196,$/;"	e	enum:__anon10
+SDLK_WORLD_37	.\SDL.h	/^	SDLK_WORLD_37		= 197,$/;"	e	enum:__anon10
+SDLK_WORLD_38	.\SDL.h	/^	SDLK_WORLD_38		= 198,$/;"	e	enum:__anon10
+SDLK_WORLD_39	.\SDL.h	/^	SDLK_WORLD_39		= 199,$/;"	e	enum:__anon10
+SDLK_WORLD_4	.\SDL.h	/^	SDLK_WORLD_4		= 164,$/;"	e	enum:__anon10
+SDLK_WORLD_40	.\SDL.h	/^	SDLK_WORLD_40		= 200,$/;"	e	enum:__anon10
+SDLK_WORLD_41	.\SDL.h	/^	SDLK_WORLD_41		= 201,$/;"	e	enum:__anon10
+SDLK_WORLD_42	.\SDL.h	/^	SDLK_WORLD_42		= 202,$/;"	e	enum:__anon10
+SDLK_WORLD_43	.\SDL.h	/^	SDLK_WORLD_43		= 203,$/;"	e	enum:__anon10
+SDLK_WORLD_44	.\SDL.h	/^	SDLK_WORLD_44		= 204,$/;"	e	enum:__anon10
+SDLK_WORLD_45	.\SDL.h	/^	SDLK_WORLD_45		= 205,$/;"	e	enum:__anon10
+SDLK_WORLD_46	.\SDL.h	/^	SDLK_WORLD_46		= 206,$/;"	e	enum:__anon10
+SDLK_WORLD_47	.\SDL.h	/^	SDLK_WORLD_47		= 207,$/;"	e	enum:__anon10
+SDLK_WORLD_48	.\SDL.h	/^	SDLK_WORLD_48		= 208,$/;"	e	enum:__anon10
+SDLK_WORLD_49	.\SDL.h	/^	SDLK_WORLD_49		= 209,$/;"	e	enum:__anon10
+SDLK_WORLD_5	.\SDL.h	/^	SDLK_WORLD_5		= 165,$/;"	e	enum:__anon10
+SDLK_WORLD_50	.\SDL.h	/^	SDLK_WORLD_50		= 210,$/;"	e	enum:__anon10
+SDLK_WORLD_51	.\SDL.h	/^	SDLK_WORLD_51		= 211,$/;"	e	enum:__anon10
+SDLK_WORLD_52	.\SDL.h	/^	SDLK_WORLD_52		= 212,$/;"	e	enum:__anon10
+SDLK_WORLD_53	.\SDL.h	/^	SDLK_WORLD_53		= 213,$/;"	e	enum:__anon10
+SDLK_WORLD_54	.\SDL.h	/^	SDLK_WORLD_54		= 214,$/;"	e	enum:__anon10
+SDLK_WORLD_55	.\SDL.h	/^	SDLK_WORLD_55		= 215,$/;"	e	enum:__anon10
+SDLK_WORLD_56	.\SDL.h	/^	SDLK_WORLD_56		= 216,$/;"	e	enum:__anon10
+SDLK_WORLD_57	.\SDL.h	/^	SDLK_WORLD_57		= 217,$/;"	e	enum:__anon10
+SDLK_WORLD_58	.\SDL.h	/^	SDLK_WORLD_58		= 218,$/;"	e	enum:__anon10
+SDLK_WORLD_59	.\SDL.h	/^	SDLK_WORLD_59		= 219,$/;"	e	enum:__anon10
+SDLK_WORLD_6	.\SDL.h	/^	SDLK_WORLD_6		= 166,$/;"	e	enum:__anon10
+SDLK_WORLD_60	.\SDL.h	/^	SDLK_WORLD_60		= 220,$/;"	e	enum:__anon10
+SDLK_WORLD_61	.\SDL.h	/^	SDLK_WORLD_61		= 221,$/;"	e	enum:__anon10
+SDLK_WORLD_62	.\SDL.h	/^	SDLK_WORLD_62		= 222,$/;"	e	enum:__anon10
+SDLK_WORLD_63	.\SDL.h	/^	SDLK_WORLD_63		= 223,$/;"	e	enum:__anon10
+SDLK_WORLD_64	.\SDL.h	/^	SDLK_WORLD_64		= 224,$/;"	e	enum:__anon10
+SDLK_WORLD_65	.\SDL.h	/^	SDLK_WORLD_65		= 225,$/;"	e	enum:__anon10
+SDLK_WORLD_66	.\SDL.h	/^	SDLK_WORLD_66		= 226,$/;"	e	enum:__anon10
+SDLK_WORLD_67	.\SDL.h	/^	SDLK_WORLD_67		= 227,$/;"	e	enum:__anon10
+SDLK_WORLD_68	.\SDL.h	/^	SDLK_WORLD_68		= 228,$/;"	e	enum:__anon10
+SDLK_WORLD_69	.\SDL.h	/^	SDLK_WORLD_69		= 229,$/;"	e	enum:__anon10
+SDLK_WORLD_7	.\SDL.h	/^	SDLK_WORLD_7		= 167,$/;"	e	enum:__anon10
+SDLK_WORLD_70	.\SDL.h	/^	SDLK_WORLD_70		= 230,$/;"	e	enum:__anon10
+SDLK_WORLD_71	.\SDL.h	/^	SDLK_WORLD_71		= 231,$/;"	e	enum:__anon10
+SDLK_WORLD_72	.\SDL.h	/^	SDLK_WORLD_72		= 232,$/;"	e	enum:__anon10
+SDLK_WORLD_73	.\SDL.h	/^	SDLK_WORLD_73		= 233,$/;"	e	enum:__anon10
+SDLK_WORLD_74	.\SDL.h	/^	SDLK_WORLD_74		= 234,$/;"	e	enum:__anon10
+SDLK_WORLD_75	.\SDL.h	/^	SDLK_WORLD_75		= 235,$/;"	e	enum:__anon10
+SDLK_WORLD_76	.\SDL.h	/^	SDLK_WORLD_76		= 236,$/;"	e	enum:__anon10
+SDLK_WORLD_77	.\SDL.h	/^	SDLK_WORLD_77		= 237,$/;"	e	enum:__anon10
+SDLK_WORLD_78	.\SDL.h	/^	SDLK_WORLD_78		= 238,$/;"	e	enum:__anon10
+SDLK_WORLD_79	.\SDL.h	/^	SDLK_WORLD_79		= 239,$/;"	e	enum:__anon10
+SDLK_WORLD_8	.\SDL.h	/^	SDLK_WORLD_8		= 168,$/;"	e	enum:__anon10
+SDLK_WORLD_80	.\SDL.h	/^	SDLK_WORLD_80		= 240,$/;"	e	enum:__anon10
+SDLK_WORLD_81	.\SDL.h	/^	SDLK_WORLD_81		= 241,$/;"	e	enum:__anon10
+SDLK_WORLD_82	.\SDL.h	/^	SDLK_WORLD_82		= 242,$/;"	e	enum:__anon10
+SDLK_WORLD_83	.\SDL.h	/^	SDLK_WORLD_83		= 243,$/;"	e	enum:__anon10
+SDLK_WORLD_84	.\SDL.h	/^	SDLK_WORLD_84		= 244,$/;"	e	enum:__anon10
+SDLK_WORLD_85	.\SDL.h	/^	SDLK_WORLD_85		= 245,$/;"	e	enum:__anon10
+SDLK_WORLD_86	.\SDL.h	/^	SDLK_WORLD_86		= 246,$/;"	e	enum:__anon10
+SDLK_WORLD_87	.\SDL.h	/^	SDLK_WORLD_87		= 247,$/;"	e	enum:__anon10
+SDLK_WORLD_88	.\SDL.h	/^	SDLK_WORLD_88		= 248,$/;"	e	enum:__anon10
+SDLK_WORLD_89	.\SDL.h	/^	SDLK_WORLD_89		= 249,$/;"	e	enum:__anon10
+SDLK_WORLD_9	.\SDL.h	/^	SDLK_WORLD_9		= 169,$/;"	e	enum:__anon10
+SDLK_WORLD_90	.\SDL.h	/^	SDLK_WORLD_90		= 250,$/;"	e	enum:__anon10
+SDLK_WORLD_91	.\SDL.h	/^	SDLK_WORLD_91		= 251,$/;"	e	enum:__anon10
+SDLK_WORLD_92	.\SDL.h	/^	SDLK_WORLD_92		= 252,$/;"	e	enum:__anon10
+SDLK_WORLD_93	.\SDL.h	/^	SDLK_WORLD_93		= 253,$/;"	e	enum:__anon10
+SDLK_WORLD_94	.\SDL.h	/^	SDLK_WORLD_94		= 254,$/;"	e	enum:__anon10
+SDLK_WORLD_95	.\SDL.h	/^	SDLK_WORLD_95		= 255,		\/* 0xFF *\/$/;"	e	enum:__anon10
+SDLK_a	.\SDL.h	/^	SDLK_a			= 97,$/;"	e	enum:__anon10
+SDLK_b	.\SDL.h	/^	SDLK_b			= 98,$/;"	e	enum:__anon10
+SDLK_c	.\SDL.h	/^	SDLK_c			= 99,$/;"	e	enum:__anon10
+SDLK_d	.\SDL.h	/^	SDLK_d			= 100,$/;"	e	enum:__anon10
+SDLK_e	.\SDL.h	/^	SDLK_e			= 101,$/;"	e	enum:__anon10
+SDLK_f	.\SDL.h	/^	SDLK_f			= 102,$/;"	e	enum:__anon10
+SDLK_g	.\SDL.h	/^	SDLK_g			= 103,$/;"	e	enum:__anon10
+SDLK_h	.\SDL.h	/^	SDLK_h			= 104,$/;"	e	enum:__anon10
+SDLK_i	.\SDL.h	/^	SDLK_i			= 105,$/;"	e	enum:__anon10
+SDLK_j	.\SDL.h	/^	SDLK_j			= 106,$/;"	e	enum:__anon10
+SDLK_k	.\SDL.h	/^	SDLK_k			= 107,$/;"	e	enum:__anon10
+SDLK_l	.\SDL.h	/^	SDLK_l			= 108,$/;"	e	enum:__anon10
+SDLK_m	.\SDL.h	/^	SDLK_m			= 109,$/;"	e	enum:__anon10
+SDLK_n	.\SDL.h	/^	SDLK_n			= 110,$/;"	e	enum:__anon10
+SDLK_o	.\SDL.h	/^	SDLK_o			= 111,$/;"	e	enum:__anon10
+SDLK_p	.\SDL.h	/^	SDLK_p			= 112,$/;"	e	enum:__anon10
+SDLK_q	.\SDL.h	/^	SDLK_q			= 113,$/;"	e	enum:__anon10
+SDLK_r	.\SDL.h	/^	SDLK_r			= 114,$/;"	e	enum:__anon10
+SDLK_s	.\SDL.h	/^	SDLK_s			= 115,$/;"	e	enum:__anon10
+SDLK_t	.\SDL.h	/^	SDLK_t			= 116,$/;"	e	enum:__anon10
+SDLK_u	.\SDL.h	/^	SDLK_u			= 117,$/;"	e	enum:__anon10
+SDLK_v	.\SDL.h	/^	SDLK_v			= 118,$/;"	e	enum:__anon10
+SDLK_w	.\SDL.h	/^	SDLK_w			= 119,$/;"	e	enum:__anon10
+SDLK_x	.\SDL.h	/^	SDLK_x			= 120,$/;"	e	enum:__anon10
+SDLK_y	.\SDL.h	/^	SDLK_y			= 121,$/;"	e	enum:__anon10
+SDLK_z	.\SDL.h	/^	SDLK_z			= 122,$/;"	e	enum:__anon10
+SDLKey	.\SDL.h	/^} SDLKey;$/;"	t	typeref:enum:__anon10
+SDLMod	.\SDL.h	/^} SDLMod;$/;"	t	typeref:enum:__anon11
+SDL_CONTROLLER_BUTTON_A	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_A,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_B	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_B,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_BACK	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_BACK,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_DPAD_DOWN	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_DPAD_DOWN,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_DPAD_LEFT	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_DPAD_LEFT,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_DPAD_RIGHT	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_DPAD_RIGHT,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_DPAD_UP	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_DPAD_UP,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_GUIDE	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_GUIDE,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_INVALID	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_INVALID = -1,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_LEFTSHOULDER	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_LEFTSHOULDER,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_LEFTSTICK	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_LEFTSTICK,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_MAX	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_MAX$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_RIGHTSHOULDER	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_RIGHTSHOULDER,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_RIGHTSTICK	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_RIGHTSTICK,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_START	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_START,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_X	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_X,$/;"	e	enum:__anon4
+SDL_CONTROLLER_BUTTON_Y	.\SDL.h	/^    SDL_CONTROLLER_BUTTON_Y,$/;"	e	enum:__anon4
+SDL_Color	.\SDL.h	/^typedef struct SDL_Color$/;"	s
+SDL_Color	.\SDL.h	/^} SDL_Color;$/;"	t	typeref:struct:SDL_Color
+SDL_Colour	.\SDL.h	33;"	d
+SDL_GameController	.\SDL.h	/^typedef struct _SDL_GameController SDL_GameController;$/;"	t	typeref:struct:_SDL_GameController
+SDL_GameControllerButton	.\SDL.h	/^} SDL_GameControllerButton; $/;"	t	typeref:enum:__anon4
+SDL_INIT_AUDIO	.\SDL.h	606;"	d
+SDL_INIT_EVENTS	.\SDL.h	611;"	d
+SDL_INIT_EVERYTHING	.\SDL.h	613;"	d
+SDL_INIT_GAMECONTROLLER	.\SDL.h	610;"	d
+SDL_INIT_HAPTIC	.\SDL.h	609;"	d
+SDL_INIT_JOYSTICK	.\SDL.h	608;"	d
+SDL_INIT_NOPARACHUTE	.\SDL.h	612;"	d
+SDL_INIT_TIMER	.\SDL.h	605;"	d
+SDL_INIT_VIDEO	.\SDL.h	607;"	d
+SDL_JoystickID	.\SDL.h	/^typedef Sint32 SDL_JoystickID; $/;"	t
+SDL_Keycode	.\SDL.h	/^typedef Sint32 SDL_Keycode; $/;"	t
+SDL_Palette	.\SDL.h	/^typedef struct SDL_Palette$/;"	s
+SDL_Palette	.\SDL.h	/^} SDL_Palette;$/;"	t	typeref:struct:SDL_Palette
+SDL_PixelFormat	.\SDL.h	/^typedef struct SDL_PixelFormat$/;"	s
+SDL_PixelFormat	.\SDL.h	/^} SDL_PixelFormat;$/;"	t	typeref:struct:SDL_PixelFormat
+SDL_RWops	.\SDL.h	/^typedef struct SDL_RWops$/;"	s
+SDL_RWops	.\SDL.h	/^} SDL_RWops; $/;"	t	typeref:struct:SDL_RWops
+SDL_Rect	.\SDL.h	/^typedef struct SDL_Rect$/;"	s
+SDL_Rect	.\SDL.h	/^} SDL_Rect;$/;"	t	typeref:struct:SDL_Rect
+SDL_Renderer	.\SDL.h	/^typedef struct SDL_Renderer SDL_Renderer; $/;"	t	typeref:struct:SDL_Renderer
+SDL_Surface	.\SDL.h	/^typedef struct SDL_Surface$/;"	s
+SDL_Surface	.\SDL.h	/^} SDL_Surface; $/;"	t	typeref:struct:SDL_Surface
+SDL_Texture	.\SDL.h	/^typedef struct SDL_Texture SDL_Texture; $/;"	t	typeref:struct:SDL_Texture
+SDL_Window	.\SDL.h	/^typedef struct SDL_Window SDL_Window;$/;"	t	typeref:struct:SDL_Window
+SOUNDSYSTEM_H	.\SoundSystem.h	2;"	d
+SPACESTATION2_H	.\Spacestation2.h	2;"	d
+ScaleSurface	.\GraphicsUtil.cpp	/^SDL_Surface * ScaleSurface( SDL_Surface *_surface, int Width, int Height, SDL_Surface * Dest )$/;"	f
+ScaleSurfaceSlow	.\GraphicsUtil.cpp	/^SDL_Surface * ScaleSurfaceSlow( SDL_Surface *_surface, int Width, int Height)$/;"	f
+Screen	.\Screen.cpp	/^Screen::Screen()$/;"	f	class:Screen
+Screen	.\Screen.h	/^class Screen$/;"	c
+ScrollSurface	.\GraphicsUtil.cpp	/^void ScrollSurface( SDL_Surface* _src, int _pX, int _pY )$/;"	f
+Sint32	.\SDL.h	/^typedef int32_t Sint32;$/;"	t
+Sint64	.\SDL.h	/^typedef int64_t Sint64;$/;"	t
+SoundSystem	.\SoundSystem.cpp	/^SoundSystem::SoundSystem()$/;"	f	class:SoundSystem
+SoundSystem	.\SoundSystem.h	/^class SoundSystem$/;"	c
+SoundTrack	.\SoundSystem.cpp	/^SoundTrack::SoundTrack(const char* fileName)$/;"	f	class:SoundTrack
+SoundTrack	.\SoundSystem.h	/^class SoundTrack$/;"	c
+Stage	.\titlerender.h	/^class Stage$/;"	c
+SteamAPI_GetHSteamPipeFunc	.\SteamNetwork.c	/^typedef int32_t (*SteamAPI_GetHSteamPipeFunc)();$/;"	t	file:
+SteamAPI_GetHSteamUserFunc	.\SteamNetwork.c	/^typedef int32_t (*SteamAPI_GetHSteamUserFunc)();$/;"	t	file:
+SteamAPI_ISteamClient_GetISteamUserStatsFunc	.\SteamNetwork.c	/^typedef intptr_t (*SteamAPI_ISteamClient_GetISteamUserStatsFunc)($/;"	t	file:
+SteamAPI_ISteamUserStats_GetStatFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_ISteamUserStats_GetStatFunc)($/;"	t	file:
+SteamAPI_ISteamUserStats_RequestCurrentStatsFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_ISteamUserStats_RequestCurrentStatsFunc)(intptr_t);$/;"	t	file:
+SteamAPI_ISteamUserStats_SetAchievementFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_ISteamUserStats_SetAchievementFunc)($/;"	t	file:
+SteamAPI_ISteamUserStats_SetStatFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_ISteamUserStats_SetStatFunc)($/;"	t	file:
+SteamAPI_ISteamUserStats_StoreStatsFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_ISteamUserStats_StoreStatsFunc)(intptr_t);$/;"	t	file:
+SteamAPI_InitFunc	.\SteamNetwork.c	/^typedef uint8_t (*SteamAPI_InitFunc)();$/;"	t	file:
+SteamAPI_RunCallbacksFunc	.\SteamNetwork.c	/^typedef void (*SteamAPI_RunCallbacksFunc)();$/;"	t	file:
+SteamAPI_ShutdownFunc	.\SteamNetwork.c	/^typedef void (*SteamAPI_ShutdownFunc)();$/;"	t	file:
+SteamInternal_CreateInterfaceFunc	.\SteamNetwork.c	/^typedef intptr_t (*SteamInternal_CreateInterfaceFunc)(const char*);$/;"	t	file:
+String	.\UtilityClass.cpp	/^std::string UtilityClass::String( int _v )$/;"	f	class:UtilityClass
+TELEPORTERMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+TERMINALSCRIPTS_H	.\TerminalScripts.cpp	2;"	d	file:
+TEXTBOX_H	.\Textbox.h	2;"	d
+TITLEMODE	.\Enums.h	/^	GAMEMODE, TITLEMODE, CLICKTOSTART, FOCUSMODE, MAPMODE, TELEPORTERMODE, GAMECOMPLETE,  GAMECOMPLETE2, EDITORMODE, PRELOADER$/;"	e	enum:__anon2
+TITLERENDERER_H	.\titlerender.h	2;"	d
+TOWER_H	.\Tower.h	2;"	d
+TRIGGER	.\Entity.h	/^    TRIGGER = 1,$/;"	e	enum:__anon1
+TRIGGER	.\Otherlevel.h	/^        TRIGGER,$/;"	e	enum:otherlevelclass::__anon3
+UTILITYCLASS_H	.\UtilityClass.h	2;"	d
+Uint32	.\SDL.h	/^typedef uint32_t Uint32;$/;"	t
+Uint8	.\SDL.h	/^typedef uint8_t Uint8;$/;"	t
+UpdateScreen	.\Screen.cpp	/^void Screen::UpdateScreen(SDL_Surface* buffer, SDL_Rect* rect )$/;"	f	class:Screen
+UtilityClass	.\UtilityClass.cpp	/^UtilityClass::UtilityClass() :$/;"	f	class:UtilityClass
+UtilityClass	.\UtilityClass.h	/^class UtilityClass$/;"	c
+VNEEDS_MIGRATION	.\FileSystemUtils.cpp	18;"	d	file:
+VNEEDS_MIGRATION	.\FileSystemUtils.cpp	22;"	d	file:
+VNETWORK_H	.\Network.h	2;"	d
+VVVVVV_STEAMCLIENT	.\SteamNetwork.c	9;"	d	file:
+VVVVVV_STEAMUSERSTATS	.\SteamNetwork.c	10;"	d	file:
+WARPCLASS_H	.\WarpClass.h	2;"	d
+_System	.\SDL.h	183;"	d
+_WIN32	.\FileSystemUtils.cpp	12;"	d	file:
+_WIN32	.\SteamNetwork.c	14;"	d	file:
+a	.\SDL.h	/^    Uint8 a;$/;"	m	struct:SDL_Color
+absfree	.\editor.cpp	/^int editorclass::absfree( int x, int y )$/;"	f	class:editorclass
+abuf	.\SDL.h	/^    Uint8 *abuf;$/;"	m	struct:Mix_Chunk
+act_fade	.\Game.h	/^    int activeactivity, act_fade;$/;"	m	class:Game
+actionframe	.\Ent.h	/^    int framedelay, drawframe, walkingframe, dir, actionframe;$/;"	m	class:entclass
+active	.\BlockV.h	/^    bool active;$/;"	m	class:blockclass
+active	.\Ent.h	/^    bool active, invis;$/;"	m	class:entclass
+active	.\Textbox.h	/^    bool active;$/;"	m	class:textboxclass
+activeactivity	.\Game.h	/^    int activeactivity, act_fade;$/;"	m	class:Game
+activetele	.\Game.h	/^    bool activetele;$/;"	m	class:Game
+activetrigger	.\Entity.h	/^    int activetrigger;$/;"	m	class:entityclass
+activity_b	.\Game.h	/^    int activity_r, activity_g, activity_b;$/;"	m	class:Game
+activity_g	.\Game.h	/^    int activity_r, activity_g, activity_b;$/;"	m	class:Game
+activity_lastprompt	.\Game.h	/^    std::string activity_lastprompt;$/;"	m	class:Game
+activity_r	.\Game.h	/^    int activity_r, activity_g, activity_b;$/;"	m	class:Game
+add	.\Script.h	/^    void inline add(std::string t)$/;"	f	class:scriptclass
+addedentity	.\editor.cpp	/^void addedentity( int xp, int yp, int tp, int p1\/*=0*\/, int p2\/*=0*\/, int p3\/*=0*\/, int p4\/*=0*\/, int p5\/*=320*\/, int p6\/*=240*\/)$/;"	f
+addhook	.\editor.cpp	/^void editorclass::addhook(std::string t)$/;"	f	class:editorclass
+addhooktoscript	.\editor.cpp	/^void editorclass::addhooktoscript(std::string t)$/;"	f	class:editorclass
+addline	.\Graphics.cpp	/^void Graphics::addline( std::string t )$/;"	f	class:Graphics
+addline	.\Otherlevel.cpp	/^void otherlevelclass::addline(std::string t)$/;"	f	class:otherlevelclass
+addline	.\Textbox.cpp	/^void textboxclass::addline(std::string t)$/;"	f	class:textboxclass
+adjust	.\Textbox.cpp	/^void textboxclass::adjust()$/;"	f	class:textboxclass
+advanced_mode	.\Game.h	/^    bool advanced_mode;$/;"	m	class:Game
+advancetext	.\Game.h	/^    bool advancetext, pausescript;$/;"	m	class:Game
+alarmdelay	.\Game.h	/^    int alarmdelay;$/;"	m	class:Game
+alarmon	.\Game.h	/^    bool alarmon;$/;"	m	class:Game
+alen	.\SDL.h	/^    Uint32 alen;$/;"	m	struct:Mix_Chunk
+allocated	.\SDL.h	/^    int allocated;$/;"	m	struct:Mix_Chunk
+altstates	.\Entity.h	/^    int altstates;$/;"	m	class:entityclass
+androidio	.\SDL.h	/^        } androidio;$/;"	m	union:SDL_RWops::__anon5	typeref:struct:SDL_RWops::__anon5::__anon6
+animate	.\Ent.h	/^    int behave, animate;$/;"	m	class:entclass
+animateentities	.\Entity.cpp	/^void entityclass::animateentities( int _i, Game& game, UtilityClass& help )$/;"	f	class:entityclass
+applyfriction	.\Entity.cpp	/^void entityclass::applyfriction( int t, float xrate, float yrate )$/;"	f	class:entityclass
+area	.\Map.cpp	/^int mapclass::area(int _rx, int _ry)$/;"	f	class:mapclass
+areamap	.\Map.h	/^    std::vector <int> areamap;$/;"	m	class:mapclass
+assetFileDescriptorRef	.\SDL.h	/^            void *assetFileDescriptorRef;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+at	.\Tower.cpp	/^int towerclass::at(int xp, int yp, int yoff)$/;"	f	class:towerclass
+at	.\editor.cpp	/^int editorclass::at( int x, int y )$/;"	f	class:editorclass
+author	.\editor.h	/^  std::string author;$/;"	m	class:editorclass
+autoclose	.\SDL.h	/^            SDL_bool autoclose;$/;"	m	struct:SDL_RWops::__anon5::__anon7
+ax	.\Ent.h	/^    float ax, ay, vx, vy;$/;"	m	class:entclass
+ay	.\Ent.h	/^    float ax, ay, vx, vy;$/;"	m	class:entclass
+b	.\BlockV.h	/^    int r, g, b;$/;"	m	class:blockclass
+b	.\Map.h	/^    int r, g,b;$/;"	m	class:mapclass
+b	.\SDL.h	/^    Uint8 b;$/;"	m	struct:SDL_Color
+b	.\Script.h	/^    int r,g,b;$/;"	m	class:scriptclass
+b	.\Textbox.h	/^    int r,g,b;$/;"	m	class:textboxclass
+back	.\Tower.h	/^    std::vector<int> back;$/;"	m	class:towerclass
+backBuffer	.\Graphics.h	/^	SDL_Surface* backBuffer;$/;"	m	class:Graphics
+backat	.\Tower.cpp	/^int towerclass::backat(int xp, int yp, int yoff)$/;"	f	class:towerclass
+backbase	.\editor.cpp	/^int editorclass::backbase( int x, int y )$/;"	f	class:editorclass
+backboxes	.\Graphics.h	/^	std::vector<SDL_Rect> backboxes;$/;"	m	class:Graphics
+backboxint	.\Graphics.h	/^	std::vector<float> backboxint;$/;"	m	class:Graphics
+backboxrect	.\Graphics.h	/^	SDL_Rect backboxrect;$/;"	m	class:Graphics
+backboxvx	.\Graphics.h	/^	std::vector<int> backboxvx;$/;"	m	class:Graphics
+backboxvy	.\Graphics.h	/^	std::vector<int> backboxvy;$/;"	m	class:Graphics
+backedgetile	.\editor.cpp	/^int editorclass::backedgetile( int x, int y )$/;"	f	class:editorclass
+backfree	.\editor.cpp	/^int editorclass::backfree( int x, int y )$/;"	f	class:editorclass
+background	.\Map.h	/^    int background;$/;"	m	class:mapclass
+backgrounddrawn	.\Graphics.h	/^	bool backgrounddrawn, foregrounddrawn;$/;"	m	class:Graphics
+backgrounds	.\Graphics.h	/^	std::vector <SDL_Surface*> backgrounds;$/;"	m	class:Graphics
+backgroundtext	.\Game.h	/^    bool backgroundtext;$/;"	m	class:Game
+backmatch	.\editor.cpp	/^int editorclass::backmatch( int x, int y )$/;"	f	class:editorclass
+backoffset	.\Graphics.h	/^	int backoffset;$/;"	m	class:Graphics
+backonlyfree	.\editor.cpp	/^int editorclass::backonlyfree( int x, int y )$/;"	f	class:editorclass
+badSignalEffect	.\Screen.h	/^	bool badSignalEffect;$/;"	m	class:Screen
+base	.\SDL.h	/^            Uint8 *base;$/;"	m	struct:SDL_RWops::__anon5::__anon8
+base	.\editor.cpp	/^int editorclass::base( int x, int y )$/;"	f	class:editorclass
+bcol	.\Graphics.h	/^	int bcol, bcol2, rcol;$/;"	m	class:Graphics
+bcol2	.\Graphics.h	/^	int bcol, bcol2, rcol;$/;"	m	class:Graphics
+behave	.\Ent.h	/^    int behave, animate;$/;"	m	class:entclass
+bestgamedeaths	.\Game.h	/^    int bestgamedeaths;$/;"	m	class:Game
+bestlives	.\Game.h	/^    std::vector<int>bestlives;$/;"	m	class:Game
+bestrank	.\Game.h	/^    std::vector<int> bestrank;$/;"	m	class:Game
+besttimes	.\Game.h	/^    std::vector<int>besttimes;$/;"	m	class:Game
+besttrinkets	.\Game.h	/^    std::vector<int>besttrinkets;$/;"	m	class:Game
+bfont	.\Graphics.h	/^	std::vector <SDL_Surface*> bfont;$/;"	m	class:Graphics
+bfont_rect	.\Graphics.h	/^	SDL_Rect bfont_rect;$/;"	m	class:Graphics
+bfontlen	.\Graphics.h	/^	std::vector <int> bfontlen;$/;"	m	class:Graphics
+bfontmask	.\Graphics.h	/^	std::vector <SDL_Surface*> bfontmask;$/;"	m	class:Graphics
+bfontmask_rect	.\Graphics.h	/^	SDL_Rect bfontmask_rect;$/;"	m	class:Graphics
+bg_rect	.\Graphics.h	/^	SDL_Rect bg_rect;$/;"	m	class:Graphics
+bigprint	.\Graphics.cpp	/^void Graphics::bigprint(  int _x, int _y, std::string _s, int r, int g, int b, bool cen, int sc )$/;"	f	class:Graphics
+bigrprint	.\Graphics.cpp	/^void Graphics::bigrprint(int x, int y, std::string& t, int r, int g, int b, bool cen, float sc)$/;"	f	class:Graphics
+binaryBlob	.\BinaryBlob.cpp	/^binaryBlob::binaryBlob()$/;"	f	class:binaryBlob
+binaryBlob	.\BinaryBlob.h	/^class binaryBlob$/;"	c
+blackout	.\Game.h	/^    bool blackout;$/;"	m	class:Game
+blockclass	.\BlockV.cpp	/^blockclass::blockclass()$/;"	f	class:blockclass
+blockclass	.\BlockV.h	/^class blockclass$/;"	c
+blocks	.\Entity.h	/^    std::vector<blockclass> blocks;$/;"	m	class:entityclass
+boundarymod	.\editor.h	/^  int boundarymod, boundarytype;$/;"	m	class:editorclass
+boundarytype	.\editor.h	/^  int boundarymod, boundarytype;$/;"	m	class:editorclass
+boundx1	.\editor.h	/^  int boundx1, boundx2, boundy1, boundy2;$/;"	m	class:editorclass
+boundx2	.\editor.h	/^  int boundx1, boundx2, boundy1, boundy2;$/;"	m	class:editorclass
+boundy1	.\editor.h	/^  int boundx1, boundx2, boundy1, boundy2;$/;"	m	class:editorclass
+boundy2	.\editor.h	/^  int boundx1, boundx2, boundy1, boundy2;$/;"	m	class:editorclass
+bprint	.\Graphics.cpp	/^void Graphics::bprint( int x, int y, std::string t, int r, int g, int b, bool cen \/*= false*\/ )$/;"	f	class:Graphics
+bscroll	.\Map.h	/^    int bscroll;$/;"	m	class:mapclass
+buttonmap	.\KeyPoll.h	/^	std::map<SDL_GameControllerButton, bool> buttonmap;$/;"	m	class:KeyPoll
+bypos	.\Map.h	/^    int bypos;$/;"	m	class:mapclass
+cameramode	.\Map.h	/^    int cameramode;$/;"	m	class:mapclass
+cameraseek	.\Map.h	/^    int cameraseek, cameraseekframe;$/;"	m	class:mapclass
+cameraseekframe	.\Map.h	/^    int cameraseek, cameraseekframe;$/;"	m	class:mapclass
+cblocks	.\Entity.cpp	/^bool entityclass::cblocks( int t )$/;"	f	class:entityclass
+centerx	.\Textbox.cpp	/^void textboxclass::centerx()$/;"	f	class:textboxclass
+centery	.\Textbox.cpp	/^void textboxclass::centery()$/;"	f	class:textboxclass
+changecollect	.\Entity.cpp	/^void entityclass::changecollect( int t, int s )$/;"	f	class:entityclass
+changecustomcollect	.\Entity.cpp	/^void entityclass::changecustomcollect( int t, int s )$/;"	f	class:entityclass
+changefinalcol	.\Map.cpp	/^void mapclass::changefinalcol(int t, entityclass& obj, Game& game)$/;"	f	class:mapclass
+changeflag	.\Entity.cpp	/^void entityclass::changeflag( int t, int s )$/;"	f	class:entityclass
+changemusicarea	.\Music.cpp	/^void musicclass::changemusicarea(int x, int y)$/;"	f	class:musicclass
+changeroom	.\editor.h	/^  bool updatetiles, changeroom;$/;"	m	class:editorclass
+check	.\Map.h	/^    int check, cmode;$/;"	m	class:mapclass
+checkactivity	.\Entity.cpp	/^int entityclass::checkactivity()$/;"	f	class:entityclass
+checkblocks	.\Entity.cpp	/^bool entityclass::checkblocks()$/;"	f	class:entityclass
+checkdamage	.\Entity.cpp	/^bool entityclass::checkdamage()$/;"	f	class:entityclass
+checkdirectional	.\Entity.cpp	/^bool entityclass::checkdirectional( int t )$/;"	f	class:entityclass
+checkhook	.\editor.cpp	/^bool editorclass::checkhook(std::string t)$/;"	f	class:editorclass
+checkplatform	.\Entity.cpp	/^bool entityclass::checkplatform()$/;"	f	class:entityclass
+checktowerspikes	.\Entity.cpp	/^bool entityclass::checktowerspikes(int t, mapclass& map)$/;"	f	class:entityclass
+checktrigger	.\Entity.cpp	/^int entityclass::checktrigger()$/;"	f	class:entityclass
+checkwall	.\Entity.cpp	/^bool entityclass::checkwall( mapclass& map )$/;"	f	class:entityclass
+clamp	.\Maths.h	/^inline int clamp(int x, int a, int b)$/;"	f
+cleanup	.\Entity.cpp	/^void entityclass::cleanup()$/;"	f	class:entityclass
+clear	.\BlockV.cpp	/^void blockclass::clear()$/;"	f	class:blockclass
+clear	.\Ent.cpp	/^void entclass::clear()$/;"	f	class:entclass
+clear	.\Textbox.cpp	/^void textboxclass::clear()$/;"	f	class:textboxclass
+clearcustom	.\Script.cpp	/^void scriptclass::clearcustom(){$/;"	f	class:scriptclass
+clearcustomlevelstats	.\Game.cpp	/^void Game::clearcustomlevelstats()$/;"	f	class:Game
+clearscriptbuffer	.\editor.cpp	/^void editorclass::clearscriptbuffer()$/;"	f	class:editorclass
+clip_rect	.\SDL.h	/^    SDL_Rect clip_rect;         \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+close	.\SDL.h	/^    int (SDLCALL * close) (struct SDL_RWops * context);$/;"	m	struct:SDL_RWops
+cmode	.\Map.h	/^    int check, cmode;$/;"	m	class:mapclass
+coin	.\Finalclass.h	/^    int coin, rcol;$/;"	m	class:finalclass
+coin	.\Labclass.h	/^    int coin, rcol;$/;"	m	class:labclass
+coin	.\WarpClass.h	/^	int coin, rcol;$/;"	m	class:warpclass
+coins	.\Game.h	/^    int coins, trinkets, crewmates, trinkencollect;$/;"	m	class:Game
+collect	.\Entity.h	/^    std::vector<int> collect;$/;"	m	class:entityclass
+collide	.\Map.cpp	/^bool mapclass::collide(int x, int y)$/;"	f	class:mapclass
+colors	.\SDL.h	/^    SDL_Color *colors;$/;"	m	struct:SDL_Palette
+colour	.\Ent.h	/^    int life, colour;$/;"	m	class:entclass
+colour	.\GraphicsUtil.h	/^    Uint32 colour;$/;"	m	struct:colourTransform
+colourTransform	.\GraphicsUtil.h	/^struct colourTransform$/;"	s
+colourblindmode	.\Game.h	/^    bool  colourblindmode;$/;"	m	class:Game
+colpoint1	.\Entity.h	/^    point colpoint1, colpoint2;$/;"	m	class:entityclass
+colpoint2	.\Entity.h	/^    point colpoint1, colpoint2;$/;"	m	class:entityclass
+colstate	.\Map.h	/^    int colstate, colstatedelay;$/;"	m	class:mapclass
+colstatedelay	.\Map.h	/^    int colstate, colstatedelay;$/;"	m	class:mapclass
+colsuperstate	.\Map.h	/^    int colsuperstate;$/;"	m	class:mapclass
+comboaction	.\Game.h	/^    std::string comboaction;$/;"	m	class:Game
+combolen	.\Game.h	/^    int combolen;$/;"	m	class:Game
+combomode	.\Game.h	/^    bool combomode;$/;"	m	class:Game
+commands	.\Script.h	/^    std::vector<std::string> commands;$/;"	m	class:scriptclass
+companion	.\Game.h	/^    int companion;$/;"	m	class:Game
+compare_nocase	.\editor.cpp	/^bool compare_nocase (std::string first, std::string second)$/;"	f
+completestop	.\Game.h	/^    bool completestop;$/;"	m	class:Game
+confirmflags	.\Entity.cpp	/^void entityclass::confirmflags()$/;"	f	class:entityclass
+contents	.\Map.h	/^    std::vector <int> contents;$/;"	m	class:mapclass
+contents	.\Tower.h	/^    std::vector<int> contents;$/;"	m	class:towerclass
+contents	.\editor.h	/^  std::vector <int> contents;$/;"	m	class:editorclass
+controllerButtonDown	.\KeyPoll.cpp	/^bool KeyPoll::controllerButtonDown()$/;"	f	class:KeyPoll
+controllerButton_esc	.\Game.h	/^	std::vector<SDL_GameControllerButton> controllerButton_esc;$/;"	m	class:Game
+controllerButton_flip	.\Game.h	/^	std::vector<SDL_GameControllerButton> controllerButton_flip;$/;"	m	class:Game
+controllerButton_map	.\Game.h	/^	std::vector<SDL_GameControllerButton> controllerButton_map;$/;"	m	class:Game
+controllerSensitivity	.\Game.h	/^	int controllerSensitivity;$/;"	m	class:Game
+controllerWantsLeft	.\KeyPoll.cpp	/^bool KeyPoll::controllerWantsLeft(bool includeVert)$/;"	f	class:KeyPoll
+controllerWantsRight	.\KeyPoll.cpp	/^bool KeyPoll::controllerWantsRight(bool includeVert)$/;"	f	class:KeyPoll
+controllers	.\KeyPoll.h	/^	std::map<SDL_JoystickID, SDL_GameController*> controllers;$/;"	m	class:KeyPoll
+copyedentity	.\editor.cpp	/^void copyedentity( int a, int b )$/;"	f
+copylinecross	.\Entity.cpp	/^void entityclass::copylinecross( int t )$/;"	f	class:entityclass
+countstuff	.\editor.cpp	/^void editorclass::countstuff()$/;"	f	class:editorclass
+createblock	.\Entity.cpp	/^void entityclass::createblock( int t, int xp, int yp, int w, int h, int trig \/*= 0*\/ )$/;"	f	class:entityclass
+createentity	.\Entity.cpp	/^void entityclass::createentity( Game& game, float xp, float yp, int t, float vx \/*= 0*\/, float vy \/*= 0*\/, int p1 \/*= 0*\/, int p2 \/*= 0*\/, int p3 \/*= 320*\/, int p4 \/*= 240 *\/ )$/;"	f	class:entityclass
+createmenu	.\Game.cpp	/^void Game::createmenu( std::string t )$/;"	f	class:Game
+createtextbox	.\Graphics.cpp	/^void Graphics::createtextbox( std::string t, int xp, int yp, int r\/*= 255*\/, int g\/*= 255*\/, int b \/*= 255*\/ )$/;"	f	class:Graphics
+creator	.\editor.h	/^	std::string creator;$/;"	m	class:EditorData
+creator	.\editor.h	/^	std::string creator;$/;"	m	struct:LevelMetaData
+creatormod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+creditposdelay	.\Game.h	/^    int creditposx, creditposy, creditposdelay;$/;"	m	class:Game
+creditposition	.\Game.h	/^    int creditposition;$/;"	m	class:Game
+creditposx	.\Game.h	/^    int creditposx, creditposy, creditposdelay;$/;"	m	class:Game
+creditposy	.\Game.h	/^    int creditposx, creditposy, creditposdelay;$/;"	m	class:Game
+crewcolour	.\Entity.cpp	/^int entityclass::crewcolour( int t )$/;"	f	class:entityclass
+crewcolour	.\Graphics.cpp	/^int Graphics::crewcolour(const int t)$/;"	f	class:Graphics
+crewframe	.\Graphics.h	/^	int crewframe;$/;"	m	class:Graphics
+crewframedelay	.\Graphics.h	/^	int crewframedelay;$/;"	m	class:Graphics
+crewmates	.\Game.h	/^    int coins, trinkets, crewmates, trinkencollect;$/;"	m	class:Game
+crewrescued	.\Game.cpp	/^int Game::crewrescued()$/;"	f	class:Game
+crewstats	.\Game.h	/^    std::vector<bool> crewstats;$/;"	m	class:Game
+ct	.\Graphics.h	/^	colourTransform ct;$/;"	m	class:Graphics
+currentaction	.\Game.h	/^    std::string currentaction;$/;"	m	class:Game
+currentarea	.\Map.cpp	/^std::string mapclass::currentarea(int t)$/;"	f	class:mapclass
+currentletter	.\Script.h	/^    std::string currentletter;$/;"	m	class:scriptclass
+currentmenuname	.\Game.h	/^    std::string menuselection, currentmenuname, previousmenuname;$/;"	m	class:Game
+currentmenuoption	.\Game.h	/^    int nummenuoptions, currentmenuoption ;$/;"	m	class:Game
+currentroomdeaths	.\Game.h	/^    int hardestroomdeaths, currentroomdeaths;$/;"	m	class:Game
+currentsong	.\Music.h	/^	int currentsong, musicfade, musicfadein;$/;"	m	class:musicclass
+cursordelay	.\Map.h	/^    int cursorstate, cursordelay;$/;"	m	class:mapclass
+cursorstate	.\Map.h	/^    int cursorstate, cursordelay;$/;"	m	class:mapclass
+customcol	.\Game.h	/^    int customcol;$/;"	m	class:Game
+customcollect	.\Entity.h	/^    std::vector<int> customcollect;$/;"	m	class:entityclass
+customcrewmates	.\Map.h	/^    int customcrewmates;$/;"	m	class:mapclass
+customcrewmoods	.\Entity.h	/^    int customcrewmoods[6];$/;"	m	class:entityclass
+customenemy	.\Entity.h	/^    int customenemy;$/;"	m	class:entityclass
+customheight	.\Map.h	/^    int customwidth, customheight;$/;"	m	class:mapclass
+customlevelfilename	.\Game.h	/^    std::string customlevelfilename;$/;"	m	class:Game
+customlevelscore	.\Game.h	/^    int customlevelscore[200];\/\/0 - not played, 1 - finished, 2 - all trinkets, 3 - finished, all trinkets$/;"	m	class:Game
+customlevelstats	.\Game.h	/^    std::string customlevelstats[200]; \/\/string array containing level filenames$/;"	m	class:Game
+customlevelstatsloaded	.\Game.h	/^    bool customlevelstatsloaded;$/;"	m	class:Game
+customleveltitle	.\Game.h	/^    std::string customleveltitle;$/;"	m	class:Game
+customloadquick	.\Game.cpp	/^void Game::customloadquick(std::string savfile, mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+custommmxoff	.\Map.h	/^    int custommmxoff, custommmyoff, custommmxsize, custommmysize;$/;"	m	class:mapclass
+custommmxsize	.\Map.h	/^    int custommmxoff, custommmyoff, custommmxsize, custommmysize;$/;"	m	class:mapclass
+custommmyoff	.\Map.h	/^    int custommmxoff, custommmyoff, custommmxsize, custommmysize;$/;"	m	class:mapclass
+custommmysize	.\Map.h	/^    int custommmxoff, custommmyoff, custommmxsize, custommmysize;$/;"	m	class:mapclass
+custommode	.\Map.h	/^    bool custommode;$/;"	m	class:mapclass
+custommodeforreal	.\Map.h	/^    bool custommodeforreal;$/;"	m	class:mapclass
+custompd	.\Music.h	/^	bool custompd;$/;"	m	class:musicclass
+customplatformtile	.\Entity.h	/^    int customplatformtile;$/;"	m	class:entityclass
+customquicksummary	.\Game.h	/^    std::string telesummary, quicksummary, customquicksummary;$/;"	m	class:Game
+customsavequick	.\Game.cpp	/^void Game::customsavequick(std::string savfile, mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+customscript	.\Entity.h	/^    std::string customscript;$/;"	m	class:entityclass
+customscript	.\Game.h	/^    std::string customscript[50];$/;"	m	class:Game
+customscript	.\Script.h	/^     std::vector <std::string>  customscript;$/;"	m	class:scriptclass
+customshowmm	.\Map.h	/^    bool customshowmm;$/;"	m	class:mapclass
+customstart	.\Game.cpp	/^void Game::customstart( entityclass& obj, musicclass& music )$/;"	f	class:Game
+customtrinkets	.\Map.h	/^    int customtrinkets;$/;"	m	class:mapclass
+customwarplinecheck	.\Entity.cpp	/^void entityclass::customwarplinecheck(int i) {$/;"	f	class:entityclass
+customwarpmode	.\Entity.h	/^    bool customwarpmode, customwarpmodevon, customwarpmodehon;$/;"	m	class:entityclass
+customwarpmodehon	.\Entity.h	/^    bool customwarpmode, customwarpmodevon, customwarpmodehon;$/;"	m	class:entityclass
+customwarpmodevon	.\Entity.h	/^    bool customwarpmode, customwarpmodevon, customwarpmodehon;$/;"	m	class:entityclass
+customwidth	.\Map.h	/^    int customwidth, customheight;$/;"	m	class:mapclass
+customx	.\Map.h	/^    int customx, customy;$/;"	m	class:mapclass
+customy	.\Map.h	/^    int customx, customy;$/;"	m	class:mapclass
+customzoom	.\Map.h	/^    int customzoom;$/;"	m	class:mapclass
+cutscenebars	.\Graphics.cpp	/^void Graphics::cutscenebars()$/;"	f	class:Graphics
+cutscenebarspos	.\Graphics.h	/^	int cutscenebarspos;$/;"	m	class:Graphics
+cx	.\Ent.h	/^    int cx, cy, w, h;$/;"	m	class:entclass
+cy	.\Ent.h	/^    int cx, cy, w, h;$/;"	m	class:entclass
+data1	.\SDL.h	/^            void *data1;$/;"	m	struct:SDL_RWops::__anon5::__anon9
+data2	.\SDL.h	/^            void *data2;$/;"	m	struct:SDL_RWops::__anon5::__anon9
+deathcounts	.\Game.h	/^    int deathcounts;$/;"	m	class:Game
+deathseq	.\Game.h	/^    int deathseq, lifeseq;$/;"	m	class:Game
+deathsequence	.\Game.cpp	/^void Game::deathsequence( mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+deletekeyheld	.\editor.h	/^  int deletekeyheld;$/;"	m	class:editorclass
+deletequick	.\Game.cpp	/^void Game::deletequick()$/;"	f	class:Game
+deletestats	.\Game.cpp	/^void Game::deletestats( mapclass& map, Graphics& dwgfx )$/;"	f	class:Game
+deletetele	.\Game.cpp	/^void Game::deletetele()$/;"	f	class:Game
+desc1mod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+desc2mod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+desc3mod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+description	.\editor.h	/^  std::string description;$/;"	m	class:editorclass
+dir	.\Ent.h	/^    int framedelay, drawframe, walkingframe, dir, actionframe;$/;"	m	class:entclass
+directmode	.\editor.h	/^	int directmode;$/;"	m	class:edlevelclass
+directoryList	.\editor.h	/^  std::vector<std::string> directoryList;$/;"	m	class:editorclass
+disabletextentry	.\KeyPoll.cpp	/^void KeyPoll::disabletextentry()$/;"	f	class:KeyPoll
+dmtile	.\editor.h	/^  int dmtile;$/;"	m	class:editorclass
+dmtileeditor	.\editor.h	/^  int dmtileeditor;$/;"	m	class:editorclass
+door_down	.\Game.h	/^    int door_down;$/;"	m	class:Game
+door_left	.\Game.h	/^    int door_left;$/;"	m	class:Game
+door_right	.\Game.h	/^    int door_right;$/;"	m	class:Game
+door_up	.\Game.h	/^    int door_up;$/;"	m	class:Game
+dr	.\Entity.h	/^    float dx, dy, dr;$/;"	m	class:entityclass
+drawbackground	.\Graphics.cpp	/^void Graphics::drawbackground( int t, mapclass& map )$/;"	f	class:Graphics
+drawcoloredtile	.\Graphics.cpp	/^void Graphics::drawcoloredtile( int x, int y, int t, int r, int g, int b )$/;"	f	class:Graphics
+drawcrewman	.\Graphics.cpp	/^void Graphics::drawcrewman( int x, int y, int t, bool act, UtilityClass& help, bool noshift \/*=false*\/ )$/;"	f	class:Graphics
+drawcustompixeltextbox	.\Graphics.cpp	/^void Graphics::drawcustompixeltextbox( int x, int y, int w, int h, int w2, int h2, int r, int g, int b, int xo, int yo )$/;"	f	class:Graphics
+drawentcolours	.\Graphics.cpp	/^void Graphics::drawentcolours( int x, int y, int t)$/;"	f	class:Graphics
+drawentities	.\Graphics.cpp	/^void Graphics::drawentities( mapclass& map, entityclass& obj, UtilityClass& help )$/;"	f	class:Graphics
+drawfade	.\Graphics.cpp	/^void Graphics::drawfade()$/;"	f	class:Graphics
+drawfinalmap	.\Graphics.cpp	/^void Graphics::drawfinalmap(mapclass & map)$/;"	f	class:Graphics
+drawforetile	.\Graphics.cpp	/^void Graphics::drawforetile(int x, int y, int t)$/;"	f	class:Graphics
+drawforetile2	.\Graphics.cpp	/^void Graphics::drawforetile2(int x, int y, int t)$/;"	f	class:Graphics
+drawforetile3	.\Graphics.cpp	/^void Graphics::drawforetile3(int x, int y, int t, int off)$/;"	f	class:Graphics
+drawframe	.\Ent.h	/^    int framedelay, drawframe, walkingframe, dir, actionframe;$/;"	m	class:entclass
+drawgravityline	.\Graphics.cpp	/^void Graphics::drawgravityline( int t, entityclass& obj )$/;"	f	class:Graphics
+drawgui	.\Graphics.cpp	/^void Graphics::drawgui( UtilityClass& help )$/;"	f	class:Graphics
+drawhuetile	.\Graphics.cpp	/^void Graphics::drawhuetile( int x, int y, int t, int c )$/;"	f	class:Graphics
+drawimage	.\Graphics.cpp	/^void Graphics::drawimage( int t, int xp, int yp, bool cent\/*=false*\/ )$/;"	f	class:Graphics
+drawimagecol	.\Graphics.cpp	/^void Graphics::drawimagecol( int t, int xp, int yp, int r = 0, int g = 0, int b = 0, bool cent\/*= false*\/ )$/;"	f	class:Graphics
+drawlevelmenu	.\Graphics.cpp	/^void Graphics::drawlevelmenu( Game& game, int cr, int cg, int cb, int division \/*= 30*\/ )$/;"	f	class:Graphics
+drawmap	.\Graphics.cpp	/^void Graphics::drawmap( mapclass& map )$/;"	f	class:Graphics
+drawmenu	.\Graphics.cpp	/^void Graphics::drawmenu( Game& game, int cr, int cg, int cb, int division \/*= 30*\/ )$/;"	f	class:Graphics
+drawmode	.\editor.h	/^  int drawmode;$/;"	m	class:editorclass
+drawpartimage	.\Graphics.cpp	/^void Graphics::drawpartimage( int t, int xp, int yp, int wp, int hp)$/;"	f	class:Graphics
+drawpixeltextbox	.\Graphics.cpp	/^void Graphics::drawpixeltextbox( int x, int y, int w, int h, int w2, int h2, int r, int g, int b, int xo, int yo )$/;"	f	class:Graphics
+drawrect	.\Graphics.cpp	/^void Graphics::drawrect(int x, int y, int w, int h, int r, int g, int b)$/;"	f	class:Graphics
+drawsprite	.\Graphics.cpp	/^void Graphics::drawsprite( int x, int y, int t, int r, int g,  int b )$/;"	f	class:Graphics
+drawspritesetcol	.\Graphics.cpp	/^void Graphics::drawspritesetcol(int x, int y, int t, int c, UtilityClass& help)$/;"	f	class:Graphics
+drawtele	.\Graphics.cpp	/^void Graphics::drawtele(int x, int y, int t, int c, UtilityClass& help)$/;"	f	class:Graphics
+drawtextbox	.\Graphics.cpp	/^void Graphics::drawtextbox( int x, int y, int w, int h, int r, int g, int b )$/;"	f	class:Graphics
+drawtile	.\Graphics.cpp	/^void Graphics::drawtile( int x, int y, int t, int r, int g,  int b )$/;"	f	class:Graphics
+drawtile	.\Graphics.cpp	/^void Graphics::drawtile(int x, int y, int t)$/;"	f	class:Graphics
+drawtile2	.\Graphics.cpp	/^void Graphics::drawtile2( int x, int y, int t, int r, int g,  int b )$/;"	f	class:Graphics
+drawtile3	.\Graphics.cpp	/^void Graphics::drawtile3( int x, int y, int t, int off )$/;"	f	class:Graphics
+drawtowerbackground	.\Graphics.cpp	/^void Graphics::drawtowerbackground( mapclass& map )$/;"	f	class:Graphics
+drawtowerbackgroundsolo	.\Graphics.cpp	/^void Graphics::drawtowerbackgroundsolo( mapclass& map )$/;"	f	class:Graphics
+drawtowerentities	.\Graphics.cpp	/^void Graphics::drawtowerentities( mapclass& map, entityclass& obj, UtilityClass& help )$/;"	f	class:Graphics
+drawtowermap	.\Graphics.cpp	/^void Graphics::drawtowermap( mapclass& map )$/;"	f	class:Graphics
+drawtowermap_nobackground	.\Graphics.cpp	/^void Graphics::drawtowermap_nobackground( mapclass& map )$/;"	f	class:Graphics
+drawtowerspikes	.\Graphics.cpp	/^void Graphics::drawtowerspikes( mapclass& map )$/;"	f	class:Graphics
+drawtowertile	.\Graphics.cpp	/^void Graphics::drawtowertile( int x, int y, int t )$/;"	f	class:Graphics
+drawtowertile3	.\Graphics.cpp	/^void Graphics::drawtowertile3( int x, int y, int t, int off )$/;"	f	class:Graphics
+drawtrophytext	.\Graphics.cpp	/^void Graphics::drawtrophytext( entityclass& obj, UtilityClass& help )$/;"	f	class:Graphics
+dx	.\Entity.h	/^    float dx, dy, dr;$/;"	m	class:entityclass
+dy	.\Entity.h	/^    float dx, dy, dr;$/;"	m	class:entityclass
+ed	.\main.cpp	/^ editorclass ed;$/;"	v
+edentat	.\editor.cpp	/^int edentat( int xp, int yp )$/;"	f
+edentclear	.\editor.cpp	/^bool edentclear( int xp, int yp )$/;"	f
+edentities	.\editor.h	/^class edentities{$/;"	c
+edentity	.\main.cpp	/^ edentities edentity[3000];$/;"	v
+edgetile	.\editor.cpp	/^int editorclass::edgetile( int x, int y )$/;"	f	class:editorclass
+editorclass	.\editor.cpp	/^editorclass::editorclass()$/;"	f	class:editorclass
+editorclass	.\editor.h	/^class editorclass{$/;"	c
+editorinput	.\editor.cpp	/^void editorinput( KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f
+editorlogic	.\editor.cpp	/^void editorlogic( KeyPoll& key, Graphics& dwgfx, Game& game, entityclass& obj, musicclass& music, mapclass& map, UtilityClass& help )$/;"	f
+editorrender	.\editor.cpp	/^void editorrender( KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help )$/;"	f
+edlevelclass	.\editor.cpp	/^edlevelclass::edlevelclass()$/;"	f	class:edlevelclass
+edlevelclass	.\editor.h	/^class edlevelclass{$/;"	c
+edsavedir	.\Game.h	/^    int edsavegc, edsavedir;$/;"	m	class:Game
+edsavegc	.\Game.h	/^    int edsavegc, edsavedir;$/;"	m	class:Game
+edsaverx	.\Game.h	/^    int edsavex, edsavey, edsaverx, edsavery;$/;"	m	class:Game
+edsavery	.\Game.h	/^    int edsavex, edsavey, edsaverx, edsavery;$/;"	m	class:Game
+edsavex	.\Game.h	/^    int edsavex, edsavey, edsaverx, edsavery;$/;"	m	class:Game
+edsavey	.\Game.h	/^    int edsavex, edsavey, edsaverx, edsavery;$/;"	m	class:Game
+edteleportent	.\Game.h	/^    int edteleportent;$/;"	m	class:Game
+enabletextentry	.\KeyPoll.cpp	/^void KeyPoll::enabletextentry()$/;"	f	class:KeyPoll
+endian_swap	.\GraphicsUtil.cpp	/^unsigned int endian_swap( unsigned int x )$/;"	f
+endian_swap	.\GraphicsUtil.cpp	/^void endian_swap(T *objp)$/;"	f
+enemytype	.\editor.h	/^	int enemyx1, enemyy1, enemyx2, enemyy2, enemytype;$/;"	m	class:edlevelclass
+enemyx1	.\editor.h	/^	int enemyx1, enemyy1, enemyx2, enemyy2, enemytype;$/;"	m	class:edlevelclass
+enemyx2	.\editor.h	/^	int enemyx1, enemyy1, enemyx2, enemyy2, enemytype;$/;"	m	class:edlevelclass
+enemyy1	.\editor.h	/^	int enemyx1, enemyy1, enemyx2, enemyy2, enemytype;$/;"	m	class:edlevelclass
+enemyy2	.\editor.h	/^	int enemyx1, enemyy1, enemyx2, enemyy2, enemytype;$/;"	m	class:edlevelclass
+entclass	.\Ent.cpp	/^entclass::entclass()$/;"	f	class:entclass
+entclass	.\Ent.h	/^class entclass$/;"	c
+entcol	.\editor.h	/^  int entcol;$/;"	m	class:editorclass
+entcolours	.\Graphics.h	/^	std::vector <SDL_Surface*> entcolours;$/;"	m	class:Graphics
+entframe	.\editor.h	/^  int entframe, entframedelay;$/;"	m	class:editorclass
+entframedelay	.\editor.h	/^  int entframe, entframedelay;$/;"	m	class:editorclass
+entities	.\Entity.h	/^    std::vector<entclass> entities;$/;"	m	class:entityclass
+entityclass	.\Entity.h	/^class entityclass$/;"	c
+entitycollide	.\Entity.cpp	/^bool entityclass::entitycollide( int a, int b )$/;"	f	class:entityclass
+entitycollidefloor	.\Entity.cpp	/^bool entityclass::entitycollidefloor( mapclass& map, int t )$/;"	f	class:entityclass
+entitycollideplatformfloor	.\Entity.cpp	/^float entityclass::entitycollideplatformfloor( mapclass& map, int t )$/;"	f	class:entityclass
+entitycollideplatformroof	.\Entity.cpp	/^float entityclass::entitycollideplatformroof( mapclass& map, int t )$/;"	f	class:entityclass
+entitycollideroof	.\Entity.cpp	/^bool entityclass::entitycollideroof( mapclass& map, int t )$/;"	f	class:entityclass
+entitycollisioncheck	.\Entity.cpp	/^void entityclass::entitycollisioncheck( Graphics& dwgfx, Game& game, mapclass& map, musicclass& music )$/;"	f	class:entityclass
+entityhlinecollide	.\Entity.cpp	/^bool entityclass::entityhlinecollide( int t, int l )$/;"	f	class:entityclass
+entitymapcollision	.\Entity.cpp	/^void entityclass::entitymapcollision( int t, mapclass& map )$/;"	f	class:entityclass
+entityvlinecollide	.\Entity.cpp	/^bool entityclass::entityvlinecollide( int t, int l )$/;"	f	class:entityclass
+entitywarphlinecollide	.\Entity.cpp	/^bool entityclass::entitywarphlinecollide(int t, int l) {$/;"	f	class:entityclass
+entitywarpvlinecollide	.\Entity.cpp	/^bool entityclass::entitywarpvlinecollide(int t, int l) {$/;"	f	class:entityclass
+escapeWasPressedPreviously	.\KeyPoll.h	/^	bool escapeWasPressedPreviously;$/;"	m	class:KeyPoll
+explored	.\Map.h	/^    std::vector <int> explored;$/;"	m	class:mapclass
+exploretower	.\Map.cpp	/^void mapclass::exploretower()$/;"	f	class:mapclass
+extrarow	.\Map.h	/^    int extrarow;$/;"	m	class:mapclass
+fRandom	.\Maths.h	/^float inline fRandom()$/;"	f
+fadeMusicVolumeIn	.\Music.cpp	/^void musicclass::fadeMusicVolumeIn(int ms)$/;"	f	class:musicclass
+fadeamount	.\Graphics.h	/^	int fadeamount;$/;"	m	class:Graphics
+fadebars	.\Graphics.h	/^	std::vector <int> fadebars;$/;"	m	class:Graphics
+fademode	.\Graphics.h	/^	int fademode;$/;"	m	class:Graphics
+fadeout	.\Music.cpp	/^void musicclass::fadeout()$/;"	f	class:musicclass
+fatal_bottom	.\Entity.h	/^    void fatal_bottom()$/;"	f	class:entityclass
+fatal_left	.\Entity.h	/^    void fatal_left()$/;"	f	class:entityclass
+fatal_right	.\Entity.h	/^    void fatal_right()$/;"	f	class:entityclass
+fatal_top	.\Entity.h	/^    void fatal_top()$/;"	f	class:entityclass
+fd	.\SDL.h	/^            int fd;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+fileNameRef	.\SDL.h	/^            void *fileNameRef;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+filename	.\editor.h	/^	std::string filename;$/;"	m	struct:LevelMetaData
+filename	.\editor.h	/^  std::string filename;$/;"	m	class:editorclass
+fillareamap	.\Map.cpp	/^void mapclass::fillareamap(std::vector<std::string>& tmap)$/;"	f	class:mapclass
+fillbackground	.\Tower.cpp	/^void towerclass::fillbackground(std::vector<std::string>& tmap)$/;"	f	class:towerclass
+fillbox	.\editor.cpp	/^void fillbox( Graphics& dwgfx, int x, int y, int x2, int y2, int c )$/;"	f
+fillboxabs	.\editor.cpp	/^void fillboxabs( Graphics& dwgfx, int x, int y, int x2, int y2, int c )$/;"	f
+fillcontent	.\Map.cpp	/^void mapclass::fillcontent(std::vector<std::string>& tmap)$/;"	f	class:mapclass
+fillcontents	.\Tower.cpp	/^void towerclass::fillcontents(std::vector<std::string>& tmap)$/;"	f	class:towerclass
+fillminitower	.\Tower.cpp	/^void towerclass::fillminitower(std::vector<std::string>& tmap)$/;"	f	class:towerclass
+filterSubrect	.\Screen.h	/^	SDL_Rect filterSubrect;$/;"	m	class:Screen
+final_aniframe	.\Map.h	/^    int final_aniframe;$/;"	m	class:mapclass
+final_aniframedelay	.\Map.h	/^    int final_aniframedelay;$/;"	m	class:mapclass
+final_colorframe	.\Map.h	/^    int final_colorframe, final_colorframedelay;$/;"	m	class:mapclass
+final_colorframedelay	.\Map.h	/^    int final_colorframe, final_colorframedelay;$/;"	m	class:mapclass
+final_colormode	.\Map.h	/^    bool final_colormode;$/;"	m	class:mapclass
+final_mapcol	.\Map.h	/^    int final_mapcol;$/;"	m	class:mapclass
+finalat	.\Map.cpp	/^int mapclass::finalat(int x, int y)$/;"	f	class:mapclass
+finalclass	.\Finalclass.h	/^class finalclass$/;"	c
+finallevel	.\Map.h	/^    finalclass finallevel;$/;"	m	class:mapclass
+finalmode	.\Map.h	/^    bool finalmode;$/;"	m	class:mapclass
+finalstretch	.\Map.h	/^    bool finalstretch;$/;"	m	class:mapclass
+finalx	.\Map.h	/^    int finalx;$/;"	m	class:mapclass
+finaly	.\Map.h	/^    int finaly;$/;"	m	class:mapclass
+findcrewmate	.\editor.cpp	/^int editorclass::findcrewmate(int t)$/;"	f	class:editorclass
+findstartpoint	.\editor.cpp	/^void editorclass::findstartpoint(Game& game)$/;"	f	class:editorclass
+findtrinket	.\editor.cpp	/^int editorclass::findtrinket(int t)$/;"	f	class:editorclass
+findwarptoken	.\editor.cpp	/^int editorclass::findwarptoken(int t)$/;"	f	class:editorclass
+firstcreate	.\Textbox.cpp	/^void textboxclass::firstcreate()$/;"	f	class:textboxclass
+fixfriction	.\Entity.cpp	/^void entityclass::fixfriction( int t, float xfix, float xrate, float yrate )$/;"	f	class:entityclass
+flags	.\Entity.h	/^    std::vector<int> flags;$/;"	m	class:entityclass
+flags	.\SDL.h	/^    Uint32 flags;               \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+flashlight	.\Game.h	/^    int screenshake, flashlight;$/;"	m	class:Game
+flashlight	.\Graphics.cpp	/^void Graphics::flashlight()$/;"	f	class:Graphics
+flipbfont	.\Graphics.h	/^	std::vector <SDL_Surface*> flipbfont;$/;"	m	class:Graphics
+flipbfontmask	.\Graphics.h	/^	std::vector <SDL_Surface*> flipbfontmask;$/;"	m	class:Graphics
+flipmode	.\Graphics.h	/^	bool flipmode;$/;"	m	class:Graphics
+flipsprites	.\Graphics.h	/^	std::vector <SDL_Surface*> flipsprites;$/;"	m	class:Graphics
+foot_rect	.\Graphics.h	/^	SDL_Rect foot_rect;$/;"	m	class:Graphics
+footerrect	.\Graphics.h	/^	SDL_Rect footerrect;$/;"	m	class:Graphics
+foregrounddrawn	.\Graphics.h	/^	bool backgrounddrawn, foregrounddrawn;$/;"	m	class:Graphics
+forgroundBuffer	.\Graphics.h	/^	SDL_Surface* forgroundBuffer;$/;"	m	class:Graphics
+format	.\SDL.h	/^    SDL_PixelFormat *format;    \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+format	.\SDL.h	/^    Uint32 format;$/;"	m	struct:SDL_PixelFormat
+fp	.\SDL.h	/^            FILE *fp;$/;"	m	struct:SDL_RWops::__anon5::__anon7
+frameRate	.\titlerender.h	/^    int frameRate;$/;"	m	class:Stage
+framedelay	.\Ent.h	/^    int framedelay, drawframe, walkingframe, dir, actionframe;$/;"	m	class:entclass
+frames	.\Game.h	/^    int frames, seconds, minutes, hours;$/;"	m	class:Game
+free	.\editor.cpp	/^int editorclass::free( int x, int y )$/;"	f	class:editorclass
+freewrap	.\editor.cpp	/^int editorclass::freewrap( int x, int y )$/;"	f	class:editorclass
+fullScreenEffect_badSignal	.\Game.h	/^    bool fullScreenEffect_badSignal;$/;"	m	class:Game
+fullscreen	.\Game.h	/^    bool fullscreen;$/;"	m	class:Game
+g	.\BlockV.h	/^    int r, g, b;$/;"	m	class:blockclass
+g	.\Map.h	/^    int r, g,b;$/;"	m	class:mapclass
+g	.\SDL.h	/^    Uint8 g;$/;"	m	struct:SDL_Color
+g	.\Script.h	/^    int r,g,b;$/;"	m	class:scriptclass
+g	.\Textbox.h	/^    int r,g,b;$/;"	m	class:textboxclass
+gameclock	.\Game.cpp	/^void Game::gameclock()$/;"	f	class:Game
+gamecompleteinput	.\Input.cpp	/^void gamecompleteinput(KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map,$/;"	f
+gamecompleteinput2	.\Input.cpp	/^void gamecompleteinput2(KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map,$/;"	f
+gamecompletelogic	.\Logic.cpp	/^void gamecompletelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music, mapclass& map, UtilityClass& help)$/;"	f
+gamecompletelogic2	.\Logic.cpp	/^void gamecompletelogic2(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music, mapclass& map, UtilityClass& help)$/;"	f
+gamecompleterender	.\titlerender.cpp	/^void gamecompleterender(Graphics& dwgfx, Game& game, entityclass& obj, UtilityClass& help, mapclass& map)$/;"	f
+gamecompleterender2	.\titlerender.cpp	/^void gamecompleterender2(Graphics& dwgfx, Game& game, entityclass& obj, UtilityClass& help)$/;"	f
+gameframerate	.\Game.h	/^    Uint32 gameframerate;$/;"	m	class:Game
+gameinput	.\Input.cpp	/^void gameinput(KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map,$/;"	f
+gamelogic	.\Logic.cpp	/^void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music, mapclass& map, UtilityClass& help)$/;"	f
+gameoverdelay	.\Game.h	/^    int gameoverdelay;$/;"	m	class:Game
+gamerender	.\titlerender.cpp	/^void gamerender(Graphics& dwgfx, mapclass& map, Game& game, entityclass& obj, UtilityClass& help)$/;"	f
+gamesaved	.\Game.h	/^    bool gamesaved;$/;"	m	class:Game
+gamestate	.\Game.h	/^    int gamestate;$/;"	m	class:Game
+generatecustomminimap	.\editor.cpp	/^void editorclass::generatecustomminimap(Graphics& dwgfx, mapclass& map)$/;"	f	class:editorclass
+generateswnwave	.\Entity.cpp	/^void entityclass::generateswnwave( Game& game, UtilityClass& help, int t )$/;"	f	class:entityclass
+getAddress	.\BinaryBlob.cpp	/^char* binaryBlob::getAddress(int _index)$/;"	f	class:binaryBlob
+getBGR	.\Graphics.cpp	/^Uint32 Graphics::getBGR(Uint8 r, Uint8 g, Uint8 b)$/;"	f	class:Graphics
+getDirectoryData	.\editor.cpp	/^void editorclass::getDirectoryData()$/;"	f	class:editorclass
+getGlobalSoundVol	.\Game.h	/^    float getGlobalSoundVol()$/;"	f	class:Game
+getIndex	.\BinaryBlob.cpp	/^int binaryBlob::getIndex(const char* _name)$/;"	f	class:binaryBlob
+getLevelMetaData	.\editor.cpp	/^bool editorclass::getLevelMetaData(std::string& _path, LevelMetaData& _data )$/;"	f	class:editorclass
+getRGB	.\Graphics.cpp	/^Uint32 Graphics::getRGB(Uint32 _col)$/;"	f	class:Graphics
+getRGB	.\Graphics.cpp	/^Uint32 Graphics::getRGB(Uint8 r, Uint8 g, Uint8 b)$/;"	f	class:Graphics
+getSize	.\BinaryBlob.cpp	/^int binaryBlob::getSize(int _index)$/;"	f	class:binaryBlob
+getcompanion	.\Entity.cpp	/^int entityclass::getcompanion( int t )$/;"	f	class:entityclass
+getcrewman	.\Entity.cpp	/^int entityclass::getcrewman( int t )$/;"	f	class:entityclass
+getcustomcrewman	.\Entity.cpp	/^int entityclass::getcustomcrewman( int t )$/;"	f	class:entityclass
+getenemycol	.\editor.cpp	/^int editorclass::getenemycol(int t)$/;"	f	class:editorclass
+getenemyframe	.\editor.cpp	/^int editorclass::getenemyframe(int t)$/;"	f	class:editorclass
+getglitchname	.\Map.cpp	/^std::string mapclass::getglitchname(int x, int y)$/;"	f	class:mapclass
+getgridpoint	.\Entity.cpp	/^int entityclass::getgridpoint( int t )$/;"	f	class:entityclass
+gethardestroom	.\Game.cpp	/^void Game::gethardestroom( mapclass& map )$/;"	f	class:Game
+gethooks	.\editor.cpp	/^void editorclass::gethooks()$/;"	f	class:editorclass
+getlevelcol	.\editor.cpp	/^int editorclass::getlevelcol(int t)$/;"	f	class:editorclass
+getlineat	.\Entity.cpp	/^int entityclass::getlineat( int t )$/;"	f	class:entityclass
+getplayer	.\Entity.cpp	/^int entityclass::getplayer()$/;"	f	class:entityclass
+getscm	.\Entity.cpp	/^int entityclass::getscm()$/;"	f	class:entityclass
+getteleporter	.\Entity.cpp	/^int entityclass::getteleporter()$/;"	f	class:entityclass
+gettype	.\Entity.cpp	/^bool entityclass::gettype( int t )$/;"	f	class:entityclass
+getwarpbackground	.\editor.cpp	/^int editorclass::getwarpbackground(int rx, int ry)$/;"	f	class:editorclass
+giventimestring	.\Game.cpp	/^std::string Game::giventimestring( int hrs, int min, int sec, UtilityClass& help )$/;"	f	class:Game
+glScreen	.\Screen.h	/^	bool glScreen;$/;"	m	class:Screen
+glitchdelay	.\Map.h	/^    int glitchdelay;$/;"	m	class:mapclass
+glitchmode	.\Map.h	/^    int glitchmode;$/;"	m	class:mapclass
+glitchname	.\Map.h	/^    std::string glitchname;$/;"	m	class:mapclass
+glitchrunkludge	.\Game.h	/^		bool glitchrunkludge;$/;"	m	class:Game
+globalsound	.\Game.h	/^    int globalsound;$/;"	m	class:Game
+globaltemp	.\UtilityClass.h	/^    int globaltemp;$/;"	m	class:UtilityClass
+glow	.\UtilityClass.h	/^    int glow;$/;"	m	class:UtilityClass
+glowdir	.\UtilityClass.h	/^    int glowdir;$/;"	m	class:UtilityClass
+gotoroom	.\Map.cpp	/^void mapclass::gotoroom(int rx, int ry, Graphics& dwgfx, Game& game, entityclass& obj, musicclass& music)$/;"	f	class:mapclass
+gravcreate	.\Entity.cpp	/^void entityclass::gravcreate( Game& game, int ypos, int dir, int xoff \/*= 0*\/, int yoff \/*= 0*\/ )$/;"	f	class:entityclass
+gravity	.\Ent.h	/^    bool gravity;$/;"	m	class:entclass
+gravitycontrol	.\Game.h	/^    int gravitycontrol;$/;"	m	class:Game
+gridmatch	.\Entity.cpp	/^bool entityclass::gridmatch( int p1, int p2, int p3, int p4, int p11, int p21, int p31, int p41 )$/;"	f	class:entityclass
+grphx	.\Graphics.h	/^	GraphicsResources grphx;$/;"	m	class:Graphics
+h	.\Ent.h	/^    int cx, cy, w, h;$/;"	m	class:entclass
+h	.\SDL.h	/^    int w, h;                   \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+h	.\SDL.h	/^    int w, h;$/;"	m	struct:SDL_Rect
+h	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+haltdasmusik	.\Music.cpp	/^void musicclass::haltdasmusik()$/;"	f	class:musicclass
+hardestroom	.\Game.h	/^    std::string hardestroom;$/;"	m	class:Game
+hardestroomdeaths	.\Game.h	/^    int hardestroomdeaths, currentroomdeaths;$/;"	m	class:Game
+hardreset	.\Script.cpp	/^void scriptclass::hardreset( KeyPoll& key, Graphics& dwgfx, Game& game,mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:scriptclass
+harmful	.\Ent.h	/^    bool harmful;$/;"	m	class:entclass
+hascontrol	.\Game.h	/^    bool hascontrol, jumpheld;$/;"	m	class:Game
+here	.\SDL.h	/^            Uint8 *here;$/;"	m	struct:SDL_RWops::__anon5::__anon8
+hidden	.\SDL.h	/^    } hidden;$/;"	m	struct:SDL_RWops	typeref:union:SDL_RWops::__anon5
+hideship	.\Map.cpp	/^void mapclass::hideship()$/;"	f	class:mapclass
+hooklist	.\editor.h	/^  std::string hooklist[500];$/;"	m	class:editorclass
+hookmenu	.\editor.h	/^  int hookmenupage, hookmenu;$/;"	m	class:editorclass
+hookmenupage	.\editor.h	/^  int hookmenupage, hookmenu;$/;"	m	class:editorclass
+hormovingplatformfix	.\Entity.cpp	/^void entityclass::hormovingplatformfix( int t, mapclass& map )$/;"	f	class:entityclass
+horplatforms	.\Entity.h	/^    bool vertplatforms, horplatforms;$/;"	m	class:entityclass
+hours	.\Game.h	/^    int frames, seconds, minutes, hours;$/;"	m	class:Game
+hp	.\BlockV.h	/^    int xp, yp, wp, hp;$/;"	m	class:blockclass
+hplatformat	.\Entity.cpp	/^float entityclass::hplatformat()$/;"	f	class:entityclass
+i	.\Otherlevel.h	/^    int i;$/;"	m	class:otherlevelclass
+i	.\Script.h	/^    int i, j, k;$/;"	m	class:scriptclass
+i	.\Tower.h	/^    int i;$/;"	m	class:towerclass
+im_bfont	.\GraphicsResources.h	/^    SDL_Surface* im_bfont;$/;"	m	class:GraphicsResources
+im_bfontmask	.\GraphicsResources.h	/^    SDL_Surface* im_bfontmask;$/;"	m	class:GraphicsResources
+im_entcolours	.\GraphicsResources.h	/^    SDL_Surface* im_entcolours;$/;"	m	class:GraphicsResources
+im_flipsprites	.\GraphicsResources.h	/^    SDL_Surface* im_flipsprites;$/;"	m	class:GraphicsResources
+im_image0	.\GraphicsResources.h	/^    SDL_Surface* im_image0;$/;"	m	class:GraphicsResources
+im_image1	.\GraphicsResources.h	/^    SDL_Surface* im_image1;$/;"	m	class:GraphicsResources
+im_image10	.\GraphicsResources.h	/^    SDL_Surface* im_image10;$/;"	m	class:GraphicsResources
+im_image11	.\GraphicsResources.h	/^    SDL_Surface* im_image11;$/;"	m	class:GraphicsResources
+im_image12	.\GraphicsResources.h	/^    SDL_Surface* im_image12;$/;"	m	class:GraphicsResources
+im_image2	.\GraphicsResources.h	/^    SDL_Surface* im_image2;$/;"	m	class:GraphicsResources
+im_image3	.\GraphicsResources.h	/^    SDL_Surface* im_image3;$/;"	m	class:GraphicsResources
+im_image4	.\GraphicsResources.h	/^    SDL_Surface* im_image4;$/;"	m	class:GraphicsResources
+im_image5	.\GraphicsResources.h	/^    SDL_Surface* im_image5;$/;"	m	class:GraphicsResources
+im_image6	.\GraphicsResources.h	/^    SDL_Surface* im_image6;$/;"	m	class:GraphicsResources
+im_image7	.\GraphicsResources.h	/^    SDL_Surface* im_image7;$/;"	m	class:GraphicsResources
+im_image8	.\GraphicsResources.h	/^    SDL_Surface* im_image8;$/;"	m	class:GraphicsResources
+im_image9	.\GraphicsResources.h	/^    SDL_Surface* im_image9;$/;"	m	class:GraphicsResources
+im_sprites	.\GraphicsResources.h	/^    SDL_Surface* im_sprites;$/;"	m	class:GraphicsResources
+im_teleporter	.\GraphicsResources.h	/^    SDL_Surface* im_teleporter;$/;"	m	class:GraphicsResources
+im_tiles	.\GraphicsResources.h	/^    SDL_Surface* im_tiles;$/;"	m	class:GraphicsResources
+im_tiles2	.\GraphicsResources.h	/^    SDL_Surface* im_tiles2;$/;"	m	class:GraphicsResources
+im_tiles3	.\GraphicsResources.h	/^    SDL_Surface* im_tiles3;$/;"	m	class:GraphicsResources
+images	.\Graphics.h	/^	std::vector <SDL_Surface*> images;$/;"	m	class:Graphics
+images_rect	.\Graphics.h	/^	SDL_Rect images_rect;$/;"	m	class:Graphics
+inertia	.\Game.h	/^    float inertia;$/;"	m	class:Game
+infocus	.\Game.h	/^    bool infocus;$/;"	m	class:Game
+inintermission	.\Game.h	/^    bool inintermission;$/;"	m	class:Game
+init	.\Entity.cpp	/^void entityclass::init()$/;"	f	class:entityclass
+initcol	.\Textbox.cpp	/^void textboxclass::initcol(int rr, int gg, int bb)$/;"	f	class:textboxclass
+initefchannels	.\Music.cpp	/^void musicclass::initefchannels()$/;"	f	class:musicclass
+initmapdata	.\Map.cpp	/^void mapclass::initmapdata()$/;"	f	class:mapclass
+initteleportermode	.\Game.cpp	/^void Game::initteleportermode( mapclass& map )$/;"	f	class:Game
+inputStreamRef	.\SDL.h	/^            void *inputStreamRef;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+insecretlab	.\Game.h	/^    bool insecretlab;$/;"	m	class:Game
+insertline	.\editor.cpp	/^void editorclass::insertline(int t)$/;"	f	class:editorclass
+intersectRect	.\GraphicsUtil.cpp	/^bool intersectRect( float left1, float right1, float bottom1, float top1, float left2, float right2, float bottom2, float top2 )$/;"	f
+intersects	.\UtilityClass.cpp	/^bool UtilityClass::intersects( SDL_Rect A, SDL_Rect B )$/;"	f	class:UtilityClass
+intimetrial	.\Game.h	/^    bool intimetrial, timetrialparlost;$/;"	m	class:Game
+intpol	.\Map.cpp	/^int mapclass::intpol(int a, int b, float c)$/;"	f	class:mapclass
+invincibility	.\Map.h	/^    bool invincibility;$/;"	m	class:mapclass
+invis	.\Ent.h	/^    bool active, invis;$/;"	m	class:entclass
+isActive	.\KeyPoll.h	/^	bool isActive;$/;"	m	class:KeyPoll
+isDown	.\KeyPoll.cpp	/^bool KeyPoll::isDown(SDL_GameControllerButton button)$/;"	f	class:KeyPoll
+isDown	.\KeyPoll.cpp	/^bool KeyPoll::isDown(SDL_Keycode key)$/;"	f	class:KeyPoll
+isDown	.\KeyPoll.cpp	/^bool KeyPoll::isDown(std::vector<SDL_GameControllerButton> buttons)$/;"	f	class:KeyPoll
+isFiltered	.\Screen.h	/^	bool isFiltered;$/;"	m	class:Screen
+isUp	.\KeyPoll.cpp	/^bool KeyPoll::isUp(SDL_Keycode key)$/;"	f	class:KeyPoll
+isWindowed	.\Screen.h	/^	bool isWindowed;$/;"	m	class:Screen
+isplatform	.\Ent.h	/^    bool isplatform;$/;"	m	class:entclass
+isscrolling	.\GraphicsUtil.cpp	/^bool isscrolling = 0;$/;"	v
+j	.\Game.h	/^    int temp, j, k;$/;"	m	class:Game
+j	.\Graphics.h	/^	int j, k, m;$/;"	m	class:Graphics
+j	.\Map.h	/^    int j;$/;"	m	class:mapclass
+j	.\Script.h	/^    int i, j, k;$/;"	m	class:scriptclass
+jumpframe	.\Ent.h	/^    int jumpframe;$/;"	m	class:entclass
+jumpheld	.\Game.h	/^    bool hascontrol, jumpheld;$/;"	m	class:Game
+jumping	.\Ent.h	/^    bool jumping;$/;"	m	class:entclass
+jumppressed	.\Game.h	/^    int jumppressed;$/;"	m	class:Game
+k	.\Entity.h	/^    int x, k;$/;"	m	class:entityclass
+k	.\Game.h	/^    int temp, j, k;$/;"	m	class:Game
+k	.\Graphics.h	/^	int j, k, m;$/;"	m	class:Graphics
+k	.\Script.h	/^    int i, j, k;$/;"	m	class:scriptclass
+k	.\Tower.h	/^    int k;$/;"	m	class:towerclass
+keybuffer	.\KeyPoll.h	/^	std::string keybuffer;$/;"	m	class:KeyPoll
+keybuffer	.\editor.h	/^  std::string keybuffer;$/;"	m	class:editorclass
+keybufferlen	.\KeyPoll.h	/^	int keyentered, keybufferlen;$/;"	m	class:KeyPoll
+keydelay	.\editor.h	/^  int keydelay, lclickdelay;$/;"	m	class:editorclass
+keyentered	.\KeyPoll.h	/^	int keyentered, keybufferlen;$/;"	m	class:KeyPoll
+keymap	.\KeyPoll.h	/^	std::map<SDL_Keycode, bool> keymap;$/;"	m	class:KeyPoll
+labclass	.\Labclass.h	/^class labclass$/;"	c
+lablevel	.\Map.h	/^    labclass lablevel;$/;"	m	class:mapclass
+labspikedir	.\editor.cpp	/^int editorclass::labspikedir( int x, int y, int t )$/;"	f	class:editorclass
+lastsaved	.\Game.h	/^    int lastsaved;$/;"	m	class:Game
+lclickdelay	.\editor.h	/^  int keydelay, lclickdelay;$/;"	m	class:editorclass
+leftbutton	.\KeyPoll.h	/^	int leftbutton, rightbutton, middlebutton;$/;"	m	class:KeyPoll
+len	.\Graphics.cpp	/^int Graphics::len(std::string t)$/;"	f	class:Graphics
+level	.\editor.h	/^  edlevelclass level[400]; \/\/Maxwidth*maxheight$/;"	m	class:editorclass
+levelDir	.\FileSystemUtils.cpp	/^char levelDir[MAX_PATH];$/;"	v
+levelpage	.\Game.h	/^    int levelpage;$/;"	m	class:Game
+levmusic	.\editor.h	/^  int levmusic;$/;"	m	class:editorclass
+levx	.\editor.h	/^  int levx, levy;$/;"	m	class:editorclass
+levy	.\editor.h	/^  int levx, levy;$/;"	m	class:editorclass
+libHandle	.\SteamNetwork.c	/^static void *libHandle = NULL;$/;"	v	file:
+life	.\Ent.h	/^    int life, colour;$/;"	m	class:entclass
+lifeseq	.\Game.h	/^    int deathseq, lifeseq;$/;"	m	class:Game
+lifesequence	.\Game.cpp	/^void Game::lifesequence( entityclass& obj )$/;"	f	class:Game
+line	.\Textbox.h	/^    std::vector<std::string> line;$/;"	m	class:textboxclass
+line_rect	.\Graphics.h	/^	SDL_Rect line_rect;$/;"	m	class:Graphics
+linecrosskludge	.\Entity.h	/^    std::vector<entclass> linecrosskludge;$/;"	m	class:entityclass
+linedelay	.\Graphics.h	/^	int linestate, linedelay;$/;"	m	class:Graphics
+linestate	.\Graphics.h	/^	int linestate, linedelay;$/;"	m	class:Graphics
+linetemp	.\Entity.h	/^    int px, py, linetemp;$/;"	m	class:entityclass
+load	.\Scripts.cpp	/^void scriptclass::load(std::string t)$/;"	f	class:scriptclass
+load	.\editor.cpp	/^void editorclass::load(std::string& _path)$/;"	f	class:editorclass
+loadbackground	.\Tower.cpp	/^void towerclass::loadbackground()$/;"	f	class:towerclass
+loadcustomlevelstats	.\Game.cpp	/^void Game::loadcustomlevelstats()$/;"	f	class:Game
+loadhookineditor	.\editor.cpp	/^void editorclass::loadhookineditor(std::string t)$/;"	f	class:editorclass
+loadkey	.\editor.h	/^  bool savekey, loadkey;$/;"	m	class:editorclass
+loadlevel	.\Finalclass.cpp	/^std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entityclass& obj)$/;"	f	class:finalclass
+loadlevel	.\Labclass.cpp	/^std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)$/;"	f	class:labclass
+loadlevel	.\Map.cpp	/^void mapclass::loadlevel(int rx, int ry, Graphics& dwgfx, Game& game, entityclass& obj, musicclass& music)$/;"	f	class:mapclass
+loadlevel	.\Otherlevel.cpp	/^std::vector<std::string> otherlevelclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)$/;"	f	class:otherlevelclass
+loadlevel	.\Spacestation2.cpp	/^std::vector<std::string> spacestation2class::loadlevel(int rx, int ry, Game& game, entityclass& obj)$/;"	f	class:spacestation2class
+loadlevel	.\WarpClass.cpp	/^std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)$/;"	f	class:warpclass
+loadlevel	.\editor.cpp	/^void editorclass::loadlevel( int rxi, int ryi )$/;"	f	class:editorclass
+loadmap	.\Tower.cpp	/^void towerclass::loadmap()$/;"	f	class:towerclass
+loadminitower1	.\Tower.cpp	/^void towerclass::loadminitower1()$/;"	f	class:towerclass
+loadminitower2	.\Tower.cpp	/^void towerclass::loadminitower2()$/;"	f	class:towerclass
+loadmod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+loadother	.\TerminalScripts.cpp	/^void scriptclass::loadother(std::string t)$/;"	f	class:scriptclass
+loadquick	.\Game.cpp	/^void Game::loadquick( mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+loadstats	.\Game.cpp	/^void Game::loadstats( mapclass& map, Graphics& dwgfx )$/;"	f	class:Game
+loadsummary	.\Game.cpp	/^void Game::loadsummary( mapclass& map, UtilityClass& help )$/;"	f	class:Game
+loadtele	.\Game.cpp	/^void Game::loadtele( mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+lock_data	.\SDL.h	/^    void *lock_data;            \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+locked	.\SDL.h	/^    int locked;                 \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+loopcount	.\Script.h	/^    int looppoint, loopcount;$/;"	m	class:scriptclass
+loopmusic	.\Music.cpp	/^void musicclass::loopmusic()$/;"	f	class:musicclass
+looppoint	.\Script.h	/^    int looppoint, loopcount;$/;"	m	class:scriptclass
+lw	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+m	.\Graphics.h	/^	int j, k, m;$/;"	m	class:Graphics
+m_doFadeInVol	.\Music.h	/^	bool m_doFadeInVol;$/;"	m	class:musicclass
+m_globalVol	.\Game.h	/^    float m_globalVol;$/;"	m	class:Game
+m_headers	.\BinaryBlob.h	/^	resourceheader m_headers[128];$/;"	m	class:binaryBlob
+m_isValid	.\SoundSystem.h	/^	bool m_isValid;$/;"	m	class:MusicTrack
+m_memblocks	.\BinaryBlob.h	/^	char* m_memblocks[128];$/;"	m	class:binaryBlob
+m_music	.\SoundSystem.h	/^	Mix_Music *m_music;$/;"	m	class:MusicTrack
+m_renderer	.\Screen.h	/^	SDL_Renderer *m_renderer;$/;"	m	class:Screen
+m_screen	.\Screen.h	/^	SDL_Surface* m_screen;$/;"	m	class:Screen
+m_screenTexture	.\Screen.h	/^	SDL_Texture *m_screenTexture;$/;"	m	class:Screen
+m_window	.\Screen.h	/^	SDL_Window *m_window;$/;"	m	class:Screen
+main	.\main.cpp	/^int main(int argc, char *argv[])$/;"	f
+mainmenu	.\Game.h	/^    int mainmenu;$/;"	m	class:Game
+maketelearray	.\Graphics.cpp	/^void Graphics::maketelearray()$/;"	f	class:Graphics
+map	.\SDL.h	/^    struct SDL_BlitMap *map;    \/**< Private *\/$/;"	m	struct:SDL_Surface	typeref:struct:SDL_Surface::SDL_BlitMap
+mapclass	.\Map.cpp	/^mapclass::mapclass()$/;"	f	class:mapclass
+mapclass	.\Map.h	/^class mapclass$/;"	c
+mapheight	.\editor.h	/^  int mapwidth, mapheight; \/\/Actual width and height of stage$/;"	m	class:editorclass
+mapheld	.\Game.h	/^    bool mapheld;$/;"	m	class:Game
+mapinput	.\Input.cpp	/^void mapinput(KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map,$/;"	f
+maplogic	.\Logic.cpp	/^void maplogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music, mapclass& map, UtilityClass& help)$/;"	f
+maprender	.\titlerender.cpp	/^void maprender(Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help)$/;"	f
+maptiletoenemycol	.\Map.cpp	/^int mapclass::maptiletoenemycol(int t)$/;"	f	class:mapclass
+mapwidth	.\editor.h	/^  int mapwidth, mapheight; \/\/Actual width and height of stage$/;"	m	class:editorclass
+match	.\editor.cpp	/^int editorclass::match( int x, int y )$/;"	f	class:editorclass
+max	.\Textbox.h	/^    int max;$/;"	m	class:textboxclass
+maxheight	.\editor.h	/^  int maxwidth, maxheight; \/\/Special; the physical max the engine allows$/;"	m	class:editorclass
+maxwidth	.\editor.h	/^  int maxwidth, maxheight; \/\/Special; the physical max the engine allows$/;"	m	class:editorclass
+mem	.\SDL.h	/^        } mem;$/;"	m	union:SDL_RWops::__anon5	typeref:struct:SDL_RWops::__anon5::__anon8
+menubuffer	.\Graphics.h	/^	SDL_Surface* menubuffer;$/;"	m	class:Graphics
+menucountdown	.\Game.h	/^    int menucountdown;$/;"	m	class:Game
+menudest	.\Game.h	/^    std::string menudest;$/;"	m	class:Game
+menukludge	.\Game.h	/^    bool menukludge;$/;"	m	class:Game
+menuoffrender	.\Graphics.cpp	/^void Graphics::menuoffrender()$/;"	f	class:Graphics
+menuoffset	.\Graphics.h	/^	int menuoffset;$/;"	m	class:Graphics
+menuoptions	.\Game.h	/^    std::vector<std::string> menuoptions;$/;"	m	class:Game
+menuoptionsactive	.\Game.h	/^    std::vector<bool> menuoptionsactive;$/;"	m	class:Game
+menupage	.\Game.h	/^    int menupage;$/;"	m	class:Game
+menuselection	.\Game.h	/^    std::string menuselection, currentmenuname, previousmenuname;$/;"	m	class:Game
+menustart	.\Game.h	/^    bool menustart;$/;"	m	class:Game
+menuxoff	.\Game.h	/^    int menuxoff, menuyoff;$/;"	m	class:Game
+menuyoff	.\Game.h	/^    int menuxoff, menuyoff;$/;"	m	class:Game
+middlebutton	.\KeyPoll.h	/^	int leftbutton, rightbutton, middlebutton;$/;"	m	class:KeyPoll
+miniat	.\Tower.cpp	/^int towerclass::miniat(int xp, int yp, int yoff)$/;"	f	class:towerclass
+minitower	.\Tower.h	/^    std::vector<int> minitower;$/;"	m	class:towerclass
+minitowermode	.\Map.h	/^    bool minitowermode;$/;"	m	class:mapclass
+minitowermode	.\Tower.h	/^    bool minitowermode;$/;"	m	class:towerclass
+minutes	.\Game.h	/^    int frames, seconds, minutes, hours;$/;"	m	class:Game
+mkdir	.\FileSystemUtils.cpp	17;"	d	file:
+mmmmmm	.\Music.h	/^	bool mmmmmm;$/;"	m	class:musicclass
+modifier	.\editor.h	/^	std::string modifier;$/;"	m	class:EditorData
+modifier	.\editor.h	/^	std::string modifier;$/;"	m	struct:LevelMetaData
+movingplatformfix	.\Entity.cpp	/^void entityclass::movingplatformfix( int t, mapclass& map )$/;"	f	class:entityclass
+musicTracks	.\Music.h	/^	std::vector<MusicTrack> musicTracks;$/;"	m	class:musicclass
+musicVolume	.\Music.h	/^	int musicVolume;$/;"	m	class:musicclass
+musicclass	.\Music.cpp	/^musicclass::musicclass()$/;"	f	class:musicclass
+musicclass	.\Music.h	/^class musicclass$/;"	c
+musicfade	.\Music.h	/^	int currentsong, musicfade, musicfadein;$/;"	m	class:musicclass
+musicfadein	.\Music.h	/^	int currentsong, musicfade, musicfadein;$/;"	m	class:musicclass
+musicroom	.\Music.h	8;"	d
+mutebutton	.\Game.h	/^    int mutebutton;$/;"	m	class:Game
+muted	.\Game.h	/^    bool muted;$/;"	m	class:Game
+mx	.\Game.h	/^    int mx, my;$/;"	m	class:Game
+mx	.\KeyPoll.h	/^	int mx, my;$/;"	m	class:KeyPoll
+my	.\Game.h	/^    int mx, my;$/;"	m	class:Game
+my	.\KeyPoll.h	/^	int mx, my;$/;"	m	class:KeyPoll
+naddedentity	.\editor.cpp	/^void naddedentity( int xp, int yp, int tp, int p1\/*=0*\/, int p2\/*=0*\/, int p3\/*=0*\/, int p4\/*=0*\/, int p5\/*=320*\/, int p6\/*=240*\/)$/;"	f
+name	.\BinaryBlob.h	/^	char name[48];$/;"	m	struct:resourceheader
+nblocks	.\Entity.h	/^    int nblocks;$/;"	m	class:entityclass
+ncolors	.\SDL.h	/^    int ncolors;$/;"	m	struct:SDL_Palette
+nearelephant	.\Entity.h	/^    bool nearelephant, upsetmode;$/;"	m	class:entityclass
+nentity	.\Entity.h	/^    int nentity;$/;"	m	class:entityclass
+newscript	.\Game.h	/^    std::string newscript;$/;"	m	class:Game
+newxp	.\Ent.h	/^    float newxp, newyp;$/;"	m	class:entclass
+newyp	.\Ent.h	/^    float newxp, newyp;$/;"	m	class:entclass
+next	.\SDL.h	/^    struct SDL_PixelFormat *next;$/;"	m	struct:SDL_PixelFormat	typeref:struct:SDL_PixelFormat::SDL_PixelFormat
+nexttowercolour	.\Map.cpp	/^void mapclass::nexttowercolour()$/;"	f	class:mapclass
+nicechange	.\Music.h	/^	int nicechange;$/;"	m	class:musicclass
+nicefade	.\Music.h	/^	int nicefade;$/;"	m	class:musicclass
+niceplay	.\Music.cpp	/^void musicclass::niceplay(int t)$/;"	f	class:musicclass
+nlinecrosskludge	.\Entity.h	/^    int nlinecrosskludge;$/;"	m	class:entityclass
+nocutscenes	.\Game.h	/^    bool nocutscenes;$/;"	m	class:Game
+nodeathmode	.\Game.h	/^    bool nodeathmode;$/;"	m	class:Game
+noflashingmode	.\Game.h	/^    bool noflashingmode;$/;"	m	class:Game
+note	.\editor.h	/^  std::string note;$/;"	m	class:editorclass
+notedelay	.\editor.h	/^  int notedelay;$/;"	m	class:editorclass
+ntextbox	.\Graphics.h	/^	int ntextbox;$/;"	m	class:Graphics
+number	.\UtilityClass.cpp	/^std::string UtilityClass::number( int _t )$/;"	f	class:UtilityClass
+numberofHeaders	.\BinaryBlob.h	/^	int numberofHeaders;$/;"	m	class:binaryBlob
+numcrewmates	.\editor.h	/^  int numcrewmates;$/;"	m	class:editorclass
+numcustomlevelstats	.\Game.h	/^    int numcustomlevelstats;$/;"	m	class:Game
+numedentities	.\editor.h	/^	int numedentities;$/;"	m	class:EditorData
+numhooks	.\editor.h	/^  int numhooks;$/;"	m	class:editorclass
+numlines	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+nummenuoptions	.\Game.h	/^    int nummenuoptions, currentmenuoption ;$/;"	m	class:Game
+numshinytrinkets	.\Map.h	/^    int numteleporters, numshinytrinkets;$/;"	m	class:mapclass
+numteleporters	.\Map.h	/^    int numteleporters, numshinytrinkets;$/;"	m	class:mapclass
+numtrinkets	.\editor.h	/^  int numtrinkets;$/;"	m	class:editorclass
+offset	.\SDL.h	/^            long offset;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+oldxp	.\Ent.h	/^    int oldxp, oldyp;$/;"	m	class:entclass
+oldyp	.\Ent.h	/^    int oldxp, oldyp;$/;"	m	class:entclass
+onentity	.\Ent.h	/^    int onentity;$/;"	m	class:entclass
+onground	.\Ent.h	/^    int onground, onroof;$/;"	m	class:entclass
+onroof	.\Ent.h	/^    int onground, onroof;$/;"	m	class:entclass
+onscreen	.\Graphics.cpp	/^bool Graphics::onscreen(int t)$/;"	f	class:Graphics
+onwall	.\Ent.h	/^    int onwall, onxwall, onywall;$/;"	m	class:entclass
+onxwall	.\Ent.h	/^    int onwall, onxwall, onywall;$/;"	m	class:entclass
+onywall	.\Ent.h	/^    int onwall, onxwall, onywall;$/;"	m	class:entclass
+otherlevel	.\Map.h	/^    otherlevelclass otherlevel;$/;"	m	class:mapclass
+otherlevelclass	.\Otherlevel.cpp	/^otherlevelclass::otherlevelclass()$/;"	f	class:otherlevelclass
+otherlevelclass	.\Otherlevel.h	/^class otherlevelclass$/;"	c
+outside	.\Ent.cpp	/^bool entclass::outside()$/;"	f	class:entclass
+outsideedgetile	.\editor.cpp	/^int editorclass::outsideedgetile( int x, int y )$/;"	f	class:editorclass
+outsidematch	.\editor.cpp	/^int editorclass::outsidematch( int x, int y )$/;"	f	class:editorclass
+p1	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+p2	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+p3	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+p4	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+p5	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+p6	.\editor.h	/^	int p1, p2, p3, p4, p5, p6;$/;"	m	class:edentities
+padding	.\SDL.h	/^    Uint8 padding[2];$/;"	m	struct:SDL_PixelFormat
+pagey	.\editor.h	/^  int pagey;$/;"	m	class:editorclass
+palette	.\SDL.h	/^    SDL_Palette *palette;$/;"	m	struct:SDL_PixelFormat
+para	.\Ent.h	/^    float para;$/;"	m	class:entclass
+partimestring	.\Game.cpp	/^std::string Game::partimestring( UtilityClass& help )$/;"	f	class:Game
+paused	.\Game.h	/^    bool paused;$/;"	m	class:Game
+pausescript	.\Game.h	/^    bool advancetext, pausescript;$/;"	m	class:Game
+pitch	.\SDL.h	/^    int pitch;                  \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+pixels	.\SDL.h	/^    void *pixels;               \/**< Read-write *\/$/;"	m	struct:SDL_Surface
+placetile	.\editor.cpp	/^void editorclass::placetile( int x, int y, int t )$/;"	f	class:editorclass
+placetilelocal	.\editor.cpp	/^void editorclass::placetilelocal( int x, int y, int t )$/;"	f	class:editorclass
+platformtile	.\Entity.h	/^    int platformtile;$/;"	m	class:entityclass
+platv	.\editor.h	/^	int platx1, platy1, platx2, platy2, platv;$/;"	m	class:edlevelclass
+platx1	.\editor.h	/^	int platx1, platy1, platx2, platy2, platv;$/;"	m	class:edlevelclass
+platx2	.\editor.h	/^	int platx1, platy1, platx2, platy2, platv;$/;"	m	class:edlevelclass
+platy1	.\editor.h	/^	int platx1, platy1, platx2, platy2, platv;$/;"	m	class:edlevelclass
+platy2	.\editor.h	/^	int platx1, platy1, platx2, platy2, platv;$/;"	m	class:edlevelclass
+play	.\Music.cpp	/^void musicclass::play(int t)$/;"	f	class:musicclass
+playMusic	.\SoundSystem.cpp	/^void SoundSystem::playMusic(MusicTrack* music)$/;"	f	class:SoundSystem
+playback	.\Game.h	/^    std::vector<int> playback;$/;"	m	class:Game
+playbackfinished	.\Game.h	/^    bool playbackfinished;$/;"	m	class:Game
+playbackpos	.\Game.h	/^    int playbackpos;$/;"	m	class:Game
+playbacksize	.\Game.h	/^    int playbacksize;$/;"	m	class:Game
+playcombo	.\Game.h	/^    int playcombo;$/;"	m	class:Game
+playcustomlevel	.\Game.h	/^    int playcustomlevel;$/;"	m	class:Game
+playef	.\Music.cpp	/^void musicclass::playef(int t, int offset)$/;"	f	class:musicclass
+playmove	.\Game.h	/^    int playmove;$/;"	m	class:Game
+point	.\Maths.h	/^struct point$/;"	s
+position	.\SDL.h	/^            long position;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+position	.\Script.h	/^    int position, scriptlength;$/;"	m	class:scriptclass
+pre_coltimer	.\preloader.cpp	/^int pre_darkcol=0, pre_lightcol=0, pre_curcol=0, pre_coltimer=0, pre_offset=0;$/;"	v
+pre_curcol	.\preloader.cpp	/^int pre_darkcol=0, pre_lightcol=0, pre_curcol=0, pre_coltimer=0, pre_offset=0;$/;"	v
+pre_darkcol	.\preloader.cpp	/^int pre_darkcol=0, pre_lightcol=0, pre_curcol=0, pre_coltimer=0, pre_offset=0;$/;"	v
+pre_fakepercent	.\preloader.cpp	/^int pre_fakepercent=0, pre_transition=30;$/;"	v
+pre_frontrecth	.\preloader.cpp	/^int pre_frontrectx=30, pre_frontrecty=20, pre_frontrectw=260, pre_frontrecth=200;$/;"	v
+pre_frontrectw	.\preloader.cpp	/^int pre_frontrectx=30, pre_frontrecty=20, pre_frontrectw=260, pre_frontrecth=200;$/;"	v
+pre_frontrectx	.\preloader.cpp	/^int pre_frontrectx=30, pre_frontrecty=20, pre_frontrectw=260, pre_frontrecth=200;$/;"	v
+pre_frontrecty	.\preloader.cpp	/^int pre_frontrectx=30, pre_frontrecty=20, pre_frontrectw=260, pre_frontrecth=200;$/;"	v
+pre_lightcol	.\preloader.cpp	/^int pre_darkcol=0, pre_lightcol=0, pre_curcol=0, pre_coltimer=0, pre_offset=0;$/;"	v
+pre_offset	.\preloader.cpp	/^int pre_darkcol=0, pre_lightcol=0, pre_curcol=0, pre_coltimer=0, pre_offset=0;$/;"	v
+pre_startgame	.\preloader.cpp	/^bool pre_startgame=false;$/;"	v
+pre_temprecth	.\preloader.cpp	/^int pre_temprectx=0, pre_temprecty=0, pre_temprectw=320, pre_temprecth=240;$/;"	v
+pre_temprectw	.\preloader.cpp	/^int pre_temprectx=0, pre_temprecty=0, pre_temprectw=320, pre_temprecth=240;$/;"	v
+pre_temprectx	.\preloader.cpp	/^int pre_temprectx=0, pre_temprecty=0, pre_temprectw=320, pre_temprecth=240;$/;"	v
+pre_temprecty	.\preloader.cpp	/^int pre_temprectx=0, pre_temprecty=0, pre_temprectw=320, pre_temprecth=240;$/;"	v
+pre_transition	.\preloader.cpp	/^int pre_fakepercent=0, pre_transition=30;$/;"	v
+prect	.\Graphics.h	/^	SDL_Rect prect;$/;"	m	class:Graphics
+preloaderrender	.\preloader.cpp	/^void preloaderrender(Graphics& dwgfx, Game& game, UtilityClass& help)$/;"	f
+press_action	.\Game.h	/^    bool press_left, press_right, press_action, press_map;$/;"	m	class:Game
+press_left	.\Game.h	/^    bool press_left, press_right, press_action, press_map;$/;"	m	class:Game
+press_map	.\Game.h	/^    bool press_left, press_right, press_action, press_map;$/;"	m	class:Game
+press_right	.\Game.h	/^    bool press_left, press_right, press_action, press_map;$/;"	m	class:Game
+pressedbackspace	.\KeyPoll.h	/^	bool pressedbackspace;$/;"	m	class:KeyPoll
+previousmenuname	.\Game.h	/^    std::string menuselection, currentmenuname, previousmenuname;$/;"	m	class:Game
+printcrewname	.\Graphics.cpp	/^void Graphics::printcrewname( int x, int y, int t )$/;"	f	class:Graphics
+printcrewnamedark	.\Graphics.cpp	/^void Graphics::printcrewnamedark( int x, int y, int t )$/;"	f	class:Graphics
+printcrewnamestatus	.\Graphics.cpp	/^void Graphics::printcrewnamestatus( int x, int y, int t )$/;"	f	class:Graphics
+processfade	.\Graphics.cpp	/^void Graphics::processfade()$/;"	f	class:Graphics
+processmusic	.\Music.cpp	/^void musicclass::processmusic()$/;"	f	class:musicclass
+processmusicfade	.\Music.cpp	/^void musicclass::processmusicfade()$/;"	f	class:musicclass
+processmusicfadein	.\Music.cpp	/^void musicclass::processmusicfadein()$/;"	f	class:musicclass
+prompt	.\BlockV.h	/^    std::string script, prompt;$/;"	m	class:blockclass
+px	.\Entity.h	/^    int px, py, linetemp;$/;"	m	class:entityclass
+py	.\Entity.h	/^    int px, py, linetemp;$/;"	m	class:entityclass
+quick_crewstats	.\Game.h	/^    std::vector<bool> quick_crewstats;$/;"	m	class:Game
+quick_currentarea	.\Game.h	/^    std::string quick_currentarea;$/;"	m	class:Game
+quick_gametime	.\Game.h	/^    std::string quick_gametime;$/;"	m	class:Game
+quick_trinkets	.\Game.h	/^    int quick_trinkets;$/;"	m	class:Game
+quickcookieexists	.\Game.h	/^    bool quickcookieexists;$/;"	m	class:Game
+quickrestartkludge	.\Game.h	/^    bool quickrestartkludge;$/;"	m	class:Game
+quicksummary	.\Game.h	/^    std::string telesummary, quicksummary, customquicksummary;$/;"	m	class:Game
+quitProgram	.\KeyPoll.h	/^	bool quitProgram;$/;"	m	class:KeyPoll
+r	.\BlockV.h	/^    int r, g, b;$/;"	m	class:blockclass
+r	.\Map.h	/^    int r, g,b;$/;"	m	class:mapclass
+r	.\SDL.h	/^    Uint8 r;$/;"	m	struct:SDL_Color
+r	.\Script.h	/^    int r,g,b;$/;"	m	class:scriptclass
+r	.\Textbox.h	/^    int r,g,b;$/;"	m	class:textboxclass
+rcol	.\Finalclass.h	/^    int coin, rcol;$/;"	m	class:finalclass
+rcol	.\Graphics.h	/^	int bcol, bcol2, rcol;$/;"	m	class:Graphics
+rcol	.\Labclass.h	/^    int coin, rcol;$/;"	m	class:labclass
+rcol	.\Map.h	/^    int rcol;$/;"	m	class:mapclass
+rcol	.\WarpClass.h	/^	int coin, rcol;$/;"	m	class:warpclass
+readMethod	.\SDL.h	/^            void *readMethod;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+readableByteChannelRef	.\SDL.h	/^            void *readableByteChannelRef;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+readytotele	.\Game.h	/^    int readytotele;$/;"	m	class:Game
+recording	.\Game.h	/^    int recording;$/;"	m	class:Game
+recordinit	.\Game.h	/^    bool recordinit;$/;"	m	class:Game
+recordstring	.\Game.h	/^    std::string recordstring;$/;"	m	class:Game
+rect	.\BlockV.h	/^    SDL_Rect rect;$/;"	m	class:blockclass
+rect2set	.\Entity.cpp	/^void entityclass::rect2set( int xi, int yi, int wi, int hi )$/;"	f	class:entityclass
+rectset	.\BlockV.cpp	/^void blockclass::rectset(const int xi, const int yi, const int wi, const int hi)$/;"	f	class:blockclass
+rectset	.\Entity.cpp	/^void entityclass::rectset( int xi, int yi, int wi, int hi )$/;"	f	class:entityclass
+refcount	.\SDL.h	/^    int refcount;               \/**< Read-mostly *\/$/;"	m	struct:SDL_Surface
+refcount	.\SDL.h	/^    int refcount;$/;"	m	struct:SDL_Palette
+refcount	.\SDL.h	/^    int refcount;$/;"	m	struct:SDL_PixelFormat
+remove	.\Textbox.cpp	/^void textboxclass::remove()$/;"	f	class:textboxclass
+removeallblocks	.\Entity.cpp	/^void entityclass::removeallblocks()$/;"	f	class:entityclass
+removeblock	.\Entity.cpp	/^void entityclass::removeblock( int t )$/;"	f	class:entityclass
+removeblockat	.\Entity.cpp	/^void entityclass::removeblockat( int x, int y )$/;"	f	class:entityclass
+removeedentity	.\editor.cpp	/^void removeedentity( int t )$/;"	f
+removefast	.\Textbox.cpp	/^void textboxclass::removefast()$/;"	f	class:textboxclass
+removehook	.\editor.cpp	/^void editorclass::removehook(std::string t)$/;"	f	class:editorclass
+removehookfromscript	.\editor.cpp	/^void editorclass::removehookfromscript(std::string t)$/;"	f	class:editorclass
+removeline	.\editor.cpp	/^void editorclass::removeline(int t)$/;"	f	class:editorclass
+removetrigger	.\Entity.cpp	/^void entityclass::removetrigger( int t )$/;"	f	class:entityclass
+render	.\Graphics.cpp	/^void Graphics::render()$/;"	f	class:Graphics
+reset	.\editor.cpp	/^void editorclass::reset()$/;"	f	class:editorclass
+resetWindow	.\KeyPoll.h	/^	bool resetWindow;$/;"	m	class:KeyPoll
+resetallflags	.\Entity.cpp	/^void entityclass::resetallflags()$/;"	f	class:entityclass
+resetflags	.\Entity.cpp	/^void entityclass::resetflags()$/;"	f	class:entityclass
+resetgameclock	.\Game.cpp	/^void Game::resetgameclock()$/;"	f	class:Game
+resetgametomenu	.\Script.cpp	/^void scriptclass::resetgametomenu( Graphics& dwgfx, Game& game,mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:scriptclass
+resetmap	.\Map.cpp	/^void mapclass::resetmap()$/;"	f	class:mapclass
+resetnames	.\Map.cpp	/^void mapclass::resetnames()$/;"	f	class:mapclass
+resetplayer	.\Map.cpp	/^void mapclass::resetplayer(Graphics& dwgfx, Game& game, entityclass& obj, musicclass& music)$/;"	f	class:mapclass
+resize	.\Textbox.cpp	/^void textboxclass::resize()$/;"	f	class:textboxclass
+resourceheader	.\BinaryBlob.h	/^struct resourceheader$/;"	s
+resulttimestring	.\Game.cpp	/^std::string Game::resulttimestring( UtilityClass& help )$/;"	f	class:Game
+resumedelay	.\Map.h	/^    int resumedelay;$/;"	m	class:mapclass
+resumegamemode	.\Graphics.h	/^	bool resumegamemode;$/;"	m	class:Graphics
+resumesong	.\Music.h	/^	int resumesong;$/;"	m	class:musicclass
+revertlinecross	.\Entity.cpp	/^void entityclass::revertlinecross( int t, int s )$/;"	f	class:entityclass
+rightbutton	.\KeyPoll.h	/^	int leftbutton, rightbutton, middlebutton;$/;"	m	class:KeyPoll
+rn	.\Entity.h	11;"	d
+roomchange	.\Game.h	/^    bool roomchange;$/;"	m	class:Game
+roomchangedir	.\Game.h	/^    int roomx, roomy, roomchangedir;$/;"	m	class:Game
+roomdeaths	.\Map.h	/^    std::vector <int> roomdeaths;$/;"	m	class:mapclass
+roomdeathsfinal	.\Map.h	/^    std::vector <int> roomdeathsfinal;$/;"	m	class:mapclass
+roomname	.\Finalclass.h	/^    std::string roomname;$/;"	m	class:finalclass
+roomname	.\Labclass.h	/^    std::string roomname;$/;"	m	class:labclass
+roomname	.\Map.h	/^    std::string roomname;$/;"	m	class:mapclass
+roomname	.\Otherlevel.h	/^    std::string roomname;$/;"	m	class:otherlevelclass
+roomname	.\Spacestation2.h	/^	std::string roomname;$/;"	m	class:spacestation2class
+roomname	.\WarpClass.h	/^	std::string roomname;$/;"	m	class:warpclass
+roomname	.\editor.h	/^	std::string roomname;$/;"	m	class:edlevelclass
+roomnamehide	.\editor.h	/^  int roomnamehide;$/;"	m	class:editorclass
+roomnamemod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+roomtext	.\Map.h	/^    std::vector<std::string> roomtext;$/;"	m	class:mapclass
+roomtext	.\Otherlevel.h	/^    std::vector<std::string> roomtext;$/;"	m	class:otherlevelclass
+roomtextent	.\editor.h	/^  int roomtextent;$/;"	m	class:editorclass
+roomtextmod	.\editor.h	/^  bool roomtextmod;$/;"	m	class:editorclass
+roomtextnumlines	.\Map.h	/^    int roomtextnumlines;$/;"	m	class:mapclass
+roomtextnumlines	.\Otherlevel.h	/^    int roomtextx, roomtexty, roomtextnumlines;$/;"	m	class:otherlevelclass
+roomtexton	.\Map.h	/^    bool roomtexton;$/;"	m	class:mapclass
+roomtexton	.\Otherlevel.h	/^    bool roomtexton;$/;"	m	class:otherlevelclass
+roomtextx	.\Map.h	/^    int roomtextx[100], roomtexty[100];$/;"	m	class:mapclass
+roomtextx	.\Otherlevel.h	/^    int roomtextx, roomtexty, roomtextnumlines;$/;"	m	class:otherlevelclass
+roomtexty	.\Map.h	/^    int roomtextx[100], roomtexty[100];$/;"	m	class:mapclass
+roomtexty	.\Otherlevel.h	/^    int roomtextx, roomtexty, roomtextnumlines;$/;"	m	class:otherlevelclass
+roomtileset	.\Otherlevel.h	/^    int roomtileset;$/;"	m	class:otherlevelclass
+roomx	.\Game.h	/^    int roomx, roomy, roomchangedir;$/;"	m	class:Game
+roomy	.\Game.h	/^    int roomx, roomy, roomchangedir;$/;"	m	class:Game
+rule	.\Ent.h	/^    int type, size, tile, rule;$/;"	m	class:entclass
+run	.\Script.cpp	/^void scriptclass::run( KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:scriptclass
+running	.\Script.h	/^    bool running;$/;"	m	class:scriptclass
+safeToProcessMusic	.\Music.h	/^	bool safeToProcessMusic;$/;"	m	class:musicclass
+save	.\editor.cpp	/^void editorclass::save(std::string& _path)$/;"	f	class:editorclass
+saveDir	.\FileSystemUtils.cpp	/^char saveDir[MAX_PATH];$/;"	v
+saveFilePath	.\Game.h	/^	std::string saveFilePath;$/;"	m	class:Game
+saveandquit	.\editor.h	/^  bool saveandquit;$/;"	m	class:editorclass
+savearea	.\Game.h	/^    std::string savearea;$/;"	m	class:Game
+saveconvertor	.\editor.cpp	/^void editorclass::saveconvertor()$/;"	f	class:editorclass
+savecustomlevelstats	.\Game.cpp	/^void Game::savecustomlevelstats()$/;"	f	class:Game
+savedir	.\Game.h	/^    int savegc, savedir;$/;"	m	class:Game
+savegc	.\Game.h	/^    int savegc, savedir;$/;"	m	class:Game
+savekey	.\editor.h	/^  bool savekey, loadkey;$/;"	m	class:editorclass
+savemod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+savemystats	.\Game.h	/^    bool savemystats;$/;"	m	class:Game
+savepoint	.\Game.h	/^    int savepoint, teleport, teleportxpos;$/;"	m	class:Game
+savequick	.\Game.cpp	/^void Game::savequick( mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+saverx	.\Game.h	/^    int savex, savey, saverx, savery;$/;"	m	class:Game
+savery	.\Game.h	/^    int savex, savey, saverx, savery;$/;"	m	class:Game
+savestats	.\Game.cpp	/^void Game::savestats( mapclass& _map, Graphics& _dwgfx )$/;"	f	class:Game
+savetele	.\Game.cpp	/^void Game::savetele( mapclass& map, entityclass& obj, musicclass& music )$/;"	f	class:Game
+savetime	.\Game.h	/^    std::string savetime;$/;"	m	class:Game
+savetrinkets	.\Game.h	/^    int savetrinkets;$/;"	m	class:Game
+savex	.\Game.h	/^    int savex, savey, saverx, savery;$/;"	m	class:Game
+savey	.\Game.h	/^    int savex, savey, saverx, savery;$/;"	m	class:Game
+sb	.\editor.h	/^  std::string sb[500];$/;"	m	class:editorclass
+sblength	.\editor.h	/^  int sblength;$/;"	m	class:editorclass
+sbscript	.\editor.h	/^  std::string sbscript;$/;"	m	class:editorclass
+sbx	.\editor.h	/^  int sbx, sby;$/;"	m	class:editorclass
+sby	.\editor.h	/^  int sbx, sby;$/;"	m	class:editorclass
+scmcheckdamage	.\Entity.cpp	/^bool entityclass::scmcheckdamage()$/;"	f	class:entityclass
+scmhurt	.\Game.h	/^    bool supercrewmate, scmhurt, scmmoveme;$/;"	m	class:Game
+scmmoveme	.\Game.h	/^    bool supercrewmate, scmhurt, scmmoveme;$/;"	m	class:Game
+scmmovingplatformfix	.\Entity.cpp	/^void entityclass::scmmovingplatformfix( int t, mapclass& map )$/;"	f	class:entityclass
+scmprogress	.\Game.h	/^    int scmprogress;$/;"	m	class:Game
+screenbuffer	.\Graphics.h	/^	Screen* screenbuffer;$/;"	m	class:Graphics
+screenshake	.\Game.h	/^    int screenshake, flashlight;$/;"	m	class:Game
+screenshake	.\Graphics.cpp	/^void Graphics::screenshake()$/;"	f	class:Graphics
+script	.\BlockV.h	/^    std::string script, prompt;$/;"	m	class:blockclass
+script	.\main.cpp	/^scriptclass script;$/;"	v
+scriptclass	.\Script.cpp	/^scriptclass::scriptclass()$/;"	f	class:scriptclass
+scriptclass	.\Script.h	/^class scriptclass$/;"	c
+scriptdelay	.\Script.h	/^    int scriptdelay;$/;"	m	class:scriptclass
+scripteditmod	.\editor.h	/^  bool scripteditmod;$/;"	m	class:editorclass
+scripthelppage	.\editor.h	/^  int scripthelppage, scripthelppagedelay;$/;"	m	class:editorclass
+scripthelppagedelay	.\editor.h	/^  int scripthelppage, scripthelppagedelay;$/;"	m	class:editorclass
+scriptlength	.\Script.h	/^    int position, scriptlength;$/;"	m	class:scriptclass
+scriptname	.\Script.h	/^    std::string scriptname;$/;"	m	class:scriptclass
+scriptname	.\editor.h	/^	std::string scriptname;$/;"	m	class:edentities
+scripttextent	.\editor.h	/^  int scripttextent;$/;"	m	class:editorclass
+scripttextmod	.\editor.h	/^  bool scripttextmod;$/;"	m	class:editorclass
+scripttexttype	.\editor.h	/^  int scripttexttype;$/;"	m	class:editorclass
+scrollamount	.\GraphicsUtil.cpp	/^int scrollamount = 0;$/;"	v
+scrolldir	.\Map.h	/^    int scrolldir;$/;"	m	class:mapclass
+seconds	.\Game.h	/^    int frames, seconds, minutes, hours;$/;"	m	class:Game
+sensitivity	.\KeyPoll.h	/^	int sensitivity;$/;"	m	class:KeyPoll
+setGlobalSoundVol	.\Game.h	/^    void setGlobalSoundVol(const float _vol)$/;"	f	class:Game
+setRect	.\GraphicsUtil.cpp	/^void setRect( SDL_Rect& _r, int x, int y, int w, int h )$/;"	f
+setSensitivity	.\KeyPoll.cpp	/^void KeyPoll::setSensitivity(int _value)$/;"	f	class:KeyPoll
+setblockcolour	.\Entity.cpp	/^void entityclass::setblockcolour( int t, std::string col )$/;"	f	class:entityclass
+setcol	.\Graphics.cpp	/^void Graphics::setcol( int t, UtilityClass& help )$/;"	f	class:Graphics
+setcol	.\Map.cpp	/^void mapclass::setcol(const int r1, const int g1, const int b1 , const int r2, const int g2, const int b2, const int c)$/;"	f	class:mapclass
+setcol	.\Textbox.cpp	/^void textboxclass::setcol(int rr, int gg, int bb)$/;"	f	class:textboxclass
+setcolreal	.\Graphics.cpp	/^void Graphics::setcolreal(Uint32 t)$/;"	f	class:Graphics
+setenemy	.\Entity.cpp	/^void entityclass::setenemy( int t, int r )$/;"	f	class:entityclass
+setenemyroom	.\Entity.cpp	/^void entityclass::setenemyroom( int t, int rx, int ry )$/;"	f	class:entityclass
+setflipmode	.\Graphics.h	/^	bool setflipmode;$/;"	m	class:Graphics
+setteleporter	.\Map.cpp	/^void mapclass::setteleporter(int t, int x, int y)$/;"	f	class:mapclass
+settemprect	.\Entity.cpp	/^void entityclass::settemprect( int t )$/;"	f	class:entityclass
+settile	.\Map.cpp	/^void mapclass::settile(int xp, int yp, int t)$/;"	f	class:mapclass
+settingskey	.\editor.h	/^  bool settingsmod, settingskey;$/;"	m	class:editorclass
+settingsmod	.\editor.h	/^  bool settingsmod, settingskey;$/;"	m	class:editorclass
+settowercolour	.\Map.cpp	/^void mapclass::settowercolour(int t)$/;"	f	class:mapclass
+settreadmillcolour	.\Entity.cpp	/^void entityclass::settreadmillcolour( int t, int rx, int ry )$/;"	f	class:entityclass
+settrinket	.\Map.cpp	/^void mapclass::settrinket(int t, int x, int y)$/;"	f	class:mapclass
+setwarprect	.\Graphics.cpp	/^void Graphics::setwarprect( int a, int b, int c, int d )$/;"	f	class:Graphics
+sfpsmode	.\Game.h	/^    bool sfpsmode;$/;"	m	class:Game
+shiftkey	.\editor.h	/^  bool shiftmenu, shiftkey;$/;"	m	class:editorclass
+shiftmenu	.\editor.h	/^  bool shiftmenu, shiftkey;$/;"	m	class:editorclass
+shinytrinkets	.\Map.h	/^    std::vector<point> shinytrinkets;$/;"	m	class:mapclass
+showcutscenebars	.\Graphics.h	/^	bool showcutscenebars;$/;"	m	class:Graphics
+showship	.\Map.cpp	/^void mapclass::showship()$/;"	f	class:mapclass
+showtargets	.\Map.h	/^    bool showteleporters, showtargets, showtrinkets;$/;"	m	class:mapclass
+showteleporters	.\Map.h	/^    bool showteleporters, showtargets, showtrinkets;$/;"	m	class:mapclass
+showtrinkets	.\Map.h	/^    bool showteleporters, showtargets, showtrinkets;$/;"	m	class:mapclass
+silencedasmusik	.\Music.cpp	/^void musicclass::silencedasmusik()$/;"	f	class:musicclass
+size	.\BinaryBlob.h	/^	int size;$/;"	m	struct:resourceheader
+size	.\Ent.h	/^    int type, size, tile, rule;$/;"	m	class:entclass
+size	.\SDL.h	/^            long size;$/;"	m	struct:SDL_RWops::__anon5::__anon6
+skipblocks	.\Entity.h	/^    bool skipblocks, skipdirblocks;$/;"	m	class:entityclass
+skipdirblocks	.\Entity.h	/^    bool skipblocks, skipdirblocks;$/;"	m	class:entityclass
+slowdown	.\Game.h	/^    int slowdown;$/;"	m	class:Game
+slowsine	.\UtilityClass.h	/^    int slowsine;$/;"	m	class:UtilityClass
+sound	.\SoundSystem.h	/^	Mix_Chunk *sound;$/;"	m	class:SoundTrack
+soundSystem	.\Music.h	/^	SoundSystem soundSystem;$/;"	m	class:musicclass
+soundTracks	.\Music.h	/^	std::vector<SoundTrack> soundTracks;$/;"	m	class:musicclass
+spacemenu	.\editor.h	/^  int spacemenu;$/;"	m	class:editorclass
+spacemod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+spacestation2	.\Map.h	/^    spacestation2class spacestation2;$/;"	m	class:mapclass
+spacestation2class	.\Spacestation2.h	/^class spacestation2class$/;"	c
+spcol	.\Graphics.h	/^	int spcol, spcoldel;$/;"	m	class:Graphics
+spcoldel	.\Graphics.h	/^	int spcol, spcoldel;$/;"	m	class:Graphics
+specialnames	.\Map.h	/^    std::vector<std::string> specialnames;$/;"	m	class:mapclass
+spikecollide	.\Map.cpp	/^bool mapclass::spikecollide(int x, int y)$/;"	f	class:mapclass
+spikedir	.\editor.cpp	/^int editorclass::spikedir( int x, int y )$/;"	f	class:editorclass
+spikefree	.\editor.cpp	/^int editorclass::spikefree( int x, int y )$/;"	f	class:editorclass
+spikelevelbottom	.\Map.h	/^    int spikeleveltop, spikelevelbottom;$/;"	m	class:mapclass
+spikeleveltop	.\Map.h	/^    int spikeleveltop, spikelevelbottom;$/;"	m	class:mapclass
+split	.\UtilityClass.cpp	/^std::vector<std::string> split( const std::string &s, char delim )$/;"	f
+split	.\UtilityClass.cpp	/^std::vector<std::string> split( const std::string &s, char delim, std::vector<std::string> &elems )$/;"	f
+splitseconds	.\UtilityClass.h	/^    std::vector<int> splitseconds;$/;"	m	class:UtilityClass
+sprites	.\Graphics.h	/^	std::vector <SDL_Surface*> sprites;$/;"	m	class:Graphics
+sprites_rect	.\Graphics.h	/^	SDL_Rect sprites_rect;$/;"	m	class:Graphics
+ss_toi	.\UtilityClass.cpp	/^int ss_toi( std::string _s )$/;"	f
+stage	.\titlerender.cpp	/^Stage stage;$/;"	v
+stars	.\Graphics.h	/^	std::vector<SDL_Rect> stars;$/;"	m	class:Graphics
+starsspeed	.\Graphics.h	/^	std::vector<int> starsspeed;$/;"	m	class:Graphics
+start	.\BinaryBlob.h	/^	int start;$/;"	m	struct:resourceheader
+start	.\Game.cpp	/^void Game::start( entityclass& obj, musicclass& music )$/;"	f	class:Game
+startgamemode	.\Script.cpp	/^void scriptclass::startgamemode( int t, KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:scriptclass
+startscript	.\Game.h	/^    bool startscript;$/;"	m	class:Game
+startspecial	.\Game.cpp	/^void Game::startspecial( int t, entityclass& obj, musicclass& music )$/;"	f	class:Game
+starttrial	.\Game.cpp	/^void Game::starttrial( int t, entityclass& obj, musicclass& music )$/;"	f	class:Game
+stat_backgrounds	.\Game.h	/^    bool stat_backgrounds;$/;"	m	class:Game
+stat_flipmode	.\Game.h	/^    bool stat_flipmode;$/;"	m	class:Game
+stat_invincibility	.\Game.h	/^    bool stat_invincibility;$/;"	m	class:Game
+stat_screenshakes	.\Game.h	/^    bool stat_screenshakes;$/;"	m	class:Game
+stat_slowdown	.\Game.h	/^    int stat_slowdown;$/;"	m	class:Game
+stat_trinkets	.\Game.h	/^    int stat_trinkets;$/;"	m	class:Game
+state	.\Ent.h	/^    int state, statedelay;$/;"	m	class:entclass
+state	.\Game.h	/^    int state, statedelay;$/;"	m	class:Game
+statedelay	.\Ent.h	/^    int state, statedelay;$/;"	m	class:entclass
+statedelay	.\Game.h	/^    int state, statedelay;$/;"	m	class:Game
+stdio	.\SDL.h	/^        } stdio;$/;"	m	union:SDL_RWops::__anon5	typeref:struct:SDL_RWops::__anon5::__anon7
+steamUserStats	.\SteamNetwork.c	/^static intptr_t steamUserStats = (intptr_t) NULL;$/;"	v	file:
+stop	.\SDL.h	/^            Uint8 *stop;$/;"	m	struct:SDL_RWops::__anon5::__anon8
+stopmusic	.\Music.cpp	/^void musicclass::stopmusic()$/;"	f	class:musicclass
+strcasecmp	.\Game.cpp	24;"	d	file:
+stretchMode	.\Game.h	/^	int stretchMode;$/;"	m	class:Game
+stretchMode	.\Screen.h	/^	int stretchMode;$/;"	m	class:Screen
+supercrewmate	.\Game.h	/^    bool supercrewmate, scmhurt, scmmoveme;$/;"	m	class:Game
+swapmap	.\editor.h	/^  std::vector <int> swapmap;$/;"	m	class:editorclass
+swfStage	.\titlerender.cpp	/^Stage swfStage;$/;"	v
+swnbestrank	.\Game.h	/^    int  swnrecord, swnbestrank, swnrank, swnmessage;$/;"	m	class:Game
+swncoldelay	.\Game.h	/^    int swntimer, swncolstate, swncoldelay;$/;"	m	class:Game
+swncolour	.\Entity.cpp	/^int entityclass::swncolour( int t )$/;"	f	class:entityclass
+swncolstate	.\Game.h	/^    int swntimer, swncolstate, swncoldelay;$/;"	m	class:Game
+swndeaths	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swndelay	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swnenemiescol	.\Entity.cpp	/^void entityclass::swnenemiescol( int t )$/;"	f	class:entityclass
+swngame	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swnmessage	.\Game.h	/^    int  swnrecord, swnbestrank, swnrank, swnmessage;$/;"	m	class:Game
+swnmode	.\Game.h	/^    bool swnmode;$/;"	m	class:Game
+swnpenalty	.\Game.cpp	/^void Game::swnpenalty()$/;"	f	class:Game
+swnrank	.\Game.h	/^    int  swnrecord, swnbestrank, swnrank, swnmessage;$/;"	m	class:Game
+swnrecord	.\Game.h	/^    int  swnrecord, swnbestrank, swnrank, swnmessage;$/;"	m	class:Game
+swnstate	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swnstate2	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swnstate3	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swnstate4	.\Game.h	/^    int swngame, swnstate, swnstate2, swnstate3, swnstate4, swndelay, swndeaths;$/;"	m	class:Game
+swntimer	.\Game.h	/^    int swntimer, swncolstate, swncoldelay;$/;"	m	class:Game
+t	.\editor.h	/^	int x, y, t;$/;"	m	class:edentities
+tapleft	.\Game.h	/^    int tapleft, tapright;$/;"	m	class:Game
+tapright	.\Game.h	/^    int tapleft, tapright;$/;"	m	class:Game
+tb	.\Textbox.h	/^    int tr,tg,tb;$/;"	m	class:textboxclass
+tb	.\titlerender.cpp	/^int tb;$/;"	v
+tdrawback	.\Map.h	/^    bool tdrawback;$/;"	m	class:mapclass
+tele	.\Graphics.h	/^	std::vector <SDL_Surface*> tele;$/;"	m	class:Graphics
+tele_crewstats	.\Game.h	/^    std::vector<bool> tele_crewstats;$/;"	m	class:Game
+tele_currentarea	.\Game.h	/^    std::string tele_currentarea;$/;"	m	class:Game
+tele_gametime	.\Game.h	/^    std::string tele_gametime;$/;"	m	class:Game
+tele_rect	.\Graphics.h	/^	SDL_Rect tele_rect;$/;"	m	class:Graphics
+tele_trinkets	.\Game.h	/^    int tele_trinkets;$/;"	m	class:Game
+teleblock	.\Game.h	/^    SDL_Rect teleblock;$/;"	m	class:Game
+telecookieexists	.\Game.h	/^    bool telecookieexists;$/;"	m	class:Game
+telegotoship	.\Game.h	/^    void telegotoship()$/;"	f	class:Game
+teleport	.\Game.h	/^    int savepoint, teleport, teleportxpos;$/;"	m	class:Game
+teleport	.\Script.cpp	/^void scriptclass::teleport( Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:scriptclass
+teleport_to_new_area	.\Game.h	/^    bool teleport_to_new_area;$/;"	m	class:Game
+teleport_to_teleporter	.\Game.h	/^    int teleport_to_teleporter;$/;"	m	class:Game
+teleport_to_x	.\Game.h	/^    int teleport_to_x, teleport_to_y;$/;"	m	class:Game
+teleport_to_y	.\Game.h	/^    int teleport_to_x, teleport_to_y;$/;"	m	class:Game
+teleporterinput	.\Input.cpp	/^void teleporterinput(KeyPoll& key, Graphics& dwgfx, Game& game, mapclass& map,$/;"	f
+teleporterrender	.\titlerender.cpp	/^void teleporterrender(Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help)$/;"	f
+teleporters	.\Map.h	/^    std::vector<point> teleporters;$/;"	m	class:mapclass
+teleportscript	.\Game.h	/^    std::string teleportscript;$/;"	m	class:Game
+teleportxpos	.\Game.h	/^    int savepoint, teleport, teleportxpos;$/;"	m	class:Game
+telesummary	.\Game.h	/^    std::string telesummary, quicksummary, customquicksummary;$/;"	m	class:Game
+temp	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+temp	.\Game.h	/^    int temp, j, k;$/;"	m	class:Game
+temp	.\Map.h	/^    int temp;$/;"	m	class:mapclass
+temp	.\UtilityClass.h	/^    int temp;$/;"	m	class:UtilityClass
+temp	.\editor.h	/^  int temp;$/;"	m	class:editorclass
+temp	.\titlerender.cpp	/^int temp;$/;"	v
+temp2	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+temp2	.\Map.h	/^    int temp2;$/;"	m	class:mapclass
+temp2	.\UtilityClass.h	/^    int temp2;$/;"	m	class:UtilityClass
+tempBuffer	.\Graphics.h	/^	SDL_Surface* tempBuffer;$/;"	m	class:Graphics
+temp_unlock	.\Game.h	/^    std::vector<int> temp_unlock;$/;"	m	class:Game
+temp_unlocknotify	.\Game.h	/^    std::vector<int> temp_unlocknotify;$/;"	m	class:Game
+temph	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+temprect	.\Entity.h	/^    SDL_Rect temprect, temprect2;$/;"	m	class:entityclass
+temprect2	.\Entity.h	/^    SDL_Rect temprect, temprect2;$/;"	m	class:entityclass
+tempstring	.\Game.h	/^    std::string teststring, tempstring;$/;"	m	class:Game
+tempstring	.\Graphics.h	/^	std::string tempstring;$/;"	m	class:Graphics
+tempstring	.\UtilityClass.h	/^    std::string tempstring;$/;"	m	class:UtilityClass
+tempstring	.\titlerender.cpp	/^std::string tempstring;$/;"	v
+tempw	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+tempword	.\Script.h	/^    std::string tempword;$/;"	m	class:scriptclass
+tempx	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+tempy	.\Entity.h	/^    int tempx, tempy, tempw, temph, temp, temp2;$/;"	m	class:entityclass
+test	.\Game.h	/^    bool test;$/;"	m	class:Game
+teststring	.\Game.h	/^    std::string teststring, tempstring;$/;"	m	class:Game
+testwallsx	.\Entity.cpp	/^bool entityclass::testwallsx( int t, mapclass& map, int tx, int ty )$/;"	f	class:entityclass
+testwallsy	.\Entity.cpp	/^bool entityclass::testwallsy( int t, mapclass& map, float tx, float ty )$/;"	f	class:entityclass
+textbox	.\Graphics.h	/^	std::vector <textboxclass> textbox;$/;"	m	class:Graphics
+textboxactive	.\Graphics.cpp	/^void Graphics::textboxactive()$/;"	f	class:Graphics
+textboxadjust	.\Graphics.cpp	/^void Graphics::textboxadjust()$/;"	f	class:Graphics
+textboxcenter	.\Graphics.cpp	/^void Graphics::textboxcenter()$/;"	f	class:Graphics
+textboxcenterx	.\Graphics.cpp	/^void Graphics::textboxcenterx()$/;"	f	class:Graphics
+textboxcentery	.\Graphics.cpp	/^void Graphics::textboxcentery()$/;"	f	class:Graphics
+textboxclass	.\Textbox.cpp	/^textboxclass::textboxclass()$/;"	f	class:textboxclass
+textboxclass	.\Textbox.h	/^class textboxclass$/;"	c
+textboxcleanup	.\Graphics.cpp	/^	void Graphics::textboxcleanup()$/;"	f	class:Graphics
+textboxmove	.\Graphics.cpp	/^void Graphics::textboxmove(int xo, int yo)$/;"	f	class:Graphics
+textboxmoveto	.\Graphics.cpp	/^void Graphics::textboxmoveto(int xo)$/;"	f	class:Graphics
+textboxremove	.\Graphics.cpp	/^void Graphics::textboxremove()$/;"	f	class:Graphics
+textboxremovefast	.\Graphics.cpp	/^void Graphics::textboxremovefast()$/;"	f	class:Graphics
+textboxtimer	.\Graphics.cpp	/^void Graphics::textboxtimer( int t )$/;"	f	class:Graphics
+textboxwidth	.\Graphics.cpp	/^int Graphics::textboxwidth()$/;"	f	class:Graphics
+textentry	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+textentrymode	.\KeyPoll.h	/^	bool textentrymode;$/;"	m	class:KeyPoll
+textrect	.\Textbox.h	/^    SDL_Rect textrect;$/;"	m	class:textboxclass
+textx	.\Script.h	/^    int textx;$/;"	m	class:scriptclass
+texty	.\Script.h	/^    int texty;$/;"	m	class:scriptclass
+tg	.\Textbox.h	/^    int tr,tg,tb;$/;"	m	class:textboxclass
+tg	.\titlerender.cpp	/^int tg;$/;"	v
+tile	.\Ent.h	/^    int type, size, tile, rule;$/;"	m	class:entclass
+tilecol	.\editor.h	/^	int tileset, tilecol;$/;"	m	class:edlevelclass
+tiles	.\Graphics.h	/^	std::vector <SDL_Surface*> tiles;$/;"	m	class:Graphics
+tiles2	.\Graphics.h	/^	std::vector <SDL_Surface*> tiles2;$/;"	m	class:Graphics
+tiles3	.\Graphics.h	/^	std::vector <SDL_Surface*> tiles3;$/;"	m	class:Graphics
+tiles_rect	.\Graphics.h	/^	SDL_Rect tiles_rect;$/;"	m	class:Graphics
+tileset	.\Map.h	/^    int tileset;$/;"	m	class:mapclass
+tileset	.\editor.h	/^	int tileset, tilecol;$/;"	m	class:edlevelclass
+tilex	.\editor.h	/^  int tilex, tiley;$/;"	m	class:editorclass
+tiley	.\editor.h	/^  int tilex, tiley;$/;"	m	class:editorclass
+timeCreated	.\editor.h	/^	std::string timeCreated;$/;"	m	class:EditorData
+timeCreated	.\editor.h	/^	std::string timeCreated;$/;"	m	struct:LevelMetaData
+timeModified	.\editor.h	/^	std::string timeModified;$/;"	m	class:EditorData
+timeModified	.\editor.h	/^	std::string timeModified;$/;"	m	struct:LevelMetaData
+timer	.\Textbox.h	/^    int timer;$/;"	m	class:textboxclass
+timerStartTime	.\Game.h	/^	int timerStartTime;$/;"	m	class:Game
+timestring	.\Game.cpp	/^std::string Game::timestring( UtilityClass& help )$/;"	f	class:Game
+timestring	.\UtilityClass.cpp	/^std::string UtilityClass::timestring( int t )$/;"	f	class:UtilityClass
+timetrialcountdown	.\Game.h	/^    int timetrialcountdown, timetrialshinytarget, timetriallevel;$/;"	m	class:Game
+timetriallevel	.\Game.h	/^    int timetrialcountdown, timetrialshinytarget, timetriallevel;$/;"	m	class:Game
+timetrialpar	.\Game.h	/^    int timetrialpar, timetrialresulttime, timetrialrank;$/;"	m	class:Game
+timetrialparlost	.\Game.h	/^    bool intimetrial, timetrialparlost;$/;"	m	class:Game
+timetrialrank	.\Game.h	/^    int timetrialpar, timetrialresulttime, timetrialrank;$/;"	m	class:Game
+timetrialresulttime	.\Game.h	/^    int timetrialpar, timetrialresulttime, timetrialrank;$/;"	m	class:Game
+timetrialshinytarget	.\Game.h	/^    int timetrialcountdown, timetrialshinytarget, timetriallevel;$/;"	m	class:Game
+timetstring	.\Game.cpp	/^std::string Game::timetstring( int t, UtilityClass& help )$/;"	f	class:Game
+title	.\editor.h	/^	std::string title;$/;"	m	class:EditorData
+title	.\editor.h	/^	std::string title;$/;"	m	struct:LevelMetaData
+title	.\editor.h	/^  std::string title;$/;"	m	class:editorclass
+titleinput	.\Input.cpp	/^void titleinput(KeyPoll& key, Graphics& dwgfx, mapclass& map, Game& game, entityclass& obj, UtilityClass& help, musicclass& music)$/;"	f
+titlelogic	.\Logic.cpp	/^void titlelogic( Graphics& dwgfx, Game& game, entityclass& obj, UtilityClass& help, musicclass& music, mapclass& map)$/;"	f
+titlemod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+titlerender	.\titlerender.cpp	/^void titlerender(Graphics& dwgfx, mapclass& map, Game& game, entityclass& obj, UtilityClass& help, musicclass& music)$/;"	f
+tl	.\Graphics.h	/^	point tl;$/;"	m	class:Graphics
+tl	.\Textbox.h	/^    float tl;$/;"	m	class:textboxclass
+tm	.\Textbox.h	/^    int tm;$/;"	m	class:textboxclass
+tmap	.\Map.h	/^    std::vector <std::string> tmap;$/;"	m	class:mapclass
+toggleFullScreen	.\Screen.cpp	/^void Screen::toggleFullScreen()$/;"	f	class:Screen
+toggleFullscreen	.\KeyPoll.h	/^	bool toggleFullscreen;$/;"	m	class:KeyPoll
+toggleLinearFilter	.\Screen.cpp	/^void Screen::toggleLinearFilter()$/;"	f	class:Screen
+toggleStretchMode	.\Screen.cpp	/^void Screen::toggleStretchMode()$/;"	f	class:Screen
+tokenize	.\Script.cpp	/^void scriptclass::tokenize( std::string t )$/;"	f	class:scriptclass
+totalflips	.\Game.h	/^    int totalflips;$/;"	m	class:Game
+tower	.\Map.h	/^    towerclass tower;$/;"	m	class:mapclass
+towerbuffer	.\Graphics.h	/^	SDL_Surface* towerbuffer;$/;"	m	class:Graphics
+towerclass	.\Tower.cpp	/^towerclass::towerclass()$/;"	f	class:towerclass
+towerclass	.\Tower.h	/^class towerclass$/;"	c
+towercol	.\Map.h	/^    int towercol;$/;"	m	class:mapclass
+towerlogic	.\Logic.cpp	/^void towerlogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music, mapclass& map, UtilityClass& help)$/;"	f
+towermode	.\Map.h	/^    bool towermode;$/;"	m	class:mapclass
+towerrender	.\titlerender.cpp	/^void towerrender(Graphics& dwgfx, Game& game, mapclass& map, entityclass& obj, UtilityClass& help)$/;"	f
+tpx1	.\Entity.h	/^    int tpx1, tpy1, tpx2, tpy2;$/;"	m	class:entityclass
+tpx2	.\Entity.h	/^    int tpx1, tpy1, tpx2, tpy2;$/;"	m	class:entityclass
+tpy1	.\Entity.h	/^    int tpx1, tpy1, tpx2, tpy2;$/;"	m	class:entityclass
+tpy2	.\Entity.h	/^    int tpx1, tpy1, tpx2, tpy2;$/;"	m	class:entityclass
+tr	.\Textbox.h	/^    int tr,tg,tb;$/;"	m	class:textboxclass
+tr	.\titlerender.cpp	/^int tr;$/;"	v
+transformname	.\Map.cpp	/^void mapclass::transformname(int t)$/;"	f	class:mapclass
+trigger	.\BlockV.h	/^    int trigger;$/;"	m	class:blockclass
+trinkencollect	.\Game.h	/^    int coins, trinkets, crewmates, trinkencollect;$/;"	m	class:Game
+trinketb	.\Graphics.h	/^	int trinketr, trinketg, trinketb;$/;"	m	class:Graphics
+trinketcolset	.\Graphics.h	/^	bool trinketcolset;$/;"	m	class:Graphics
+trinketg	.\Graphics.h	/^	int trinketr, trinketg, trinketb;$/;"	m	class:Graphics
+trinketr	.\Graphics.h	/^	int trinketr, trinketg, trinketb;$/;"	m	class:Graphics
+trinkets	.\Game.h	/^    int coins, trinkets, crewmates, trinkencollect;$/;"	m	class:Game
+trophytext	.\Entity.h	/^    int trophytext, trophytype;$/;"	m	class:entityclass
+trophytype	.\Entity.h	/^    int trophytext, trophytype;$/;"	m	class:entityclass
+twodigits	.\UtilityClass.cpp	/^std::string UtilityClass::twodigits( int t )$/;"	f	class:UtilityClass
+txt	.\Script.h	/^    std::vector<std::string> txt;$/;"	m	class:scriptclass
+txtnumlines	.\Script.h	/^    int txtnumlines;$/;"	m	class:scriptclass
+type	.\BlockV.h	/^    int type;$/;"	m	class:blockclass
+type	.\Ent.h	/^    int type, size, tile, rule;$/;"	m	class:entclass
+type	.\SDL.h	/^    Uint32 type;$/;"	m	struct:SDL_RWops
+unPackBinary	.\BinaryBlob.cpp	/^bool binaryBlob::unPackBinary(const char* name)$/;"	f	class:binaryBlob
+unknown	.\SDL.h	/^        } unknown;$/;"	m	union:SDL_RWops::__anon5	typeref:struct:SDL_RWops::__anon5::__anon9
+unlock	.\Game.h	/^    std::vector<int> unlock;$/;"	m	class:Game
+unlocknotify	.\Game.h	/^    std::vector<int> unlocknotify;$/;"	m	class:Game
+unlocknum	.\Game.cpp	/^void Game::unlocknum( int t, mapclass& map, Graphics& dwgfx )$/;"	f	class:Game
+unrescued	.\Game.cpp	/^std::string Game::unrescued()$/;"	f	class:Game
+update	.\Textbox.cpp	/^void textboxclass::update()$/;"	f	class:textboxclass
+updatebuttonmappings	.\Input.cpp	/^void updatebuttonmappings(Game& game, KeyPoll& key, musicclass& music, int bind)$/;"	f
+updatecustomlevelstats	.\Game.cpp	/^void Game::updatecustomlevelstats(std::string clevel, int cscore)$/;"	f	class:Game
+updateentities	.\Entity.cpp	/^bool entityclass::updateentities( int i, UtilityClass& help, Game& game, musicclass& music )$/;"	f	class:entityclass
+updateentitylogic	.\Entity.cpp	/^void entityclass::updateentitylogic( int t, Game& game )$/;"	f	class:entityclass
+updateglow	.\UtilityClass.cpp	/^void UtilityClass::updateglow()$/;"	f	class:UtilityClass
+updategraphicsmode	.\titlerender.cpp	/^void updategraphicsmode(Game& game, Graphics& dwgfx)$/;"	f
+updatestate	.\Game.cpp	/^void Game::updatestate( Graphics& dwgfx, mapclass& map, entityclass& obj, UtilityClass& help, musicclass& music )$/;"	f	class:Game
+updatetiles	.\editor.h	/^  bool updatetiles, changeroom;$/;"	m	class:editorclass
+updatetowerglow	.\Map.cpp	/^void mapclass::updatetowerglow()$/;"	f	class:mapclass
+upset	.\Entity.h	/^    int upset;$/;"	m	class:entityclass
+upsetmode	.\Entity.h	/^    bool nearelephant, upsetmode;$/;"	m	class:entityclass
+useFullscreenSpaces	.\KeyPoll.h	/^	bool useFullscreenSpaces;$/;"	m	class:KeyPoll
+useLinearFilter	.\Game.h	/^	bool useLinearFilter;$/;"	m	class:Game
+userdata	.\SDL.h	/^    void *userdata;             \/**< Read-write *\/$/;"	m	struct:SDL_Surface
+useteleporter	.\Game.h	/^    bool useteleporter;$/;"	m	class:Game
+usingmmmmmm	.\Game.h	/^		int usingmmmmmm;$/;"	m	class:Game
+usingmmmmmm	.\Music.h	/^	bool usingmmmmmm;$/;"	m	class:musicclass
+valid	.\BinaryBlob.h	/^	bool valid;$/;"	m	struct:resourceheader
+version	.\SDL.h	/^    Uint32 version;$/;"	m	struct:SDL_Palette
+version	.\editor.h	/^	int version;$/;"	m	struct:LevelMetaData
+version	.\editor.h	/^  int version;$/;"	m	class:editorclass
+vertplatforms	.\Entity.h	/^    bool vertplatforms, horplatforms;$/;"	m	class:entityclass
+vmult	.\Map.h	/^    std::vector <int> vmult;$/;"	m	class:mapclass
+vmult	.\Tower.h	/^    std::vector<int> vmult;$/;"	m	class:towerclass
+vmult	.\editor.h	/^  std::vector <int> vmult;$/;"	m	class:editorclass
+volume	.\Music.h	/^	float volume;$/;"	m	class:musicclass
+volume	.\SDL.h	/^    Uint8 volume;       \/* Per-sample volume, 0-128 *\/$/;"	m	struct:Mix_Chunk
+vx	.\Ent.h	/^    float ax, ay, vx, vy;$/;"	m	class:entclass
+vy	.\Ent.h	/^    float ax, ay, vx, vy;$/;"	m	class:entclass
+w	.\Ent.h	/^    int cx, cy, w, h;$/;"	m	class:entclass
+w	.\SDL.h	/^    int w, h;                   \/**< Read-only *\/$/;"	m	struct:SDL_Surface
+w	.\SDL.h	/^    int w, h;$/;"	m	struct:SDL_Rect
+w	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+walkingframe	.\Ent.h	/^    int framedelay, drawframe, walkingframe, dir, actionframe;$/;"	m	class:entclass
+warpbcol	.\Graphics.h	/^	int warpskip, warpfcol, warpbcol;$/;"	m	class:Graphics
+warpclass	.\WarpClass.h	/^class warpclass$/;"	c
+warpdir	.\editor.h	/^	int warpdir;$/;"	m	class:edlevelclass
+warpent	.\editor.h	/^  int warpent;$/;"	m	class:editorclass
+warpfcol	.\Graphics.h	/^	int warpskip, warpfcol, warpbcol;$/;"	m	class:Graphics
+warplevel	.\Map.h	/^    warpclass warplevel;$/;"	m	class:mapclass
+warpmod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+warprect	.\Graphics.h	/^	SDL_Rect warprect;$/;"	m	class:Graphics
+warpskip	.\Graphics.h	/^	int warpskip, warpfcol, warpbcol;$/;"	m	class:Graphics
+warpto	.\Map.cpp	/^void mapclass::warpto(int rx, int ry , int t, int tx, int ty, Graphics& dwgfx, Game& game, entityclass& obj, musicclass& music)$/;"	f	class:mapclass
+warpx	.\Finalclass.h	/^    bool warpx, warpy;$/;"	m	class:finalclass
+warpx	.\Map.h	/^    bool warpx;$/;"	m	class:mapclass
+warpx	.\WarpClass.h	/^	bool warpx, warpy;$/;"	m	class:warpclass
+warpy	.\Finalclass.h	/^    bool warpx, warpy;$/;"	m	class:finalclass
+warpy	.\Map.h	/^    bool warpy;$/;"	m	class:mapclass
+warpy	.\WarpClass.h	/^	bool warpx, warpy;$/;"	m	class:warpclass
+warpzoneedgetile	.\editor.cpp	/^int editorclass::warpzoneedgetile( int x, int y )$/;"	f	class:editorclass
+warpzonematch	.\editor.cpp	/^int editorclass::warpzonematch( int x, int y )$/;"	f	class:editorclass
+wasFullscreen	.\KeyPoll.h	/^	Uint32 wasFullscreen;$/;"	m	class:KeyPoll
+website	.\editor.h	/^	std::string website;$/;"	m	class:editorclass
+website	.\editor.h	/^	std::string website;$/;"	m	struct:LevelMetaData
+websitemod	.\editor.h	/^  bool titlemod, creatormod, desc1mod, desc2mod, desc3mod, websitemod;$/;"	m	class:editorclass
+weirdloadthing	.\editor.cpp	/^void editorclass::weirdloadthing(std::string t)$/;"	f	class:editorclass
+words	.\Script.h	/^    std::vector<std::string> words;$/;"	m	class:scriptclass
+wp	.\BlockV.h	/^    int xp, yp, wp, hp;$/;"	m	class:blockclass
+write	.\SDL.h	/^    size_t (SDLCALL * write) (struct SDL_RWops * context, const void *ptr,$/;"	m	struct:SDL_RWops
+writeBinaryBlob	.\BinaryBlob.cpp	/^void binaryBlob::writeBinaryBlob(const char* _name)$/;"	f	class:binaryBlob
+x	.\BlockV.h	/^    float x;$/;"	m	class:blockclass
+x	.\Entity.h	/^    int x, k;$/;"	m	class:entityclass
+x	.\Maths.h	/^    int x;$/;"	m	struct:point
+x	.\SDL.h	/^    int x, y;$/;"	m	struct:SDL_Rect
+x	.\Textbox.h	/^    int x,y;$/;"	m	class:textboxclass
+x	.\editor.h	/^	int x, y, t;$/;"	m	class:edentities
+x1	.\Ent.h	/^    int x1,y1,x2,y2;$/;"	m	class:entclass
+x2	.\Ent.h	/^    int x1,y1,x2,y2;$/;"	m	class:entclass
+xVel	.\KeyPoll.h	/^	int xVel, yVel;$/;"	m	class:KeyPoll
+xmod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+xp	.\BlockV.h	/^    int xp, yp, wp, hp;$/;"	m	class:blockclass
+xp	.\Ent.h	/^    int yp;int xp;$/;"	m	class:entclass
+xp	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+y	.\BlockV.h	/^    float y;$/;"	m	class:blockclass
+y	.\Maths.h	/^    int y;$/;"	m	struct:point
+y	.\SDL.h	/^    int x, y;$/;"	m	struct:SDL_Rect
+y	.\Textbox.h	/^    int x,y;$/;"	m	class:textboxclass
+y	.\editor.h	/^	int x, y, t;$/;"	m	class:edentities
+y1	.\Ent.h	/^    int x1,y1,x2,y2;$/;"	m	class:entclass
+y2	.\Ent.h	/^    int x1,y1,x2,y2;$/;"	m	class:entclass
+yVel	.\KeyPoll.h	/^	int xVel, yVel;$/;"	m	class:KeyPoll
+yline	.\Entity.cpp	/^int entityclass::yline( int a, int b )$/;"	f	class:entityclass
+yp	.\BlockV.h	/^    int xp, yp, wp, hp;$/;"	m	class:blockclass
+yp	.\Ent.h	/^    int yp;int xp;$/;"	m	class:entclass
+yp	.\Textbox.h	/^    int xp, yp, lw, w, h, numlines;$/;"	m	class:textboxclass
+ypos	.\Map.h	/^    float ypos;$/;"	m	class:mapclass
+zmod	.\editor.h	/^  bool xmod, zmod, spacemod, warpmod, roomnamemod, textentry, savemod, loadmod;$/;"	m	class:editorclass
+~Game	.\Game.cpp	/^Game::~Game(void)$/;"	f	class:Game
+~Graphics	.\Graphics.cpp	/^Graphics::~Graphics()$/;"	f	class:Graphics
+~GraphicsResources	.\GraphicsResources.cpp	/^GraphicsResources::~GraphicsResources(void)$/;"	f	class:GraphicsResources

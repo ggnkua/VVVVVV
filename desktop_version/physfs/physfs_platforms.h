@@ -72,6 +72,9 @@
 #elif defined(unix) || defined(__unix__)
 #  define PHYSFS_PLATFORM_UNIX 1
 #  define PHYSFS_PLATFORM_POSIX 1
+#elif defined(__m68k__)
+#  define PHYSFS_PLATFORM_UNIX 1
+//#  define PHYSFS_PLATFORM_POSIX 1
 #else
 #  error Unknown platform.
 #endif

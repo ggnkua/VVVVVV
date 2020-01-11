@@ -46,14 +46,14 @@ int main(int argc, char *argv[])
         SDL_INIT_JOYSTICK |
         SDL_INIT_GAMECONTROLLER
     );
-    SDL_ShowCursor(SDL_DISABLE);
+    //SDL_ShowCursor(SDL_DISABLE);
 
-    if (argc > 2 && strcmp(argv[1], "-renderer") == 0)
-    {
-        SDL_SetHintWithPriority(SDL_HINT_RENDER_DRIVER, argv[2], SDL_HINT_OVERRIDE);
-    }
+    //if (argc > 2 && strcmp(argv[1], "-renderer") == 0)
+    //{
+    //    SDL_SetHintWithPriority(SDL_HINT_RENDER_DRIVER, argv[2], SDL_HINT_OVERRIDE);
+    //}
 
-    NETWORK_init();
+    //NETWORK_init();
 
     Screen gameScreen;
 
@@ -124,24 +124,24 @@ int main(int argc, char *argv[])
     graphics.images.push_back(graphics.grphx.im_image12);
 
     const SDL_PixelFormat* fmt = gameScreen.GetFormat();
-    graphics.backBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,32,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask ) ;
-    SDL_SetSurfaceBlendMode(graphics.backBuffer, SDL_BLENDMODE_NONE);
+    //graphics.backBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,32,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask ) ;
+    //SDL_SetSurfaceBlendMode(graphics.backBuffer, SDL_BLENDMODE_NONE);
     graphics.Makebfont();
 
 
-    graphics.foregroundBuffer =  SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
-    SDL_SetSurfaceBlendMode(graphics.foregroundBuffer, SDL_BLENDMODE_NONE);
+    //graphics.forgroundBuffer =  SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
+    //SDL_SetSurfaceBlendMode(graphics.forgroundBuffer, SDL_BLENDMODE_NONE);
 
     graphics.screenbuffer = &gameScreen;
 
-    graphics.menubuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask );
-    SDL_SetSurfaceBlendMode(graphics.menubuffer, SDL_BLENDMODE_NONE);
+    //graphics.menubuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask );
+    //SDL_SetSurfaceBlendMode(graphics.menubuffer, SDL_BLENDMODE_NONE);
 
-    graphics.towerbuffer =  SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
-    SDL_SetSurfaceBlendMode(graphics.towerbuffer, SDL_BLENDMODE_NONE);
+    //graphics.towerbuffer =  SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
+    //SDL_SetSurfaceBlendMode(graphics.towerbuffer, SDL_BLENDMODE_NONE);
 
-	graphics.tempBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
-    SDL_SetSurfaceBlendMode(graphics.tempBuffer, SDL_BLENDMODE_NONE);
+	//graphics.tempBuffer = SDL_CreateRGBSurface(SDL_SWSURFACE ,320 ,240 ,fmt->BitsPerPixel,fmt->Rmask,fmt->Gmask,fmt->Bmask,fmt->Amask  );
+    //SDL_SetSurfaceBlendMode(graphics.tempBuffer, SDL_BLENDMODE_NONE);
 
     //Make a temporary rectangle to hold the offsets
     // SDL_Rect offset;
@@ -246,7 +246,7 @@ int main(int argc, char *argv[])
     {
 		//gameScreen.ClearScreen(0x00);
 
-        time = SDL_GetTicks();
+        //time = SDL_GetTicks();
 
         // Update network per frame.
         NETWORK_update();
@@ -258,8 +258,8 @@ int main(int argc, char *argv[])
           if (timetaken < 24)
           {
               volatile Uint32 delay = 24 - timetaken;
-              SDL_Delay( delay );
-              time = SDL_GetTicks();
+              //SDL_Delay( delay );
+              //time = SDL_GetTicks();
           }
           timePrev = time;
 
@@ -267,8 +267,8 @@ int main(int argc, char *argv[])
           if (timetaken < game.gameframerate)
           {
               volatile Uint32 delay = game.gameframerate - timetaken;
-              SDL_Delay( delay );
-              time = SDL_GetTicks();
+              //SDL_Delay( delay );
+              //time = SDL_GetTicks();
           }
           timePrev = time;
 
@@ -282,18 +282,18 @@ int main(int argc, char *argv[])
 			if(!gameScreen.isWindowed)
 			{
 				//SDL_WM_GrabInput(SDL_GRAB_ON);
-				SDL_ShowCursor(SDL_DISABLE);
-				SDL_ShowCursor(SDL_ENABLE);
+				//SDL_ShowCursor(SDL_DISABLE);
+				//SDL_ShowCursor(SDL_ENABLE);
 			}
 			else
 			{
-				SDL_ShowCursor(SDL_ENABLE);
+				//SDL_ShowCursor(SDL_ENABLE);
 			}
 
 
 			if(game.gamestate == EDITORMODE)
 			{
-				SDL_ShowCursor(SDL_ENABLE);
+				//SDL_ShowCursor(SDL_ENABLE);
 			}
 
 			gameScreen.toggleFullScreen();
@@ -305,7 +305,7 @@ int main(int argc, char *argv[])
 				game.press_right = false;
 				game.press_action = true;
 				game.press_map = false;
-			printf("Error: failed: %s\n", SDL_GetError());
+			//printf("Error: failed: %s\n", SDL_GetError());
 
 
 
@@ -329,7 +329,7 @@ int main(int argc, char *argv[])
             graphics.bprint(5, 230, "Press M to mute in game", 164 - help.glow, 196 - help.glow, 164 - help.glow, true);
             graphics.render();
             //We are minimised, so lets put a bit of a delay to save CPU
-            SDL_Delay(100);
+            //SDL_Delay(100);
         }
         else
         {
@@ -501,16 +501,16 @@ int main(int argc, char *argv[])
             //if (game.globalsound == 1)
             //{
                 game.globalsound = 0;
-                Mix_VolumeMusic(0) ;
-                Mix_Volume(-1,0);
+                //Mix_VolumeMusic(0) ;
+                //Mix_Volume(-1,0);
             //}
         }
 
         if (!game.muted && game.globalsound == 0)
         {
             game.globalsound = 1;
-            Mix_VolumeMusic(MIX_MAX_VOLUME) ;
-            Mix_Volume(-1,MIX_MAX_VOLUME);
+            //Mix_VolumeMusic(MIX_MAX_VOLUME) ;
+            //Mix_Volume(-1,MIX_MAX_VOLUME);
         }
 
 		if(key.resetWindow)
@@ -535,8 +535,8 @@ int main(int argc, char *argv[])
     //SDL_FreeSurface( gameScreen );
 
     //Quit SDL
-    NETWORK_shutdown();
-    SDL_Quit();
+    //NETWORK_shutdown();
+    //SDL_Quit();
     FILESYSTEM_deinit();
 
     return 0;

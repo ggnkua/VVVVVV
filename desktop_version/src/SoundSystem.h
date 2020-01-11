@@ -1,7 +1,7 @@
 #ifndef SOUNDSYSTEM_H
 #define SOUNDSYSTEM_H
 
-#include <SDL_mixer.h>
+//#include <SDL_mixer.h>
 
 class MusicTrack
 {

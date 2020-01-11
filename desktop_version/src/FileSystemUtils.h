@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-int FILESYSTEM_init(char *argvZero);
+void FILESYSTEM_init(char *argvZero);
 void FILESYSTEM_deinit();
 
 char *FILESYSTEM_getUserSaveDirectory();
