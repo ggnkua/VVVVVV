@@ -51,7 +51,7 @@ const char *GCChar(SDL_GameControllerButton button)
 	{
 		return "RB";
 	}
-	SDL_assert(0 && "Unhandled button!");
+	//SDL_assert(0 && "Unhandled button!");
 	return NULL;
 }
 

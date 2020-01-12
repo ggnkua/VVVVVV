@@ -122,7 +122,7 @@ Game::Game(void):
     globalsound = 128;
     m_globalVol = 1.0f;
 
-    timerStartTime= SDL_GetTicks();
+    //timerStartTime= SDL_GetTicks();
 
 		glitchrunkludge = false;
     hascontrol = true;
@@ -7703,5 +7703,5 @@ void Game::resetgameclock()
     seconds = 0;
     minutes = 0;
     hours = 0;
-    timerStartTime = SDL_GetTicks();
+    timerStartTime = 0; //SDL_GetTicks();
 }

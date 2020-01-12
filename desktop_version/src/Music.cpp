@@ -62,142 +62,142 @@ musicclass::musicclass()
 		mmmmmm = false;
 		usingmmmmmm=false;
 		bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
-		SDL_assert(ohCrap && "Music not found!");
+		//SDL_assert(ohCrap && "Music not found!");
 	}
 	else
 	{
 		mmmmmm = true;
 		usingmmmmmm = true;
 		int index = musicReadBlob.getIndex("data/music/0levelcomplete.ogg");
-		SDL_RWops *rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		SDL_RWops *rw; // = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/1pushingonwards.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/2positiveforce.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/3potentialforanything.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/4passionforexploring.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/5intermission.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/6presentingvvvvvv.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/7gamecomplete.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/8predestinedfate.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/9positiveforcereversed.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		///rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/10popularpotpourri.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/11pipedream.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/12pressurecooker.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/13pacedenergy.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/14piercingthesky.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		index = musicReadBlob.getIndex("data/music/predestinedfatefinallevel.ogg");
-		rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
 		bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
-		SDL_assert(ohCrap && "Music not found!");
+		//SDL_assert(ohCrap && "Music not found!");
 	}
 
 	int index = musicReadBlob.getIndex("data/music/0levelcomplete.ogg");
-	SDL_RWops *rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	SDL_RWops *rw; // = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/1pushingonwards.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/2positiveforce.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/3potentialforanything.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/4passionforexploring.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/5intermission.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/6presentingvvvvvv.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/7gamecomplete.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/8predestinedfate.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/9positiveforcereversed.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/10popularpotpourri.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/11pipedream.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/12pressurecooker.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/13pacedenergy.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/14piercingthesky.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	index = musicReadBlob.getIndex("data/music/predestinedfatefinallevel.ogg");
-	rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
+	//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 	musicTracks.push_back(MusicTrack( rw ));
 
 	safeToProcessMusic= false;
@@ -228,7 +228,7 @@ void musicclass::play(int t)
 		}
 	}
 	safeToProcessMusic = true;
-	Mix_VolumeMusic(128);
+	//Mix_VolumeMusic(128);
 	if (currentsong !=t)
 	{
 		if (currentsong != -1)
@@ -249,10 +249,10 @@ void musicclass::play(int t)
 				// Level Complete theme, no fade in or repeat
 				// musicchannel = musicchan[currentsong].play(0);
 				// musicchannel.soundTransform = new SoundTransform(1.0);
-				if(Mix_FadeInMusic(musicTracks[t].m_music, 0, 0)==-1)
-				{
-					printf("Mix_PlayMusic: %s\n", Mix_GetError());
-				}
+				//if(Mix_FadeInMusic(musicTracks[t].m_music, 0, 0)==-1)
+				//{
+				//	printf("Mix_PlayMusic: %s\n", Mix_GetError());
+				//}
 			}
 			else
 			{
@@ -260,10 +260,10 @@ void musicclass::play(int t)
 				// musicchannel = musicchan[currentsong].play(0);
 				// musicchannel.soundTransform = new SoundTransform(0);
 				// musicchannel.addEventListener(Event.SOUND_COMPLETE, loopmusic);
-				if(Mix_FadeInMusic(musicTracks[t].m_music, -1, 3000)==-1)
-				{
-					printf("Mix_FadeInMusic: %s\n", Mix_GetError());
-				}
+				//if(Mix_FadeInMusic(musicTracks[t].m_music, -1, 3000)==-1)
+				//{
+				//	printf("Mix_FadeInMusic: %s\n", Mix_GetError());
+				//}
 			}
 		}
 		else
@@ -286,7 +286,7 @@ void musicclass::stopmusic()
 {
 	// musicchannel.removeEventListener(Event.SOUND_COMPLETE, stopmusic);
 	// musicchannel.stop();
-	Mix_HaltMusic();
+	//Mix_HaltMusic();
 	currentsong = -1;
 }
 
@@ -295,7 +295,7 @@ void musicclass::haltdasmusik()
 	// musicchannel.removeEventListener(Event.SOUND_COMPLETE, stopmusic);
 	// musicchannel.stop();
 	// resumesong = currentsong;
-	Mix_HaltMusic();
+	//Mix_HaltMusic();
 	currentsong = -1;
 }
 
@@ -304,14 +304,14 @@ void musicclass::silencedasmusik()
 	//if(currentsong>-1){
 	//	musicchannel.soundTransform = new SoundTransform(0);
 	//}
-	Mix_VolumeMusic(0) ;
+	//Mix_VolumeMusic(0) ;
 	musicVolume = 0;
 }
 
 void musicclass::fadeMusicVolumeIn(int ms)
 {
 	m_doFadeInVol = true;
-	FadeVolAmountPerFrame =  MIX_MAX_VOLUME / (ms / 33);
+	//FadeVolAmountPerFrame =  MIX_MAX_VOLUME / (ms / 33);
 }
 
 void musicclass::fadeout()
@@ -323,7 +323,7 @@ void musicclass::fadeout()
 	//	}
 	//}
 
-	Mix_FadeOutMusic(2000);
+	//Mix_FadeOutMusic(2000);
 	currentsong = -1;
 }
 
@@ -341,11 +341,11 @@ void musicclass::processmusicfade()
 void musicclass::processmusicfadein()
 {
 	musicVolume += FadeVolAmountPerFrame;
-	Mix_VolumeMusic(musicVolume);
-	if (musicVolume >= MIX_MAX_VOLUME)
-	{
-		m_doFadeInVol = false;
-	}
+	//Mix_VolumeMusic(musicVolume);
+	//if (musicVolume >= MIX_MAX_VOLUME)
+	//{
+	//	m_doFadeInVol = false;
+	//}
 }
 
 void musicclass::processmusic()
@@ -358,7 +358,7 @@ void musicclass::processmusic()
 	//if (musicfade > 0) processmusicfade();
 	//if (musicfadein > 0) processmusicfadein();
 
-	if (nicefade == 1 && Mix_PlayingMusic() == 0)
+	if (nicefade == 1) // && Mix_PlayingMusic() == 0)
 	{
 		play(nicechange);
 		nicechange = -1; nicefade = 0;
@@ -452,9 +452,9 @@ void musicclass::playef(int t, int offset)
 	// if (currentefchan > 15) currentefchan -= 16;
 	int channel;
 
-	channel = Mix_PlayChannel(-1, soundTracks[t].sound, 0);
+	//channel = Mix_PlayChannel(-1, soundTracks[t].sound, 0);
 	if(channel == -1)
 	{
-		fprintf(stderr, "Unable to play WAV file: %s\n", Mix_GetError());
+		//fprintf(stderr, "Unable to play WAV file: %s\n", Mix_GetError());
 	}
 }

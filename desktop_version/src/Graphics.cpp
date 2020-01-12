@@ -158,7 +158,7 @@ void Graphics::Makebfont()
 			SDL_Surface* TempFlipped = FlipSurfaceVerticle(temp);
 
             flipbfont.push_back(TempFlipped);
-			SDL_FreeSurface(temp);
+			//SDL_FreeSurface(temp);
 
         }
     }
@@ -316,14 +316,14 @@ void Graphics::bigprint(  int _x, int _y, std::string _s, int r, int g, int b, b
 			SDL_Surface* tempPrint = ScaleSurfaceSlow(flipbfont[curr], bfont[curr]->w *sc,bfont[curr]->h *sc);
 			SDL_Rect printrect = { Sint16((_x) + bfontpos), Sint16(_y) , Sint16(bfont_rect.w*sc), Sint16(bfont_rect.h * sc)};
 			BlitSurfaceColoured(tempPrint, NULL, backBuffer, &printrect, ct);
-			SDL_FreeSurface(tempPrint);
+			//SDL_FreeSurface(tempPrint);
         }
         else
         {
 			SDL_Surface* tempPrint = ScaleSurfaceSlow(bfont[curr], bfont[curr]->w *sc,bfont[curr]->h *sc);
 			SDL_Rect printrect = { static_cast<Sint16>((_x) + bfontpos), static_cast<Sint16>(_y) , static_cast<Sint16>((bfont_rect.w*sc)+1), static_cast<Sint16>((bfont_rect.h * sc)+1)};
 			BlitSurfaceColoured(tempPrint, NULL, backBuffer, &printrect, ct);
-			SDL_FreeSurface(tempPrint);
+			//SDL_FreeSurface(tempPrint);
         }
         bfontpos+=bfontlen[curr] *sc;
     }
@@ -1911,7 +1911,7 @@ void Graphics::drawentities( mapclass& map, entityclass& obj, UtilityClass& help
 						SDL_Rect drawRect = {Sint16(obj.entities[i].xp ), Sint16(obj.entities[i].yp), sprites_rect.x, sprites_rect.y   };
 						SDL_Surface* TempSurface = ScaleSurface( flipsprites[obj.entities[i].drawframe], 6* sprites_rect.w,6* sprites_rect.w );
 						BlitSurfaceColoured(TempSurface, NULL , backBuffer,  &drawRect, ct );
-						SDL_FreeSurface(TempSurface);
+						//SDL_FreeSurface(TempSurface);
                 		//scaleMatrix.translate(-obj.entities[i].xp, -obj.entities[i].yp);
                 	}
 					else
@@ -1924,7 +1924,7 @@ void Graphics::drawentities( mapclass& map, entityclass& obj, UtilityClass& help
 						SDL_Rect drawRect = {Sint16(obj.entities[i].xp ), Sint16(obj.entities[i].yp), Sint16(sprites_rect.x * 6), Sint16(sprites_rect.y * 6 ) };
 						SDL_Surface* TempSurface = ScaleSurface( flipsprites[obj.entities[i].drawframe], 6 * sprites_rect.w,6* sprites_rect.h );
 						BlitSurfaceColoured(TempSurface, NULL , backBuffer,  &drawRect, ct );
-						SDL_FreeSurface(TempSurface);
+						//SDL_FreeSurface(TempSurface);
                 	}
 
 
@@ -2216,7 +2216,7 @@ void Graphics::drawbackground( int t, mapclass& map )
             backgrounddrawn = true;
         }
 
-        SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
+        //SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
         break;
     case 5:
         //Warp zone, central
@@ -2589,7 +2589,7 @@ void Graphics::drawtowerbackgroundsolo( mapclass& map )
                 drawtowertile3(i * 8, (j * 8) - (map.bypos % 8), temp, map.colstate);
             }
         }
-        SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
+        //SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
         map.tdrawback = false;
     }
     else
@@ -2602,7 +2602,7 @@ void Graphics::drawtowerbackgroundsolo( mapclass& map )
             drawtowertile3(i * 8, -(map.bypos % 8), temp, map.colstate);
         }
 
-        SDL_BlitSurface(towerbuffer, NULL, backBuffer,NULL);
+        //SDL_BlitSurface(towerbuffer, NULL, backBuffer,NULL);
     }
 }
 
@@ -2628,7 +2628,7 @@ void Graphics::drawtowerbackground( mapclass& map )
         }
 
         //backbuffer.copyPixels(towerbuffer, towerbuffer.rect, tl, null, null, false);
-        SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
+        //SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
 
         map.tdrawback = false;
     }
@@ -2645,7 +2645,7 @@ void Graphics::drawtowerbackground( mapclass& map )
         }
 
         //backbuffer.copyPixels(towerbuffer, towerbuffer.rect, tl, null, null, false);
-        SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
+        //SDL_BlitSurface(towerbuffer,NULL, backBuffer,NULL);
     }
 }
 
@@ -2872,14 +2872,14 @@ void Graphics::menuoffrender()
 		//	flipmatrix.translate(0, -menuoffset);
 		SDL_Surface* tempbufferFlipped = FlipSurfaceVerticle(tempBuffer);
 		//put the stored backbuffer in the backbuffer.
-		SDL_FillRect(backBuffer, NULL, 0x00000000);
+		//SDL_FillRect(backBuffer, NULL, 0x00000000);
 		BlitSurfaceStandard(tempbufferFlipped, NULL, backBuffer, NULL);
-		SDL_FreeSurface(tempbufferFlipped);
+		//SDL_FreeSurface(tempbufferFlipped);
 		SDL_Rect offsetRect;
 		setRect (offsetRect, 0, menuoffset, backBuffer->w ,backBuffer->h);
 		SDL_Surface* temp = FlipSurfaceVerticle(menubuffer);
 		BlitSurfaceStandard(temp,NULL,backBuffer,&offsetRect);
-		SDL_FreeSurface(temp);
+		//SDL_FreeSurface(temp);
 	}
 	else
 	{
@@ -3011,7 +3011,7 @@ void Graphics::screenshake()
 		setRect(shakeRect,tpoint.x, tpoint.y, backBuffer->w, backBuffer->h);
 		SDL_Surface* flipBackBuffer = FlipSurfaceVerticle(backBuffer);
 		screenbuffer->UpdateScreen( flipBackBuffer, &shakeRect);
-		SDL_FreeSurface(flipBackBuffer);
+		//SDL_FreeSurface(flipBackBuffer);
 	}
 	else
 	{
@@ -3051,7 +3051,7 @@ void Graphics::render()
 		if(tempsurface != NULL)
 		{
 			screenbuffer->UpdateScreen( tempsurface, &rect);
-			SDL_FreeSurface(tempsurface);
+			//SDL_FreeSurface(tempsurface);
 		}
 	}
 	else
@@ -3105,14 +3105,14 @@ void Graphics::bigrprint(int x, int y, std::string& t, int r, int g, int b, bool
 			SDL_Surface* tempPrint = ScaleSurfaceSlow(flipbfont[cur], bfont[cur]->w *sc,bfont[cur]->h *sc);
 			SDL_Rect printrect = { Sint16(x + bfontpos), Sint16(y) , Sint16(bfont_rect.w*sc), Sint16(bfont_rect.h * sc)};
 			BlitSurfaceColoured(tempPrint, NULL, backBuffer, &printrect ,ct);
-			SDL_FreeSurface(tempPrint);
+			//SDL_FreeSurface(tempPrint);
 		}
 		else
 		{
 			SDL_Surface* tempPrint = ScaleSurfaceSlow(bfont[cur], bfont[cur]->w *sc,bfont[cur]->h *sc);
 			SDL_Rect printrect = { Sint16((x) + bfontpos), Sint16(y) , Sint16(bfont_rect.w*sc), Sint16(bfont_rect.h * sc)};
 			BlitSurfaceColoured(tempPrint, NULL, backBuffer, &printrect, ct);
-			SDL_FreeSurface(tempPrint);
+			//SDL_FreeSurface(tempPrint);
 		}
 		bfontpos+=bfontlen[cur]* sc;
 	}
@@ -3135,12 +3135,12 @@ void Graphics::drawtele(int x, int y, int t, int c, UtilityClass& help)
 
 Uint32 Graphics::getRGB(Uint8 r, Uint8 g, Uint8 b)
 {
-	return SDL_MapRGB(backBuffer->format, b, g, r);
+	return 1; //SDL_MapRGB(backBuffer->format, b, g, r);
 }
 
 Uint32 Graphics::getBGR(Uint8 r, Uint8 g, Uint8 b)
 {
-	return SDL_MapRGB(backBuffer->format, r, g, b);
+	return 1; //SDL_MapRGB(backBuffer->format, r, g, b);
 }
 
 Uint32 Graphics::getRGB(Uint32 _col)
@@ -3150,7 +3150,7 @@ Uint32 Graphics::getRGB(Uint32 _col)
 
 Uint32 Graphics::RGBflip(Uint8  r, Uint8  g, Uint8  b)
 {
-	return SDL_MapRGB(backBuffer->format, r, g, b);
+	return 1; //SDL_MapRGB(backBuffer->format, r, g, b);
 }
 
 Uint32 Graphics::RGBf(int r, int g, int b)
@@ -3158,7 +3158,7 @@ Uint32 Graphics::RGBf(int r, int g, int b)
 	r = (r+128) / 3;
 	g = (g+128) / 3;
 	b = (b+128) / 3;
-	return SDL_MapRGB(backBuffer->format, r, g, b);
+	return 1; //SDL_MapRGB(backBuffer->format, r, g, b);
 }
 
 void Graphics::setcolreal(Uint32 t)

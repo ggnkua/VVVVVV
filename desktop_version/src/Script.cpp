@@ -3278,7 +3278,7 @@ void scriptclass::startgamemode( int t, KeyPoll& key, Graphics& dwgfx, Game& gam
 	case 100:
 		game.savestats(map, dwgfx);
 
-		SDL_Quit();
+		//SDL_Quit();
 		exit(0);
 		break;
 	}

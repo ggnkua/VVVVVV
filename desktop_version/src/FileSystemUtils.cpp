@@ -15,7 +15,7 @@
 #include <shlobj.h>
 #define mkdir(a, b) CreateDirectory(a, NULL)
 #define VNEEDS_MIGRATION (mkdirResult != 0)
-#elif defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__) || defined(__OpenBSD__)
+#elif defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__) || defined(__OpenBSD__) || defined(__mc68000)
 #include <sys/stat.h>
 #include <limits.h>
 #define VNEEDS_MIGRATION (mkdirResult == 0)
@@ -83,14 +83,14 @@ int FILESYSTEM_init(char *argvZero)
 		puts("Grab it from your purchased copy of the game,");
 		puts("or get it from the free Make and Play Edition.");
 
-		SDL_ShowSimpleMessageBox(
-			SDL_MESSAGEBOX_ERROR,
-			"data.zip missing!",
-			"You do not have data.zip!"
-			"\n\nGrab it from your purchased copy of the game,"
-			"\nor get it from the free Make and Play Edition.",
-			NULL
-		);
+		//SDL_ShowSimpleMessageBox(
+		//	SDL_MESSAGEBOX_ERROR,
+		//	"data.zip missing!",
+		//	"You do not have data.zip!"
+		//	"\n\nGrab it from your purchased copy of the game,"
+		//	"\nor get it from the free Make and Play Edition.",
+		//	NULL
+		//);
 		return 0;
 	}
 	return 1;
@@ -164,171 +164,10 @@ void PLATFORM_getOSDirectory(char* output)
 #elif defined(_WIN32)
 	SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, output);
 	strcat(output, "\\VVVVVV\\");
+#elif defined(__m68k__)
+    strcat(output, "\\VVVVVV\\");
 #else
 #error See PLATFORM_getOSDirectory
-#endif
-}
-
-void PLATFORM_migrateSaveData(char* output)
-{
-	char oldLocation[MAX_PATH];
-	char newLocation[MAX_PATH];
-	char oldDirectory[MAX_PATH];
-#if defined(__linux__) || defined(__APPLE__) || defined(__FreeBSD__) || defined(__OpenBSD__)
-	DIR *dir = NULL;
-	struct dirent *de = NULL;
-	DIR *subDir = NULL;
-	struct dirent *subDe = NULL;
-	char subDirLocation[MAX_PATH];
-	const char *homeDir = getenv("HOME");
-	if (homeDir == NULL)
-	{
-		/* Uhh, I don't want to get near this. -flibit */
-		return;
-	}
-	strcpy(oldDirectory, homeDir);
-#if defined(__linux__) || defined(__FreeBSD__) || defined(__OpenBSD__)
-	strcat(oldDirectory, "/.vvvvvv/");
-#elif defined(__APPLE__)
-	strcat(oldDirectory, "/Documents/VVVVVV/");
-#endif
-	dir = opendir(oldDirectory);
-	if (!dir)
-	{
-		printf("Could not find directory %s\n", oldDirectory);
-		return;
-	}
-
-	printf("Migrating old savedata to new location...\n");
-	for (de = readdir(dir); de != NULL; de = readdir(dir))
-	{
-		if (	strcmp(de->d_name, "..") == 0 ||
-			strcmp(de->d_name, ".") == 0	)
-		{
-			continue;
-		}
-		#define COPY_SAVEFILE(name) \
-			else if (strcmp(de->d_name, name) == 0) \
-			{ \
-				strcpy(oldLocation, oldDirectory); \
-				strcat(oldLocation, name); \
-				strcpy(newLocation, output); \
-				strcat(newLocation, "saves/"); \
-				strcat(newLocation, name); \
-				PLATFORM_copyFile(oldLocation, newLocation); \
-			}
-		COPY_SAVEFILE("unlock.vvv")
-		COPY_SAVEFILE("tsave.vvv")
-		COPY_SAVEFILE("qsave.vvv")
-		#undef COPY_SAVEFILE
-		else if (strstr(de->d_name, ".vvvvvv.vvv") != NULL)
-		{
-			strcpy(oldLocation, oldDirectory);
-			strcat(oldLocation, de->d_name);
-			strcpy(newLocation, output);
-			strcat(newLocation, "saves/");
-			strcat(newLocation, de->d_name);
-			PLATFORM_copyFile(oldLocation, newLocation);
-		}
-		else if (strstr(de->d_name, ".vvvvvv") != NULL)
-		{
-			strcpy(oldLocation, oldDirectory);
-			strcat(oldLocation, de->d_name);
-			strcpy(newLocation, output);
-			strcat(newLocation, "levels/");
-			strcat(newLocation, de->d_name);
-			PLATFORM_copyFile(oldLocation, newLocation);
-		}
-		else if (strcmp(de->d_name, "Saves") == 0)
-		{
-			strcpy(subDirLocation, oldDirectory);
-			strcat(subDirLocation, "Saves/");
-			subDir = opendir(subDirLocation);
-			if (!subDir)
-			{
-				printf("Could not open Saves/ subdir!\n");
-				continue;
-			}
-			for (
-				subDe = readdir(subDir);
-				subDe != NULL;
-				subDe = readdir(subDir)
-			) {
-				#define COPY_SAVEFILE(name) \
-					(strcmp(subDe->d_name, name) == 0) \
-					{ \
-						strcpy(oldLocation, subDirLocation); \
-						strcat(oldLocation, name); \
-						strcpy(newLocation, output); \
-						strcat(newLocation, "saves/"); \
-						strcat(newLocation, name); \
-						PLATFORM_copyFile(oldLocation, newLocation); \
-					}
-				if COPY_SAVEFILE("unlock.vvv")
-				else if COPY_SAVEFILE("tsave.vvv")
-				else if COPY_SAVEFILE("qsave.vvv")
-				#undef COPY_SAVEFILE
-			}
-		}
-	}
-#elif defined(_WIN32)
-	WIN32_FIND_DATA findHandle;
-	HANDLE hFind = NULL;
-	char fileSearch[MAX_PATH];
-
-	/* Same place, different layout. */
-	strcpy(oldDirectory, output);
-
-	/* In theory we don't need to worry about this, thanks case insensitivity!
-	sprintf(fileSearch, "%s\\Saves\\*.vvv", oldDirectory);
-	hFind = FindFirstFile(fileSearch, &findHandle);
-	if (hFind == INVALID_HANDLE_VALUE)
-	{
-		printf("Could not find directory %s\\Saves\\\n", oldDirectory);
-	}
-	else do
-	{
-		if ((findHandle.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0)
-		{
-			#define COPY_SAVEFILE(name) \
-				(strcmp(findHandle.cFileName, name) == 0) \
-				{ \
-					strcpy(oldLocation, oldDirectory); \
-					strcat(oldLocation, "Saves\\"); \
-					strcat(oldLocation, name); \
-					strcpy(newLocation, output); \
-					strcat(newLocation, "saves\\"); \
-					strcat(newLocation, name); \
-					PLATFORM_copyFile(oldLocation, newLocation); \
-				}
-			if COPY_SAVEFILE("unlock.vvv")
-			else if COPY_SAVEFILE("tsave.vvv")
-			else if COPY_SAVEFILE("qsave.vvv")
-			#undef COPY_SAVEFILE
-		}
-	} while (FindNextFile(hFind, &findHandle));
-	*/
-
-	sprintf(fileSearch, "%s\\*.vvvvvv", oldDirectory);
-	hFind = FindFirstFile(fileSearch, &findHandle);
-	if (hFind == INVALID_HANDLE_VALUE)
-	{
-		printf("Could not find directory %s\n", oldDirectory);
-	}
-	else do
-	{
-		if ((findHandle.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0)
-		{
-			strcpy(oldLocation, oldDirectory);
-			strcat(oldLocation, findHandle.cFileName);
-			strcpy(newLocation, output);
-			strcat(newLocation, "levels\\");
-			strcat(newLocation, findHandle.cFileName);
-			PLATFORM_copyFile(oldLocation, newLocation);
-		}
-	} while (FindNextFile(hFind, &findHandle));
-#else
-#error See PLATFORM_migrateSaveData
 #endif
 }
 

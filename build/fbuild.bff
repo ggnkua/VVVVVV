@@ -1,9 +1,9 @@
 .PROJECT_ROOT=".."
 
 .GCCROOT="c:\svn\gitsfap\gcc7"
-.GPP='$GCCROOT$\bin\m68k-ataribrowrer-elf-g++'
-.GCC='$GCCROOT$\bin\m68k-ataribrowrer-elf-gcc'
-.AS= '$GCCROOT$\bin\m68k-ataribrowrer-elf-as'
+.GPP='$GCCROOT$\bin\m68k-ataribrowner-elf-g++'
+.GCC='$GCCROOT$\bin\m68k-ataribrowner-elf-gcc'
+.AS= '$GCCROOT$\bin\m68k-ataribrowner-elf-as'
 
 .CFLAGS=" "
     +"-DPHYSFS_SUPPORTS_DEFAULT=0 "
@@ -13,6 +13,15 @@
     +"-I$PROJECT_ROOT$/desktop_version/physfs "
     +"-I$PROJECT_ROOT$/desktop_version/lodepng "
     +"-I$GCCROOT$/include "
+    +' -m68000'
+    +' -Ofast'
+    +' -fomit-frame-pointer'
+    +' -fstrict-aliasing'
+    +' -fcaller-saves'
+    +' -ffunction-sections'
+    +' -fdata-sections'
+    +' -fleading-underscore'
+    +' -flto'
 
 .LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
 .PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"

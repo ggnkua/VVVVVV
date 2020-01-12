@@ -45,37 +45,37 @@ SDL_Surface* LoadImage(const char *filename, bool noBlend = true, bool noAlpha =
 	}
 	FILESYSTEM_freeMemory(&fileIn);
 
-	loadedImage = SDL_CreateRGBSurfaceFrom(
-		data,
-		width,
-		height,
-		noAlpha ? 24 : 32,
-		width * (noAlpha ? 3 : 4),
-		0x000000FF,
-		0x0000FF00,
-		0x00FF0000,
-		noAlpha ? 0x00000000 : 0xFF000000
-	);
+	//loadedImage = SDL_CreateRGBSurfaceFrom(
+	//	data,
+	//	width,
+	//	height,
+	//	noAlpha ? 24 : 32,
+	//	width * (noAlpha ? 3 : 4),
+	//	0x000000FF,
+	//	0x0000FF00,
+	//	0x00FF0000,
+	//	noAlpha ? 0x00000000 : 0xFF000000
+	//);
 
 	if (loadedImage != NULL)
 	{
-		optimizedImage = SDL_ConvertSurfaceFormat(
-			loadedImage,
-			SDL_PIXELFORMAT_ABGR8888, // FIXME: Format? -flibit
-			0
-		);
-		SDL_FreeSurface( loadedImage );
+		//optimizedImage = SDL_ConvertSurfaceFormat(
+		//	loadedImage,
+		//	SDL_PIXELFORMAT_ABGR8888, // FIXME: Format? -flibit
+		//	0
+		//);
+		//SDL_FreeSurface( loadedImage );
 		free(data);
 		if (noBlend)
 		{
-			SDL_SetSurfaceBlendMode(optimizedImage, SDL_BLENDMODE_BLEND);
+			//SDL_SetSurfaceBlendMode(optimizedImage, SDL_BLENDMODE_BLEND);
 		}
 		return optimizedImage;
 	}
 	else
 	{
 		fprintf(stderr,"Image not found: %s\n", filename);
-		SDL_assert(0 && "Image not found! See stderr.");
+		//SDL_assert(0 && "Image not found! See stderr.");
 		return NULL;
 	}
 }
