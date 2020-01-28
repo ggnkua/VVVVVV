@@ -1,9 +1,9 @@
 .PROJECT_ROOT=".."
 
 .GCCROOT="c:\svn\gitsfap\gcc7"
-.GPP='$GCCROOT$\bin\m68k-ataribrowner-elf-g++'
-.GCC='$GCCROOT$\bin\m68k-ataribrowner-elf-gcc'
-.AS= '$GCCROOT$\bin\m68k-ataribrowner-elf-as'
+.GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++'
+.GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc'
+.AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as'
 
 .CFLAGS=" "
     +"-DPHYSFS_SUPPORTS_DEFAULT=0 "
@@ -14,14 +14,15 @@
     +"-I$PROJECT_ROOT$/desktop_version/lodepng "
     +"-I$GCCROOT$/include "
     +' -m68000'
-    +' -Ofast'
+    ;+' -Ofast'
     +' -fomit-frame-pointer'
     +' -fstrict-aliasing'
     +' -fcaller-saves'
     +' -ffunction-sections'
     +' -fdata-sections'
     +' -fleading-underscore'
-    +' -flto'
+    ;+' -flto'
+    +' -fno-exceptions'
 
 .LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
 .PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
@@ -31,15 +32,15 @@
 
 Compiler ( 'g++7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-g++.exe'
+    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++.exe'
 }
 Compiler ( 'gcc7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-gcc.exe'
+    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc.exe'
 }
 Compiler ( 'gas7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-ataribrowner-elf-as.exe'
+    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as.exe'
     .CompilerFamily='custom'
 }
 
@@ -154,21 +155,27 @@ Executable( 'game' )
                }
     .LinkerLinkObjects=true
     .LinkerOutput='vvvvvv.elf'
-    .LinkerOptions='%1 -o %2'
+    .LinkerOptions='brownboot.o browncrti.o browncrt++.o zerolibc.o zerocrtfini.o'
+                  +' %1 browncrtn.o -o %2'
                   +' -Wl,--emit-relocs'
                   +' -Wl,-e_start'
                   +' -Ttext=0'
                   +' -nostdlib'
                   +' -nostartfiles'
                   +' -m68000'
-                  +' -Ofast'
+                  ;+' -Ofast'
                   +' -fomit-frame-pointer'
                   +' -fstrict-aliasing'
                   +' -fcaller-saves'
                   +' -ffunction-sections'
                   +' -fdata-sections'
                   +' -fleading-underscore'
-                  +' -flto'
+                  +' -fno-exceptions'
+                  ;+' -flto'
+                  +' -L.'
+                  +' -lstdc++'
+                  +' -lgcc'
+                  +' -lc'
 }
 
 Exec ( 'brown' )
