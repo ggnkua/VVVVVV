@@ -63,43 +63,43 @@ bool GetButtonFromString(const char *pText, SDL_GameControllerButton *button)
 		return true;
 	}
 	if (	*pText == '4' ||
-		strcasecmp(pText, "BACK") == 0	)
+		strcmp(pText, "BACK") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_BACK;
 		return true;
 	}
 	if (	*pText == '5' ||
-		strcasecmp(pText, "GUIDE") == 0	)
+		strcmp(pText, "GUIDE") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_GUIDE;
 		return true;
 	}
 	if (	*pText == '6' ||
-		strcasecmp(pText, "START") == 0	)
+		strcmp(pText, "START") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_START;
 		return true;
 	}
 	if (	*pText == '7' ||
-		strcasecmp(pText, "LS") == 0	)
+		strcmp(pText, "LS") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_LEFTSTICK;
 		return true;
 	}
 	if (	*pText == '8' ||
-		strcasecmp(pText, "RS") == 0	)
+		strcmp(pText, "RS") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_RIGHTSTICK;
 		return true;
 	}
 	if (	*pText == '9' ||
-		strcasecmp(pText, "LB") == 0	)
+		strcmp(pText, "LB") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_LEFTSHOULDER;
 		return true;
 	}
 	if (	strcmp(pText, "10") == 0 ||
-		strcasecmp(pText, "RB") == 0	)
+		strcmp(pText, "RB") == 0	)
 	{
 		*button = SDL_CONTROLLER_BUTTON_RIGHTSHOULDER;
 		return true;
