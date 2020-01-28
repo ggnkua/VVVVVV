@@ -1,5 +1,5 @@
 #include "Logic.h"
-#include "Network.h"
+//#include "Network.h"
 
 extern int temp;
 
@@ -762,7 +762,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 1;
                     if (game.swnbestrank < 1)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav5");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav5");
                         game.swnbestrank = 1;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
@@ -773,7 +773,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 2;
                     if (game.swnbestrank < 2)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav10");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav10");
                         game.swnbestrank = 2;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
@@ -784,7 +784,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 3;
                     if (game.swnbestrank < 3)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav15");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav15");
                         game.swnbestrank = 3;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
@@ -795,7 +795,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 4;
                     if (game.swnbestrank < 4)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav20");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav20");
                         game.swnbestrank = 4;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
@@ -806,7 +806,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 5;
                     if (game.swnbestrank < 5)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav30");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav30");
                         game.swnbestrank = 5;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
@@ -817,7 +817,7 @@ void gamelogic(Graphics& dwgfx, Game& game, entityclass& obj,  musicclass& music
                     game.swnrank = 6;
                     if (game.swnbestrank < 6)
                     {
-												NETWORK_unlockAchievement("vvvvvvsupgrav60");
+												//NETWORK_unlockAchievement("vvvvvvsupgrav60");
                         game.swnbestrank = 6;
                         game.swnmessage = 2+30;
                         music.playef(26, 10);
