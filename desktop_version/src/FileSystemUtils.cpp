@@ -8,7 +8,6 @@
 #include <string.h>
 
 #include <SDL.h>
-#include <physfs.h>
 
 #if defined(_WIN32)
 #include <windows.h>
@@ -23,21 +22,19 @@
 #include <unistd.h>
 #include <dirent.h>
 #define MAX_PATH PATH_MAX
+#include <osbind.h>
 #endif
 
 char saveDir[MAX_PATH];
 char levelDir[MAX_PATH];
 
 void PLATFORM_getOSDirectory(char* output);
-void PLATFORM_migrateSaveData(char* output);
 void PLATFORM_copyFile(const char *oldLocation, const char *newLocation);
 
 int FILESYSTEM_init(char *argvZero)
 {
 	char output[MAX_PATH];
 	int mkdirResult;
-
-	PHYSFS_init(argvZero);
 
 	/* Determine the OS user directory */
 	PLATFORM_getOSDirectory(output);
@@ -46,28 +43,23 @@ int FILESYSTEM_init(char *argvZero)
 	mkdirResult = mkdir(output, 0777);
 
 	/* Mount our base user directory */
-	PHYSFS_mount(output, NULL, 1);
 	printf("Base directory: %s\n", output);
 
 	/* Create save directory */
 	strcpy(saveDir, output);
 	strcat(saveDir, "saves");
-	strcat(saveDir, PHYSFS_getDirSeparator());
+	strcat(saveDir, "\\");
 	mkdir(saveDir, 0777);
 	printf("Save directory: %s\n", saveDir);
 
 	/* Create level directory */
 	strcpy(levelDir, output);
 	strcat(levelDir, "levels");
-	strcat(levelDir, PHYSFS_getDirSeparator());
+	strcat(saveDir, "\\");
 	mkdirResult |= mkdir(levelDir, 0777);
 	printf("Level directory: %s\n", levelDir);
 
 	/* We didn't exist until now, migrate files! */
-	if (VNEEDS_MIGRATION)
-	{
-		PLATFORM_migrateSaveData(output);
-	}
 
 	/* Mount the stock content last */
 #ifdef _WIN32
@@ -76,29 +68,29 @@ int FILESYSTEM_init(char *argvZero)
 #else
 	strcpy(output, "data.zip");
 #endif
-	if (!PHYSFS_mount(output, NULL, 1))
-	{
-		puts("Error: data.zip missing!");
-		puts("You do not have data.zip!");
-		puts("Grab it from your purchased copy of the game,");
-		puts("or get it from the free Make and Play Edition.");
+	//if (!PHYSFS_mount(output, NULL, 1))
+	//{
+	//	puts("Error: data.zip missing!");
+	//	puts("You do not have data.zip!");
+	//	puts("Grab it from your purchased copy of the game,");
+	//	puts("or get it from the free Make and Play Edition.");
 
-		//SDL_ShowSimpleMessageBox(
-		//	SDL_MESSAGEBOX_ERROR,
-		//	"data.zip missing!",
-		//	"You do not have data.zip!"
-		//	"\n\nGrab it from your purchased copy of the game,"
-		//	"\nor get it from the free Make and Play Edition.",
-		//	NULL
-		//);
-		return 0;
-	}
+	//	//SDL_ShowSimpleMessageBox(
+	//	//	SDL_MESSAGEBOX_ERROR,
+	//	//	"data.zip missing!",
+	//	//	"You do not have data.zip!"
+	//	//	"\n\nGrab it from your purchased copy of the game,"
+	//	//	"\nor get it from the free Make and Play Edition.",
+	//	//	NULL
+	//	//);
+	//	return 0;
+	//}
 	return 1;
 }
 
 void FILESYSTEM_deinit()
 {
-	PHYSFS_deinit();
+	//PHYSFS_deinit();
 }
 
 char *FILESYSTEM_getUserSaveDirectory()
@@ -113,19 +105,20 @@ char *FILESYSTEM_getUserLevelDirectory()
 
 void FILESYSTEM_loadFileToMemory(const char *name, unsigned char **mem, size_t *len)
 {
-	PHYSFS_File *handle = PHYSFS_openRead(name);
+    FILE *handle=fopen(name,"r");
 	if (handle == NULL)
 	{
 		return;
 	}
-	PHYSFS_uint32 length = PHYSFS_fileLength(handle);
+    uint32_t length=fseek(handle,0,2);
+    fseek(handle,0,0);
 	if (len != NULL)
 	{
 		*len = length;
 	}
 	*mem = (unsigned char*) malloc(length);
-	PHYSFS_readBytes(handle, *mem, length);
-	PHYSFS_close(handle);
+    fread(*mem,length,1,handle);
+    fclose(handle);
 }
 
 void FILESYSTEM_freeMemory(unsigned char **mem)
@@ -137,22 +130,21 @@ void FILESYSTEM_freeMemory(unsigned char **mem)
 std::vector<std::string> FILESYSTEM_getLevelDirFileNames()
 {
 	std::vector<std::string> list;
-	char **fileList = PHYSFS_enumerateFiles("/levels");
+    _DTA *my_dta = Fgetdta();
+    short fnd = Fsfirst("levels\\*.*", 0xff);
 	char **i;
 	std::string builtLocation;
 
-	for (i = fileList; *i != NULL; i++)
+	while (!fnd)
 	{
-		if (strcmp(*i, "data") == 0)
-		{
-			continue; /* FIXME: lolwut -flibit */
-		}
+		//if (strcmp(*i, "data") == 0)
+		//{
+		//	continue; /* FIXME: lolwut -flibit */
+		//}
 		builtLocation = "levels/";
-		builtLocation += *i;
+		builtLocation += my_dta->dta_name;
 		list.push_back(builtLocation);
 	}
-
-	PHYSFS_freeList(fileList);
 
 	return list;
 }

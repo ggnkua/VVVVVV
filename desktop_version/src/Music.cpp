@@ -57,14 +57,14 @@ musicclass::musicclass()
 #endif
 
 	binaryBlob musicReadBlob;
-	if (!musicReadBlob.unPackBinary("mmmmmm.vvv"))
-	{
-		mmmmmm = false;
-		usingmmmmmm=false;
-		bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
-		//SDL_assert(ohCrap && "Music not found!");
-	}
-	else
+	//if (!musicReadBlob.unPackBinary("mmmmmm.vvv"))
+	//{
+	//	mmmmmm = false;
+	//	usingmmmmmm=false;
+	//	bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
+	//	//SDL_assert(ohCrap && "Music not found!");
+	//}
+	//else
 	{
 		mmmmmm = true;
 		usingmmmmmm = true;
@@ -132,7 +132,7 @@ musicclass::musicclass()
 		//rw = SDL_RWFromMem(musicReadBlob.getAddress(index), musicReadBlob.getSize(index));
 		musicTracks.push_back(MusicTrack( rw ));
 
-		bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
+		//bool ohCrap = musicReadBlob.unPackBinary("vvvvvvmusic.vvv");
 		//SDL_assert(ohCrap && "Music not found!");
 	}
 

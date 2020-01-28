@@ -249,7 +249,7 @@ int main(int argc, char *argv[])
         //time = SDL_GetTicks();
 
         // Update network per frame.
-        NETWORK_update();
+        //NETWORK_update();
 
         //framerate limit to 30
         Uint32 timetaken = time - timePrev;

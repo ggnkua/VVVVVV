@@ -4,9 +4,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* FIXME: Abstract to FileSystemUtils! */
-#include <physfs.h>
-
 binaryBlob::binaryBlob()
 {
 	numberofHeaders = 0;
@@ -78,50 +75,6 @@ void binaryBlob::writeBinaryBlob(const char* _name)
 	}
 }
 #endif
-
-bool binaryBlob::unPackBinary(const char* name)
-{
-	PHYSFS_sint64 size;
-
-	PHYSFS_File *handle = PHYSFS_openRead(name);
-	if (handle == NULL)
-	{
-		printf("Unable to open file %s\n", name);
-		return false;
-	}
-
-	size = PHYSFS_fileLength(handle);
-
-	PHYSFS_readBytes(handle, &m_headers, sizeof(resourceheader) * 128);
-
-	int offset = 0 + (sizeof(resourceheader) * 128);
-
-	for (int i = 0; i < 128; i += 1)
-	{
-		if (m_headers[i].valid)
-		{
-			PHYSFS_seek(handle, offset);
-			m_memblocks[i] = (char*) malloc(m_headers[i].size);
-			PHYSFS_readBytes(handle, m_memblocks[i], m_headers[i].size);
-			offset += m_headers[i].size;
-		}
-	}
-	PHYSFS_close(handle);
-
-	printf("The complete reloaded file size: %li\n", size);
-
-	for (int i = 0; i < 128; i += 1)
-	{
-		if (m_headers[i].valid == false)
-		{
-			break;
-		}
-
-		printf("%s unpacked\n", m_headers[i].name);
-	}
-
-	return true;
-}
 
 int binaryBlob::getIndex(const char* _name)
 {

@@ -1,6 +1,6 @@
 .PROJECT_ROOT=".."
 
-.GCCROOT="c:\svn\gitsfap\gcc7"
+.GCCROOT="C:\u-blox\workspaces\gottardo_trial\0\browncc9.2"
 .GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++'
 .GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc'
 .AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as'
@@ -22,7 +22,8 @@
     +' -fdata-sections'
     +' -fleading-underscore'
     ;+' -flto'
-    +' -fno-exceptions'
+
+.CPPFLAGS=' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall
 
 .LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
 .PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
@@ -138,7 +139,7 @@ ObjectList( 'tinyxml' )
 ObjectList( 'vvvvvv' )
 {
     .Compiler='g++7'
-    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ %1 -c -o %2'
     .CompilerOutputPath='vvvvvv'
     .CompilerOutputExtension='.o'
     .CompilerInputFiles=.VVVVVV_SRC
@@ -149,13 +150,13 @@ Executable( 'game' )
     .Linker="$GPP$"
     .Libraries={
                 "vvvvvv",
-                "physfs",
+                ;"physfs",
                 "tinyxml",
                 "lodepng"
                }
     .LinkerLinkObjects=true
     .LinkerOutput='vvvvvv.elf'
-    .LinkerOptions='brownboot.o browncrti.o browncrt++.o zerolibc.o zerocrtfini.o'
+    .LinkerOptions='browncrti.o browncrt++.o zerolibc.o zerocrtfini.o'
                   +' %1 browncrtn.o -o %2'
                   +' -Wl,--emit-relocs'
                   +' -Wl,-e_start'
@@ -170,12 +171,13 @@ Executable( 'game' )
                   +' -ffunction-sections'
                   +' -fdata-sections'
                   +' -fleading-underscore'
-                  +' -fno-exceptions'
+                  +' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ;-Wall
                   ;+' -flto'
                   +' -L.'
                   +' -lstdc++'
                   +' -lgcc'
                   +' -lc'
+                  +' $CPPFLAGS$'
 }
 
 Exec ( 'brown' )
