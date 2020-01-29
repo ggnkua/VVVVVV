@@ -1,6 +1,9 @@
 #include "UtilityClass.h"
 
 #include "SDL.h"
+#include <support.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include <sstream>
 
@@ -57,20 +60,32 @@ const char *GCChar(SDL_GameControllerButton button)
 
 int ss_toi( std::string _s )
 {
-	std::istringstream i(_s);
-	int x;
-	i >> x;
-	return x;
+    // ggn converted this to something that doesn't throw exceptions
+    // (because sure as hell our compiler doesn't support those things)
+    char s[32];
+    strcpy(s,_s.c_str());
+    return atoi(s);
 }
 
 std::vector<std::string> split( const std::string &s, char delim, std::vector<std::string> &elems )
 {
-	std::stringstream ss(s);
-	std::string item;
-	while(std::getline(ss, item, delim))
-	{
-		elems.push_back(item);
-	}
+	//std::stringstream ss(s);
+	//std::string item;
+	//while(std::getline(ss, item, delim))
+	//{
+	//	elems.push_back(item);
+	//}
+    // ggn just gave up and copypasta'd https://stackoverflow.com/a/14266139
+    // (butchered it a little too)
+    std::string ss=s;
+    size_t pos = 0;
+    std::string token;
+    while ((pos = ss.find(delim)) != std::string::npos) {
+        token = ss.substr(0, pos);
+        elems.push_back(token);
+        ss.erase(0, pos + 1);
+    }
+
 	return elems;
 }
 
@@ -97,9 +112,15 @@ glow(0),
 
 std::string UtilityClass::String( int _v )
 {
-	std::ostringstream os;
-	os << _v;
-	return(os.str());
+	//std::ostringstream os;
+	//os << _v;
+	//return(os.str());
+    // ggn converted this to something that doesn't throw exceptions
+    // (because sure as hell our compiler doesn't support those things)
+    char os[32];
+    _ltoa(_v,os,10);
+    std::string os_(os);
+    return os_;
 }
 
 std::string UtilityClass::GCString(std::vector<SDL_GameControllerButton> buttons)

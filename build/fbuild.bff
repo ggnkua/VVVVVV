@@ -23,7 +23,7 @@
     +' -fleading-underscore'
     ;+' -flto'
 
-.CPPFLAGS=' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall
+.CPPFLAGS=' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder -Wall'
 
 .LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
 .PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
@@ -171,7 +171,7 @@ Executable( 'game' )
                   +' -ffunction-sections'
                   +' -fdata-sections'
                   +' -fleading-underscore'
-                  +' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ;-Wall
+                  +' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder -Wall'
                   ;+' -flto'
                   +' -L.'
                   +' -lstdc++'
@@ -182,7 +182,7 @@ Executable( 'game' )
 
 Exec ( 'brown' )
 {
-	.ExecExecutable='bin\brownout'
+	.ExecExecutable='$GCCROOT$\bin\brownout'
     .ExecInput='vvvvvv.elf'
     .ExecOutput='vvvvvv.tos'
     .ExecArguments='-s -x -f -p 0 -i %1 -o %2'
