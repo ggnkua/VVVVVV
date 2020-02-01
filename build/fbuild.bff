@@ -1,9 +1,9 @@
 .PROJECT_ROOT=".."
 
-.GCCROOT="C:\u-blox\workspaces\gottardo_trial\0\browncc9.2"
-.GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++'
-.GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc'
-.AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as'
+.GCCROOT="C:\svn\browncc9.2"
+.GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++.exe'
+.GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc.exe'
+.AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as.exe'
 
 .CFLAGS=" "
     +"-DPHYSFS_SUPPORTS_DEFAULT=0 "
@@ -23,7 +23,7 @@
     +' -fleading-underscore'
     ;+' -flto'
 
-.CPPFLAGS=' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder -Wall'
+.CPPFLAGS=' -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall'
 
 .LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
 .PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
@@ -33,15 +33,15 @@
 
 Compiler ( 'g++7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++.exe'
+    .Executable=.GPP
 }
 Compiler ( 'gcc7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc.exe'
+    .Executable=.GCC
 }
 Compiler ( 'gas7' )
 {
-    .Executable='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as.exe'
+    .Executable=.AS
     .CompilerFamily='custom'
 }
 
@@ -130,7 +130,7 @@ ObjectList( 'physfs' )
 ObjectList( 'tinyxml' )
 {
     .Compiler='g++7'
-    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
+    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ %1 -c -o %2'
     .CompilerOutputPath='tinyxml'
     .CompilerOutputExtension='.o'
     .CompilerInputFiles=.TINYXML_SRC
@@ -171,7 +171,7 @@ Executable( 'game' )
                   +' -ffunction-sections'
                   +' -fdata-sections'
                   +' -fleading-underscore'
-                  +' -std=c++0x -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder -Wall'
+                  +' -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall'
                   ;+' -flto'
                   +' -L.'
                   +' -lstdc++'
@@ -182,7 +182,7 @@ Executable( 'game' )
 
 Exec ( 'brown' )
 {
-	.ExecExecutable='$GCCROOT$\bin\brownout'
+	.ExecExecutable='$GCCROOT$\bin\brownout.exe'
     .ExecInput='vvvvvv.elf'
     .ExecOutput='vvvvvv.tos'
     .ExecArguments='-s -x -f -p 0 -i %1 -o %2'
