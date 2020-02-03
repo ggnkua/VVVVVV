@@ -1,20 +1,17 @@
 .PROJECT_ROOT=".."
 
-.GCCROOT="C:\svn\browncc9.2"
+.GCCROOT="C:\u-blox\workspaces\gottardo_trial\0\browncc9.2"
 .GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++.exe'
 .GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc.exe'
 .AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as.exe'
 
-.CFLAGS=" "
-    +"-DPHYSFS_SUPPORTS_DEFAULT=0 "
-    +"-DPHYSFS_SUPPORTS_ZIP=0 "
-    +"-I$PROJECT_ROOT$/desktop_version/src "
-    +"-I$PROJECT_ROOT$/desktop_version/tinyxml "
-    +"-I$PROJECT_ROOT$/desktop_version/physfs "
-    +"-I$PROJECT_ROOT$/desktop_version/lodepng "
-    +"-I$GCCROOT$/include "
+.CFLAGS=''
+    +' -I$PROJECT_ROOT$/desktop_version/src'
+    +' -I$PROJECT_ROOT$/desktop_version/tinyxml'
+    +' -I$GCCROOT$/include'
     +' -m68000'
-    ;+' -Ofast'
+    +' -Os'
+.CODEGEN_FLAGS=''
     +' -fomit-frame-pointer'
     +' -fstrict-aliasing'
     +' -fcaller-saves'
@@ -23,10 +20,13 @@
     +' -fleading-underscore'
     ;+' -flto'
 
-.CPPFLAGS=' -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall'
+.CPPFLAGS=''
+    +' -fno-exceptions'
+    +' -fno-rtti'
+    +' -fno-threadsafe-statics'
+    +' -Wno-reorder'
+    ;+' -Wall'
 
-.LODEPNG_PATH="$PROJECT_ROOT$/desktop_version/lodepng"
-.PHYSFS_PATH= "$PROJECT_ROOT$/desktop_version/physfs"
 .TINYXML_PATH="$PROJECT_ROOT$/desktop_version/tinyxml"
 .VVVVVV_PATH= "$PROJECT_ROOT$/desktop_version/src"
 
@@ -47,24 +47,6 @@ Compiler ( 'gas7' )
 
 
 ; File lists
-.LODEPNG_SRC=
-{
-    "$LODEPNG_PATH$/lodepng.c"
-}
-
-.PHYSFS_SRC=
-{
-    "$PHYSFS_PATH$/physfs.c"
-    "$PHYSFS_PATH$/physfs_archiver_dir.c"
-    "$PHYSFS_PATH$/physfs_archiver_unpacked.c"
-    "$PHYSFS_PATH$/physfs_archiver_zip.c"
-    "$PHYSFS_PATH$/physfs_byteorder.c"
-    "$PHYSFS_PATH$/physfs_unicode.c"
-    "$PHYSFS_PATH$/physfs_platform_posix.c"
-    "$PHYSFS_PATH$/physfs_platform_unix.c"
-    "$PHYSFS_PATH$/physfs_platform_windows.c"
-}
-
 .TINYXML_SRC=
 {
     "$TINYXML_PATH$/tinystr.cpp"
@@ -109,28 +91,10 @@ Compiler ( 'gas7' )
     ;"$VVVVVV_PATH$/SteamNetwork.c"
 }
 
-ObjectList( 'lodepng' )
-{
-    .Compiler='gcc7'
-    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
-    .CompilerOutputPath='lodepng'
-    .CompilerOutputExtension='.o'
-    .CompilerInputFiles=.LODEPNG_SRC
-}
-
-ObjectList( 'physfs' )
-{
-    .Compiler='gcc7'
-    .CompilerOptions='$CFLAGS$ %1 -c -o %2'
-    .CompilerOutputPath='physfs'
-    .CompilerOutputExtension='.o'
-    .CompilerInputFiles=.PHYSFS_SRC
-}
-
 ObjectList( 'tinyxml' )
 {
     .Compiler='g++7'
-    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ %1 -c -o %2'
+    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ $CODEGEN_FLAGS$ %1 -c -o %2'
     .CompilerOutputPath='tinyxml'
     .CompilerOutputExtension='.o'
     .CompilerInputFiles=.TINYXML_SRC
@@ -139,7 +103,7 @@ ObjectList( 'tinyxml' )
 ObjectList( 'vvvvvv' )
 {
     .Compiler='g++7'
-    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ %1 -c -o %2'
+    .CompilerOptions='$CFLAGS$ $CPPFLAGS$ $CODEGEN_FLAGS$ %1 -c -o %2'
     .CompilerOutputPath='vvvvvv'
     .CompilerOutputExtension='.o'
     .CompilerInputFiles=.VVVVVV_SRC
@@ -150,9 +114,7 @@ Executable( 'game' )
     .Linker="$GPP$"
     .Libraries={
                 "vvvvvv",
-                ;"physfs",
                 "tinyxml",
-                "lodepng"
                }
     .LinkerLinkObjects=true
     .LinkerOutput='vvvvvv.elf'
@@ -163,21 +125,12 @@ Executable( 'game' )
                   +' -Ttext=0'
                   +' -nostdlib'
                   +' -nostartfiles'
-                  +' -m68000'
-                  ;+' -Ofast'
-                  +' -fomit-frame-pointer'
-                  +' -fstrict-aliasing'
-                  +' -fcaller-saves'
-                  +' -ffunction-sections'
-                  +' -fdata-sections'
-                  +' -fleading-underscore'
-                  +' -fno-exceptions -fno-rtti -fno-threadsafe-statics -Wno-reorder' ; -Wall'
-                  ;+' -flto'
+                  +' $CPPFLAGS$'
+                  +' $CODEGEN_FLAGS$'
                   +' -L.'
                   +' -lstdc++'
                   +' -lgcc'
                   +' -lc'
-                  +' $CPPFLAGS$'
 }
 
 Exec ( 'brown' )

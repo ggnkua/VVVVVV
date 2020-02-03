@@ -4,23 +4,23 @@
 #include <stdlib.h>
 
 // Used to load PNG data
-extern "C"
-{
-	extern unsigned lodepng_decode24(
-		unsigned char** out,
-		unsigned* w,
-		unsigned* h,
-		const unsigned char* in,
-		size_t insize
-	);
-	extern unsigned lodepng_decode32(
-		unsigned char** out,
-		unsigned* w,
-		unsigned* h,
-		const unsigned char* in,
-		size_t insize
-	);
-}
+//extern "C"
+//{
+//	extern unsigned lodepng_decode24(
+//		unsigned char** out,
+//		unsigned* w,
+//		unsigned* h,
+//		const unsigned char* in,
+//		size_t insize
+//	);
+//	extern unsigned lodepng_decode32(
+//		unsigned char** out,
+//		unsigned* w,
+//		unsigned* h,
+//		const unsigned char* in,
+//		size_t insize
+//	);
+//}
 
 SDL_Surface* LoadImage(const char *filename, bool noBlend = true, bool noAlpha = false)
 {
@@ -35,14 +35,17 @@ SDL_Surface* LoadImage(const char *filename, bool noBlend = true, bool noAlpha =
 	unsigned char *fileIn = NULL;
 	size_t length = 0;
 	FILESYSTEM_loadFileToMemory(filename, &fileIn, &length);
-	if (noAlpha)
-	{
-		lodepng_decode24(&data, &width, &height, fileIn, length);
-	}
-	else
-	{
-		lodepng_decode32(&data, &width, &height, fileIn, length);
-	}
+    // ggn: nah, we *really* don't want to have the graphics
+    //      stored as PNG. Never mind the code bloat, but
+    //      depacking times will be horrible, I'm sure
+	//if (noAlpha)
+	//{
+	//	lodepng_decode24(&data, &width, &height, fileIn, length);
+	//}
+	//else
+	//{
+	//	lodepng_decode32(&data, &width, &height, fileIn, length);
+	//}
 	FILESYSTEM_freeMemory(&fileIn);
 
 	//loadedImage = SDL_CreateRGBSurfaceFrom(
