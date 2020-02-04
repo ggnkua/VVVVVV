@@ -1,6 +1,6 @@
 .PROJECT_ROOT=".."
 
-.GCCROOT="C:\u-blox\workspaces\gottardo_trial\0\browncc9.2"
+.GCCROOT="C:\svn\browncc9.2"
 .GPP='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-g++.exe'
 .GCC='$GCCROOT$\bin\m68k-atarihyperbrowner-elf-gcc.exe'
 .AS= '$GCCROOT$\bin\m68k-atarihyperbrowner-elf-as.exe'
@@ -138,7 +138,7 @@ Exec ( 'brown' )
 	.ExecExecutable='$GCCROOT$\bin\brownout.exe'
     .ExecInput='vvvvvv.elf'
     .ExecOutput='vvvvvv.tos'
-    .ExecArguments='-s -x -f -p 0 -i %1 -o %2'
+    .ExecArguments='-s -x -p 0 -i %1 -o %2'
 }
 
 Alias( 'all' ) { .Targets = { 'game', 'brown'} }
