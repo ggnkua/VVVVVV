@@ -1443,7 +1443,7 @@ static short rn_default[30][40]={
     
 };
 
-std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)
+short *labclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)
 {
 	int t;
 
@@ -1480,7 +1480,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		rcol=1;
 		roomname = "Get Ready To Bounce";
-		break;
+        return (short *)rn_50_50;
+        break;
 
 	case rn(50,51):
 
@@ -1488,7 +1489,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 0;
 
 		roomname = "It's Perfectly Safe";
-		break;
+        return (short *)rn_50_51;
+        break;
 
 	case rn(49,51):
 
@@ -1497,7 +1499,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 4;
 
 		roomname = "Rascasse";
-		break;
+        return (short *)rn_49_51;
+        break;
 
 	case rn(49,52):
 
@@ -1509,7 +1512,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 2;
 
 		roomname = "Keep Going";
-		break;
+        return (short *)rn_49_52;
+        break;
 
 	case rn(48,52):
 
@@ -1520,7 +1524,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=3;
 
 		roomname = "Single-slit Experiment";
-		break;
+        return (short *)rn_48_52;
+        break;
 
 
 	case rn(48,53):
@@ -1531,7 +1536,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 5;
 
 		roomname = "Don't Flip Out";
-		break;
+        return (short *)rn_48_53;
+        break;
 
 	case rn(49,53):
 
@@ -1545,7 +1551,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 1;
 
 		roomname = "Shuffled Hallway";
-		break;
+        return (short *)rn_49_53;
+        break;
 
 	case rn(50,53):
 
@@ -1554,7 +1561,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 3;
 
 		roomname = "Double-slit Experiment";
-		break;
+        return (short *)rn_50_53;
+        break;
 
 	case rn(51,53):
 
@@ -1564,7 +1572,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.createentity(game, 40, 112, 10, 0, 253511);  // (savepoint)
 		rcol = 2;
 		roomname = "They Call Him Flipper";
-		break;
+        return (short *)rn_51_53;
+        break;
 
 	case rn(52,53):
 
@@ -1572,7 +1581,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.createentity(game, 64, 164, 11, 200);  // (horizontal gravity line)
 		rcol = 4;
 		roomname = "Three's a Crowd";
-		break;
+        return (short *)rn_52_53;
+        break;
 
 	case rn(52,52):
 
@@ -1582,7 +1592,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.createentity(game, 80, 96, 10, 1, 252521);  // (savepoint)
 		rcol = 2;
 		roomname = "Hitting the Apex";
-		break;
+        return (short *)rn_52_52;
+        break;
 
 	case rn(51,52):
 
@@ -1594,7 +1605,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=0;
 
 		roomname = "Square Root";
-		break;
+        return (short *)rn_51_52;
+        break;
 
 
 	case rn(51,51):
@@ -1603,7 +1615,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.createentity(game, 176, 180, 11, 112);  // (horizontal gravity line)
 		rcol = 4;
 		roomname = "Thorny Exchange";
-		break;
+        return (short *)rn_51_51;
+        break;
 
 	case rn(51,50):
 
@@ -1613,7 +1626,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.createentity(game, 88, 112, 10, 0, 250510);  // (savepoint)
 		roomname = "Brought to you by the letter G";
 		rcol = 1;
-		break;
+        return (short *)rn_51_50;
+        break;
 
 	case rn(52,50):
 
@@ -1622,14 +1636,16 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=2;
 
 		roomname = "Free Your Mind";
-		break;
+        return (short *)rn_52_50;
+        break;
 
 	case rn(52,51):
 
 		obj.createentity(game, 80, 180, 11, 248);  // (horizontal gravity line)
 		rcol=0;
 		roomname = "I Changed My Mind, Thelma...";
-		break;
+        return (short *)rn_52_51;
+        break;
 
 	case rn(53,51):
 
@@ -1638,7 +1654,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=4;
 
 		roomname = "Indirect Jump Vector";
-		break;
+        return (short *)rn_53_51;
+        break;
 
 	case rn(53,50):
 
@@ -1646,7 +1663,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=5;
 
 		roomname = "In a Single Bound";
-		break;
+        return (short *)rn_53_50;
+        break;
 
 	case rn(54,50):
 
@@ -1656,7 +1674,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=1;
 
 		roomname = "Barani, Barani";
-		break;
+        return (short *)rn_54_50;
+        break;
 
 
 	case rn(54,51):
@@ -1667,7 +1686,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=2;
 
 		roomname = "Safety Dance";
-		break;
+        return (short *)rn_54_51;
+        break;
 
 	case rn(55,50):
 
@@ -1675,7 +1695,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		rcol=3;
 		roomname = "Heady Heights";
-		break;
+        return (short *)rn_55_50;
+        break;
 
 	case rn(55,49):
 
@@ -1690,7 +1711,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 5;
 
 		roomname = "Entanglement Generator";
-		break;
+        return (short *)rn_55_49;
+        break;
 
 
 	case rn(55,51):
@@ -1699,7 +1721,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		rcol = 0;
 		roomname = "Exausted?";
-		break;
+        return (short *)rn_55_51;
+        break;
 
 
 	case rn(55,52):
@@ -1709,7 +1732,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 4;
 
 		roomname = "The Tantalizing Trinket";
-		break;
+        return (short *)rn_55_52;
+        break;
 
 	case rn(55,53):
 
@@ -1720,7 +1744,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=1;
 
 		roomname = "The Bernoulli Principle";
-		break;
+        return (short *)rn_55_53;
+        break;
 
 	case rn(55,54):
 
@@ -1730,7 +1755,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 5;
 
 		roomname = "Standing Wave";
-		break;
+        return (short *)rn_55_54;
+        break;
 
 	case rn(54,54):
 
@@ -1740,7 +1766,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		obj.fatal_top();
 		roomname = "Topsy Turvyism";
-		break;
+        return (short *)rn_54_54;
+        break;
 
 	case rn(53,54):
 
@@ -1756,7 +1783,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		obj.fatal_top();
 		roomname = "Spike Strip Deployed";
-		break;
+        return (short *)rn_53_54;
+        break;
 
 	case rn(52,54):
 
@@ -1769,7 +1797,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.fatal_top();
 		roomname = "Vibrating String Problem";
 		rcol = 5;
-		break;
+        return (short *)rn_52_54;
+        break;
 
 	case rn(51,54):
 
@@ -1782,7 +1811,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		obj.fatal_top();
 		roomname = "Merge";
-		break;
+        return (short *)rn_51_54;
+        break;
 
 	case rn(50,54):
 
@@ -1796,7 +1826,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		obj.fatal_top();
 
 		roomname = "Kids His Age Bounce";
-		break;
+        return (short *)rn_50_54;
+        break;
 
 	case rn(49,54):
 
@@ -1807,7 +1838,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=2;
 
 		roomname = "I'm Sorry";
-		break;
+        return (short *)rn_49_54;
+        break;
 
 
 	case rn(49,55):
@@ -1817,7 +1849,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=4;
 
 		roomname = "Please Forgive Me!";
-		break;
+        return (short *)rn_49_55;
+        break;
 
 	case rn(50,55):
 
@@ -1828,7 +1861,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=1;
 
 		roomname = "Playing Foosball";
-		break;
+        return (short *)rn_50_55;
+        break;
 
 	case rn(51,55):
 
@@ -1846,7 +1880,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=5;
 
 		roomname = "A Difficult Chord";
-		break;
+        return (short *)rn_51_55;
+        break;
 
 	case rn(52,55):
 
@@ -1858,19 +1893,22 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 0;
 
 		roomname = "The Living Dead End";
-		break;
+        return (short *)rn_52_55;
+        break;
 
 	case rn(52,56):
 		rcol=3;
 
 		roomname = "AAAAAA";
-		break;
+        return (short *)rn_52_56;
+        break;
 
 	case rn(52,57):
 		rcol = 2;
 
 		roomname = "Diode";
-		break;
+        return (short *)rn_52_57;
+        break;
 
 
 	case rn(50,52):
@@ -1885,14 +1923,16 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol=0;
 
 		roomname = "Young Man, It's Worth the Challenge";
-		break;
+        return (short *)rn_50_52;
+        break;
 
 	case rn(53,55):
 
 		rcol = 6;
 
 		roomname = "Anomaly";
-		break;
+        return (short *)rn_53_55;
+        break;
 
 	case rn(54,55):
 
@@ -1900,7 +1940,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 6;
 
 		roomname = "Purest Unobtainium";
-		break;
+        return (short *)rn_54_55;
+        break;
 
 
 	case rn(52,58):
@@ -1908,7 +1949,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		rcol = 5;
 
 		roomname = "I Smell Ozone";
-		break;
+        return (short *)rn_52_58;
+        break;
 
 	case rn(51,58):
 		rcol=0;
@@ -1924,7 +1966,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		roomname = "Why So Blue?";
 
-		break;
+        return (short *)rn_51_58;
+        break;
 
 	case rn(50,58):
 
@@ -1937,7 +1980,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 		}
 
 		roomname = "Philadelphia Experiment";
-		break;
+        return (short *)rn_50_58;
+        break;
 
 
 
@@ -1946,8 +1990,8 @@ std::vector<std::string> labclass::loadlevel(int rx, int ry , Game& game, entity
 
 		game.test = true;
 		game.teststring = "ERROR: Map not found in Lab Area";
-		break;
+        return (short *)rn_default;
+        break;
 	}
 
-	return tmap;
 }

@@ -1760,7 +1760,7 @@ static short	rn_default[30][40]={
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 };
 
-std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entityclass& obj)
+short *finalclass::loadlevel(int rx, int ry, Game& game, entityclass& obj)
 {
 	int t;
 
@@ -1785,7 +1785,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpx = true;
 		roomname = "1954 World Cup Vinyl";
-		break;
+        return (short *)rn_50_52;
+        break;
 
 	case rn(50,51):
 
@@ -1797,7 +1798,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 256, 128, 10, 0, 51503);  // (savepoint)
 		warpy = true;
 		roomname = "The V Stooges";
-		break;
+        return (short *)rn_50_51;
+        break;
 
 
 	case rn(49,51):
@@ -1809,7 +1811,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "glitch";
-		break;
+        return (short *)rn_49_51;
+        break;
 
 	case rn(48,51):
 
@@ -1823,7 +1826,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "glitch";
-		break;
+        return (short *)rn_48_51;
+        break;
 
 	case rn(47,51):
 
@@ -1835,7 +1839,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "change";
-		break;
+        return (short *)rn_47_51;
+        break;
 
 	case rn(46,51):
 
@@ -1849,7 +1854,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "change";
-		break;
+        return (short *)rn_46_51;
+        break;
 
 	case rn(45,51):
 
@@ -1860,7 +1866,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "change";
-		break;
+        return (short *)rn_45_51;
+        break;
 
 
 	case rn(44,51):
@@ -1881,7 +1888,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "Vertigo";
-		break;
+        return (short *)rn_44_51;
+        break;
 
 	case rn(43,51):
 
@@ -1899,7 +1907,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "The Voon Show";
-		break;
+        return (short *)rn_43_51;
+        break;
 
 	case rn(42,51):
 
@@ -1909,7 +1918,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "glitch";
-		break;
+        return (short *)rn_42_51;
+        break;
 
 
 	case rn(41,51):
@@ -1922,7 +1932,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpx = true;
 		roomname = "1950 Silverstone Grand V";
-		break;
+        return (short *)rn_41_51;
+        break;
 
 
 	case rn(41,52):
@@ -1945,11 +1956,13 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "DIY V Repair";
-		break;
+        return (short *)rn_41_52;
+        break;
 
 	case rn(42,52):
 		roomname = "Party Time!";
-		break;
+        return (short *)rn_42_52;
+        break;
 
 
 	case rn(43,52):
@@ -1961,7 +1974,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 96, 88, 1, 3, 8);  // Enemy
 		obj.createentity(game, 72, 32, 10, 0, 52431);  // (savepoint)
 		roomname = "Upstairs, Downstairs";
-		break;
+        return (short *)rn_43_52;
+        break;
 
 
 	case rn(44,52):
@@ -1982,7 +1996,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		//obj.createentity(game, 224, 168, 1, 1, 5, 0, 120, 320, 200);  // Enemy, bounded
 		obj.createentity(game, 24, 184, 10, 1, 52440);  // (savepoint)
 		roomname = "Timeslip";
-		break;
+        return (short *)rn_44_52;
+        break;
 
 	case rn(45,52):
 
@@ -1991,7 +2006,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 128, 88, 10, 1, 52451);  // (savepoint)
 		obj.createentity(game, 160, 76, 11, 96);  // (horizontal gravity line)
 		roomname = "Three's Company";
-		break;
+        return (short *)rn_45_52;
+        break;
 
 	case rn(47,52):
 
@@ -2002,7 +2018,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 120, 192, 2, 3, 6);  // Platform
 		obj.createentity(game, 264, 48, 2, 2, 6);  // Platform
 		roomname = "Cosmic Creepers";
-		break;
+        return (short *)rn_47_52;
+        break;
 
 	case rn(48,52):
 		obj.createentity(game, 16, 112, 10, 1, 52480);  // (savepoint)
@@ -2013,7 +2030,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 123, 128, 12, 88);  // (vertical gravity line)
 
 		roomname = "The Villi People";
-		break;
+        return (short *)rn_48_52;
+        break;
 
 	case rn(50,53):
 
@@ -2030,7 +2048,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpx = true;
 		roomname = "change";
-		break;
+        return (short *)rn_50_53;
+        break;
 
 	case rn(50,54):
 
@@ -2044,7 +2063,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpx = true;
 		roomname = "change";
-		break;
+        return (short *)rn_50_54;
+        break;
 
 
 	case rn(52,53):
@@ -2057,7 +2077,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 272, 80, 3);  //Disappearing Platform
 		obj.createentity(game, 304, 80, 3);  //Disappearing Platform
 		roomname = "The Last Straw";
-		break;
+        return (short *)rn_52_53;
+        break;
 
 	case rn(53,53):
 
@@ -2072,7 +2093,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 128, 88, 3);  //Disappearing Platform
 		obj.createentity(game, 160, 88, 3);  //Disappearing Platform
 		roomname = "W";
-		break;
+        return (short *)rn_53_53;
+        break;
 
 	case rn(54,53):
 
@@ -2082,27 +2104,32 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 120, 128, 9, 19);  // (shiny trinket)
 
 		roomname="V";
-		break;
+        return (short *)rn_54_53;
+        break;
 
 
 	case rn(54,52):
 		roomname = "VV";
-		break;
+        return (short *)rn_54_52;
+        break;
 
 
 	case rn(54,51):
 		roomname = "VVV";
-		break;
+        return (short *)rn_54_51;
+        break;
 
 
 	case rn(54,50):
 		roomname = "VVVV";
-		break;
+        return (short *)rn_54_50;
+        break;
 
 	case rn(54,49):
 
 		roomname = "VVVVV";
-		break;
+        return (short *)rn_54_49;
+        break;
 
 	case rn(54,48):
 
@@ -2119,7 +2146,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 			obj.createblock(1, 0, 0, 320, 120, 3500); //Game complete
 		}
 		roomname = "VVVVVV";
-		break;
+        return (short *)rn_54_48;
+        break;
 
 
 	case rn(46,54):
@@ -2127,12 +2155,14 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		rcol = 6;
 		warpy = true;
 		roomname = "Temporary Fault...";
-		break;
+        return (short *)rn_46_54;
+        break;
 
 	case rn(47,54):
 		warpy = true;
 		roomname = "Do Not Adjust the V-hold";
-		break;
+        return (short *)rn_47_54;
+        break;
 
 	case rn(48,54):
 
@@ -2144,14 +2174,16 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "Regular Service Will Return Shortly";
-		break;
+        return (short *)rn_48_54;
+        break;
 
 	case rn(49,54):
 
 		obj.createentity(game, 120, 116, 11, 80);  // (horizontal gravity line)
 		warpy = true;
 		roomname = "Origami Room";
-		break;
+        return (short *)rn_49_54;
+        break;
 
 
 		//Tower Hallways from here
@@ -2160,7 +2192,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		obj.createentity(game, 40, 80, 10, 1, 50500);  // (savepoint)
 
 		roomname = "Teleporter Divot";
-		break;
+        return (short *)rn_108_109;
+        break;
 
 	case rn(110,104):
 
@@ -2175,7 +2208,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 				obj.createblock(1, 26*8, 0, 32, 240, 36);
 			}
 		}
-		break;
+        return (short *)rn_110_104;
+        break;
 
 	case rn(111,104):
 
@@ -2186,20 +2220,23 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		{
 			obj.createblock(1, 40, 0, 32, 240, 82);
 		}
-		break;
+        return (short *)rn_111_104;
+        break;
 
 		//Intermission level 2
 	case rn(53,48):
 
 		roomname = "Whee Sports";
 		warpx = true;
-		break;
+        return (short *)rn_53_48;
+        break;
 
 	case rn(53,49):
 
 		roomname = "Whizz Down The Shaft";
 		warpx = true;
-		break;
+        return (short *)rn_53_49;
+        break;
 
 	case rn(53, 50):
 
@@ -2211,7 +2248,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "The Gravitron";
 		warpx = true; //warpy = true;
-		break;
+        return (short *)rn_53_50;
+        break;
 
 	case rn(53,51):
 
@@ -2245,7 +2283,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		warpx = true;
 
 		game.swnmode = false;
-		break;
+        return (short *)rn_53_51;
+        break;
 
 
 	case rn(53,52):
@@ -2254,7 +2293,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "House of Mirrors";
 		warpx = true;
-		break;
+        return (short *)rn_53_52;
+        break;
 
 		//Intermission 1
 
@@ -2264,7 +2304,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "Now Take My Lead";
-		break;
+        return (short *)rn_41_56;
+        break;
 
 
 	case rn(42,56):
@@ -2277,7 +2318,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "What Are You Waiting For?";
 		warpy = true;
-		break;
+        return (short *)rn_42_56;
+        break;
 
 	case rn(43,56):
 
@@ -2291,7 +2333,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		warpy = true;
 		roomname = "Don't Get Ahead of Yourself!";
-		break;
+        return (short *)rn_43_56;
+        break;
 
 	case rn(44,56):
 
@@ -2305,7 +2348,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "Very Good";
 		warpy = true;
-		break;
+        return (short *)rn_44_56;
+        break;
 
 	case rn(45,56):
 
@@ -2315,7 +2359,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		roomname = "Must I Do Everything For You?";
 		warpy = true;
 
-		break;
+        return (short *)rn_45_56;
+        break;
 
 	case rn(46,56):
 
@@ -2328,7 +2373,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "Now Stay Close To Me...";
 		warpy = true;
-		break;
+        return (short *)rn_46_56;
+        break;
 
 	case rn(47,56):
 
@@ -2336,13 +2382,15 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "...But Not Too Close";
 		warpy = true;
-		break;
+        return (short *)rn_47_56;
+        break;
 
 	case rn(48,56):
 
 		warpy = true;
 		roomname = "Don't Be Afraid";
-		break;
+        return (short *)rn_48_56;
+        break;
 
 	case rn(49,56):
 
@@ -2353,7 +2401,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		}
 		warpy = true;
 		roomname = "Do as I Say...";
-		break;
+        return (short *)rn_49_56;
+        break;
 
 	case rn(50,56):
 
@@ -2363,7 +2412,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "...Not as I Do";
 		warpy = true;
-		break;
+        return (short *)rn_50_56;
+        break;
 
 	case rn(51,56):
 
@@ -2374,7 +2424,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 		}
 		warpy = true;
 		roomname = "Mind Your Head";
-		break;
+        return (short *)rn_51_56;
+        break;
 
 	case rn(52,56):
 
@@ -2388,7 +2439,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "Do Try To Keep Up";
 		warpy = true;
-		break;
+        return (short *)rn_52_56;
+        break;
 
 	case rn(53,56):
 
@@ -2396,7 +2448,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "You're Falling Behind";
 		warpy = true;
-		break;
+        return (short *)rn_53_56;
+        break;
 
 	case rn(54,56):
 
@@ -2409,7 +2462,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		roomname = "Class Dismissed!";
 		warpy = true;
-		break;
+        return (short *)rn_54_56;
+        break;
 
 
 
@@ -2418,8 +2472,8 @@ std::vector<std::string> finalclass::loadlevel(int rx, int ry, Game& game, entit
 
 		//game.test = true;
 		//game.teststring = "ERROR: Map not found in Final Area";
-		break;
+        return (short *)rn_default;
+        break;
 	}
 
-	return tmap;
 }

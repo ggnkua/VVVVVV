@@ -15,9 +15,9 @@ public:
 
     int miniat(int xp, int yp, int yoff);
 
-    void fillbackground(std::vector<std::string>& tmap);
+    void fillbackground(short *tmap);
 
-    void fillminitower(std::vector<std::string>& tmap);
+    void fillminitower(short *tmap);
 
     void loadminitower1();
 
@@ -25,7 +25,7 @@ public:
 
     void loadbackground();
 
-    void fillcontents(std::vector<std::string>& tmap);
+    void fillcontents(short *tmap);
 
     void loadmap();
 
@@ -34,9 +34,9 @@ public:
     //public var minitower:Array = new Array();
     //public var vmult:Array = new Array();
 
-    std::vector<int> back;
-    std::vector<int> contents;
-    std::vector<int> minitower;
+    short back[120*40];
+    short contents[700*40];
+    short minitower[100*40];
     std::vector<int> vmult;
 
     bool minitowermode;

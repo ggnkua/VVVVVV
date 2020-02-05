@@ -769,7 +769,7 @@ static short	rn_49_49[29][40]={
 		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
 };
 
-std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)
+short *warpclass::loadlevel(int rx, int ry , Game& game, entityclass& obj)
 {
 	int t;
 
@@ -802,13 +802,15 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 0;
 		warpy = true;
 		roomname = "This is how it is";
-		break;
+        return (short *)rn_50_50;
+        break;
 
 	case rn(51,50):
 		rcol = 2;
 		warpx = true;
 		roomname = "A Bisected Spiral";
-		break;
+        return (short *)rn_51_50;
+        break;
 
 
 	case rn(51,51):
@@ -819,7 +821,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 1;
 		warpy = true;
 		roomname = "Take the Red Pill";
-		break;
+        return (short *)rn_51_51;
+        break;
 
 	case rn(52,51):
 
@@ -832,7 +835,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 5;
 		warpx = true;
 		roomname = "Short Circuit";
-		break;
+        return (short *)rn_52_51;
+        break;
 
 	case rn(52,50):
 
@@ -840,7 +844,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 4;
 		warpy = true;
 		roomname = "As you like it";
-		break;
+        return (short *)rn_52_50;
+        break;
 
 
 	case rn(53,50):
@@ -849,7 +854,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 3;
 		warpx = true;
 		roomname = "Maze With No Entrance";
-		break;
+        return (short *)rn_53_50;
+        break;
 
 	case rn(53,49):
 
@@ -857,7 +863,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 2;
 		warpy = true;
 		roomname = "As we go up, we go down";
-		break;
+        return (short *)rn_53_49;
+        break;
 
 	case rn(54,49):
 
@@ -868,7 +875,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 0;
 		warpx = true;
 		roomname = "Time to get serious";
-		break;
+        return (short *)rn_54_49;
+        break;
 
 
 	case rn(54,50):
@@ -879,7 +887,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 2;
 		warpy = true;
 		roomname = "Wheeler's Wormhole";
-		break;
+        return (short *)rn_54_50;
+        break;
 
 	case rn(55,50):
 
@@ -890,7 +899,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 4;
 		warpx = true;
 		roomname = "Ascending and Descending";
-		break;
+        return (short *)rn_55_50;
+        break;
 
 	case rn(55,51):
 
@@ -903,7 +913,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 1;
 		warpy = true;
 		roomname = "Shockwave Rider";
-		break;
+        return (short *)rn_55_51;
+        break;
 
 	case rn(54,51):
 
@@ -919,7 +930,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 3;
 		warpx = true;
 		roomname = "Sweeney's Maze";
-		break;
+        return (short *)rn_54_51;
+        break;
 
 	case rn(54,52):
 
@@ -938,7 +950,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 5;
 		warpy = true;
 		roomname = "Mind The Gap";
-		break;
+        return (short *)rn_54_52;
+        break;
 
 	case rn(53,52):
 
@@ -957,7 +970,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		rcol = 2;
 		warpx = true;
 		roomname = "Edge Games";
-		break;
+        return (short *)rn_53_52;
+        break;
 
 	case rn(53,51):
 
@@ -966,7 +980,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "The Brown Gate";
-		break;
+        return (short *)rn_53_51;
+        break;
 
 	case rn(55,49):
 
@@ -976,7 +991,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "To The Batcave!";
-		break;
+        return (short *)rn_55_49;
+        break;
 
 	case rn(55,52):
 
@@ -986,7 +1002,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "This will make you flip";
-		break;
+        return (short *)rn_55_52;
+        break;
 
 	case rn(52,52):
 
@@ -996,7 +1013,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "Twisty Little Passages";
-		break;
+        return (short *)rn_52_52;
+        break;
 
 	case rn(50,51):
 
@@ -1010,7 +1028,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "That's Why I Have To Kill You";
-		break;
+        return (short *)rn_50_51;
+        break;
 
 	case rn(52,49):
 
@@ -1025,13 +1044,15 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		warpx = true;
 		warpy = true;
 		roomname = "I Love You";
-		break;
+        return (short *)rn_52_49;
+        break;
 
 	case rn(50,49):
 		rcol = 1;
 		warpy = true;
 		roomname = "Green Dudes Can't Flip";
-		break;
+        return (short *)rn_50_49;
+        break;
 
 
 	case rn(51,49):
@@ -1050,7 +1071,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 		}
 
 		roomname = "Murdering Twinmaker";
-		break;
+        return (short *)rn_51_49;
+        break;
 
 	case rn(49,49):
 
@@ -1066,7 +1088,8 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 			}
 		}
 		roomname = "It's Not Easy Being Green";
-		break;
+        return (short *)rn_49_49;
+        break;
 
 
 	default:
@@ -1074,9 +1097,9 @@ std::vector<std::string> warpclass::loadlevel(int rx, int ry , Game& game, entit
 
 		game.test = true;
 		game.teststring = "ERROR: Map not found in Warp Area";
-		break;
+        return (short *)rn_default;
+        break;
 					#endif
 	}
 
-	return tmap;
 }

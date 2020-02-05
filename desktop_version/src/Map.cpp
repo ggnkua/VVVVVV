@@ -1,4 +1,5 @@
 #include "Map.h"
+#include <cstring>
 
 #include "MakeAndPlay.h"
 
@@ -60,13 +61,7 @@ mapclass::mapclass()
 		shinytrinkets.push_back(point());
 	}
 	//We create a blank map
-	for (int j = 0; j < 30; j++)
-	{
-		for (int i = 0; i < 40; i++)
-		{
-			contents.push_back(0);
-		}
-	}
+    memset(contents,0,sizeof(contents));
 
 	for (int j = 0; j < 20; j++)
 	{
@@ -758,18 +753,10 @@ void mapclass::settile(int xp, int yp, int t)
 	}
 }
 
-void mapclass::fillcontent(std::vector<std::string>& tmap)
+void mapclass::fillcontent(short *tmap)
 {
 
-	for (j = 0; j < 29+extrarow; j++)
-	{
-		std::vector<std::string> maprow = split(tmap[j], ',');
-
-		for(int i = 0; i < 40; i++)
-		{
-			contents[i + vmult[j]] = atoi(maprow[i].c_str());
-		}
-	}
+    memcpy(contents,tmap,(29*40+extrarow)*sizeof(short));
 }
 
 
@@ -1189,7 +1176,7 @@ void mapclass::loadlevel(int rx, int ry, Graphics& dwgfx, Game& game, entityclas
 	obj.customwarpmodevon=false;
 	obj.customwarpmodehon=false;
 
-	std::vector<std::string> tmap;
+	short *tmap;
 
 	if (finalmode)
 	{

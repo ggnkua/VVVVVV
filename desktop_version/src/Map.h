@@ -60,7 +60,7 @@ public:
 
     void settile(int xp, int yp, int t);
 
-    void fillcontent(std::vector<std::string>& tmap);
+    void fillcontent(short *tmap);
 
 
     int area(int _rx, int _ry);
@@ -85,10 +85,10 @@ public:
     std::vector <int> roomdeaths;
     std::vector <int> roomdeathsfinal;
     std::vector <int> areamap;
-    std::vector <int> contents;
+    short contents[30*40];
     std::vector <int> explored;
     std::vector <int> vmult;
-    std::vector <std::string> tmap;
+    short *tmap;
 
     int temp;
     int temp2;
